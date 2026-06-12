@@ -488,27 +488,117 @@
 
   function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
   function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bang ${group.name}</div><div class="team-head"><span>Doi</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
-  function renderFixtures() {
-    const now = new Date();
-    const matches = getRelevantFixtures(now).slice(0, config.MAX_FIXTURES || 8);
-    const liveCount = matches.filter(isLive).length;
-    el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} tran`;
+  // function renderFixtures() {
+  //   const now = new Date();
+  //   const matches = getRelevantFixtures(now).slice(0, config.MAX_FIXTURES || 8);
+  //   const liveCount = matches.filter(isLive).length;
+  //   el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} tran`;
 
-    el.fixtures.innerHTML = matches.map((m, i) => `
-      <article class="fixture-card ${isLive(m) ? "is-live" : i === 0 ? "is-next" : ""}">
-        <div class="fixture-time">
-          <span>${fmtKickoff(m.date)}</span>
-          <span class="status-pill ${isLive(m) ? "is-live" : ""}">${statusLabel(m)}</span>
-        </div>
-        <div class="fixture-teams">
-          <strong>${flagImg(m.home, "fixture-flag")}<span>${shortTeam(m.home)}</span></strong>
-          ${matchCenterText(m)}
-          <strong>${flagImg(m.away, "fixture-flag")}<span>${shortTeam(m.away)}</span></strong>
-        </div>
-        <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
-        <div class="fixture-meta"><span>${m.group ? `Bang ${m.group}` : "World Cup"}</span><span>${m.venue || "TBA"}</span></div>
-      </article>`).join("") || `<div class="empty-state">Chua co lich / ti so de hien thi</div>`;
+  //   el.fixtures.innerHTML = matches.map((m, i) => `
+  //     <article class="fixture-card ${isLive(m) ? "is-live" : i === 0 ? "is-next" : ""}">
+  //       <div class="fixture-time">
+  //         <span>${fmtKickoff(m.date)}</span>
+  //         <span class="status-pill ${isLive(m) ? "is-live" : ""}">${statusLabel(m)}</span>
+  //       </div>
+  //       <div class="fixture-teams">
+  //         <strong>${flagImg(m.home, "fixture-flag")}<span>${shortTeam(m.home)}</span></strong>
+  //         ${matchCenterText(m)}
+  //         <strong>${flagImg(m.away, "fixture-flag")}<span>${shortTeam(m.away)}</span></strong>
+  //       </div>
+  //       <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
+  //       <div class="fixture-meta"><span>${m.group ? `Bang ${m.group}` : "World Cup"}</span><span>${m.venue || "TBA"}</span></div>
+  //     </article>`).join("") || `<div class="empty-state">Chua co lich / ti so de hien thi</div>`;
+  // }
+
+  function isFinishedMatch(m) {
+  return ["FT", "FINISHED", "AET", "PEN"].includes(String(m.status).toUpperCase());
+}
+
+function isUpcomingMatch(m, now = new Date()) {
+  const d = new Date(m.kickoff);
+  return d > now && !isFinishedMatch(m);
+}
+
+function getSidebarFixtures() {
+  const now = new Date();
+
+  const all = (data.fixtures || [])
+    .map((m) => ({
+      ...m,
+      date: new Date(m.kickoff)
+    }))
+    .filter((m) => !Number.isNaN(m.date.getTime()));
+
+  const finished = all
+    .filter((m) => isFinishedMatch(m))
+    .sort((a, b) => b.date - a.date)
+    .slice(0, 2);
+
+  const upcoming = all
+    .filter((m) => isUpcomingMatch(m, now))
+    .sort((a, b) => a.date - b.date)
+    .slice(0, 3);
+
+  return [...finished, ...upcoming].sort((a, b) => a.date - b.date);
+}
+
+function scoreText(m) {
+  const hg = m.homeGoals;
+  const ag = m.awayGoals;
+
+  if (hg !== null && hg !== undefined && ag !== null && ag !== undefined) {
+    return `${hg} - ${ag}`;
   }
+
+  return "VS";
+}
+
+function statusLabel(m) {
+  if (isFinishedMatch(m)) return "FT";
+  if (String(m.status).toUpperCase() === "LIVE") return "LIVE";
+  return "SAP DAU";
+}
+
+function renderFixtures() {
+  const matches = getSidebarFixtures();
+
+  el.fixtureCount.textContent = `${matches.length} tran`;
+
+  el.fixtures.innerHTML = matches.map((m, i) => {
+    const isDone = isFinishedMatch(m);
+    const score = scoreText(m);
+
+    return `
+      <article class="fixture-card ${i === 0 ? "is-next" : ""}">
+        <div class="fixture-top">
+          <div class="fixture-time">${fmtKickoff(m.date)}</div>
+          <div class="fixture-status">${statusLabel(m)}</div>
+        </div>
+
+        <div class="fixture-teams">
+          <strong>
+            ${flagImg(m.home, "fixture-flag")}
+            <span>${shortTeam(m.home)}</span>
+          </strong>
+
+          <span class="${isDone ? "fixture-score" : "fixture-vs"}">${score}</span>
+
+          <strong>
+            ${flagImg(m.away, "fixture-flag")}
+            <span>${shortTeam(m.away)}</span>
+          </strong>
+        </div>
+
+        <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
+
+        <div class="fixture-meta">
+          <span>${m.group ? `Bang ${m.group}` : "World Cup"}</span>
+          <span>${m.venue || "TBA"}</span>
+        </div>
+      </article>
+    `;
+  }).join("") || `<div class="empty-state">Chua co du lieu tran dau</div>`;
+}
   function updateClock() { const now = new Date(); el.clock.textContent = fmtDate(now, { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }); el.dateLine.textContent = fmtDate(now, { weekday: "long", day: "2-digit", month: "long", year: "numeric" }); }
   function getFeaturedMatch(now) {
     const dated = fixturesWithDates();
