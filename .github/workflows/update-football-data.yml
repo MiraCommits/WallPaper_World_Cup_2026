@@ -3,15 +3,6 @@ run-name: ${{ github.event_name }} - update football-data.org data
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/update-football-data.yml"
-      - "scripts/update-data.js"
-      - "package.json"
-      - "package-lock.json"
-  schedule:
-    - cron: "3,8,13,18,23,28,33,38,43,48,53,58 * * * *"
 
 permissions:
   contents: write
@@ -23,6 +14,7 @@ concurrency:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,21 +24,11 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Fetch football-data.org and generate static data
-        env:
-          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-          COMPETITION: WC
-          SEASON: "2026"
-          TIMEZONE: Asia/Ho_Chi_Minh
-        run: node scripts/update-data.js
-
-      - name: Fetch football-data.org and generate static data
-        env:
-          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-          COMPETITION: WC
-          SEASON: "2026"
-          TIMEZONE: Asia/Ho_Chi_Minh
-        run: node scripts/update-data.js
+      - name: Show trigger info
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "ref=${{ github.ref }}"
+          date -u
 
       - name: Fetch football-data.org and generate static data
         env:
@@ -71,7 +53,6 @@ jobs:
           echo "All fetch attempts failed."
           exit 1
 
-      
       - name: Commit data changes
         shell: bash
         run: |
@@ -84,9 +65,3 @@ jobs:
           else
             echo "No changes to commit."
           fi
-      - name: Show trigger info
-        run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "ref=${{ github.ref }}"
-          echo "actor=${{ github.actor }}"
-          date -u
