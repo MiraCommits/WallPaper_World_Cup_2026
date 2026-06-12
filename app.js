@@ -659,21 +659,9 @@
       .sort((a, b) => a.date - b.date)
       .slice(0, 3);
 
-    return uniqueMatches([...live, ...finished, ...upcoming])
-      .sort((a, b) => {
-        const aLive = isLive(a, now);
-        const bLive = isLive(b, now);
-
-        if (aLive !== bLive) return aLive ? -1 : 1;
-
-        const aFinished = isFinishedMatch(a);
-        const bFinished = isFinishedMatch(b);
-
-        if (aFinished !== bFinished) return aFinished ? -1 : 1;
-
-        return a.date - b.date;
-      })
-      .slice(0, max);
+    return uniqueMatches([...finished, ...live, ...upcoming])
+  .sort((a, b) => a.date - b.date)
+  .slice(0, max);
   }
 
   function renderFixtures() {
