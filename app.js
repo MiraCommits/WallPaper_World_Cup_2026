@@ -511,65 +511,74 @@
   // }
 
   function isFinishedMatch(m) {
-  return ["FT", "FINISHED", "AET", "PEN"].includes(String(m.status).toUpperCase());
-}
-
-function isUpcomingMatch(m, now = new Date()) {
-  const d = new Date(m.kickoff);
-  return d > now && !isFinishedMatch(m);
-}
-
-function getSidebarFixtures() {
-  const now = new Date();
-
-  const all = (data.fixtures || [])
-    .map((m) => ({
-      ...m,
-      date: new Date(m.kickoff)
-    }))
-    .filter((m) => !Number.isNaN(m.date.getTime()));
-
-  const finished = all
-    .filter((m) => isFinishedMatch(m))
-    .sort((a, b) => b.date - a.date)
-    .slice(0, 2);
-
-  const upcoming = all
-    .filter((m) => isUpcomingMatch(m, now))
-    .sort((a, b) => a.date - b.date)
-    .slice(0, 3);
-
-  return [...finished, ...upcoming].sort((a, b) => a.date - b.date);
-}
-
-function scoreText(m) {
-  const hg = m.homeGoals;
-  const ag = m.awayGoals;
-
-  if (hg !== null && hg !== undefined && ag !== null && ag !== undefined) {
-    return `${hg} - ${ag}`;
+    return ["FT", "FINISHED", "AET", "PEN"].includes(String(m.status).toUpperCase());
   }
 
-  return "VS";
-}
+  function isUpcomingMatch(m, now = new Date()) {
+    const d = new Date(m.kickoff);
+    return d > now && !isFinishedMatch(m);
+  }
 
-function statusLabel(m) {
-  if (isFinishedMatch(m)) return "FT";
-  if (String(m.status).toUpperCase() === "LIVE") return "LIVE";
-  return "SAP DAU";
-}
+  function getSidebarFixtures() {
+    const now = new Date();
 
-function renderFixtures() {
-  const matches = getSidebarFixtures();
+    const all = (data.fixtures || [])
+      .map((m) => ({
+        ...m,
+        date: new Date(m.kickoff)
+      }))
+      .filter((m) => !Number.isNaN(m.date.getTime()));
 
-  el.fixtureCount.textContent = `${matches.length} tran`;
+    const finished = all
+      .filter((m) => isFinishedMatch(m))
+      .sort((a, b) => b.date - a.date)
+      .slice(0, 2);
 
-  el.fixtures.innerHTML = matches.map((m, i) => {
-    const isDone = isFinishedMatch(m);
-    const score = scoreText(m);
+    const upcoming = all
+      .filter((m) => isUpcomingMatch(m, now))
+      .sort((a, b) => a.date - b.date)
+      .slice(0, 3);
 
-    return `
-      <article class="fixture-card ${i === 0 ? "is-next" : ""}">
+    return [...finished, ...upcoming].sort((a, b) => a.date - b.date);
+  }
+
+  function scoreText(m) {
+    const hg = m.homeGoals;
+    const ag = m.awayGoals;
+
+    if (hg !== null && hg !== undefined && ag !== null && ag !== undefined) {
+      return `${hg} - ${ag}`;
+    }
+
+    return "VS";
+  }
+
+  function statusLabel(m) {
+    if (isFinishedMatch(m)) return "FT";
+    if (String(m.status).toUpperCase() === "LIVE") return "LIVE";
+    return "SAP DAU";
+  }
+
+  function renderFixtures() {
+    const matches = getSidebarFixtures();
+    const now = new Date();
+
+    const nextUpcoming = matches
+      .filter((m) => isUpcomingMatch(m, now))
+      .sort((a, b) => a.date - b.date)[0];
+
+    el.fixtureCount.textContent = `${matches.length} tran`;
+
+    el.fixtures.innerHTML = matches.map((m) => {
+      const isDone = isFinishedMatch(m);
+      const score = scoreText(m);
+
+      const isNextUpcoming =
+        nextUpcoming &&
+        String(m.id || m.kickoff) === String(nextUpcoming.id || nextUpcoming.kickoff);
+
+      return `
+    <article class="fixture-card ${isNextUpcoming ? "is-next" : ""}">
         <div class="fixture-top">
           <div class="fixture-time">${fmtKickoff(m.date)}</div>
           <div class="fixture-status">${statusLabel(m)}</div>
@@ -597,8 +606,8 @@ function renderFixtures() {
         </div>
       </article>
     `;
-  }).join("") || `<div class="empty-state">Chua co du lieu tran dau</div>`;
-}
+    }).join("") || `<div class="empty-state">Chua co du lieu tran dau</div>`;
+  }
   function updateClock() { const now = new Date(); el.clock.textContent = fmtDate(now, { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }); el.dateLine.textContent = fmtDate(now, { weekday: "long", day: "2-digit", month: "long", year: "numeric" }); }
   function getFeaturedMatch(now) {
     const dated = fixturesWithDates();
