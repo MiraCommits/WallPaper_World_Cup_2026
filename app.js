@@ -467,9 +467,9 @@
       return min;
     }
     if (m.status === "FT") return "FT";
-    if (m.status === "PP") return "Hoan";
-    if (m.status === "CANCEL") return "Huy";
-    return "Sap dau";
+    if (m.status === "PP") return "Hoãn";
+    if (m.status === "CANCEL") return "Hủy";
+    return "Sắp diễn ra";
   }
 
   function matchCenterText(m) {
@@ -556,7 +556,7 @@
   function statusLabel(m) {
     if (isFinishedMatch(m)) return "FT";
     if (String(m.status).toUpperCase() === "LIVE") return "LIVE";
-    return "SAP DAU";
+    return "Sắp diễn ra";
   }
 
   function renderFixtures() {
@@ -567,7 +567,7 @@
       .filter((m) => isUpcomingMatch(m, now))
       .sort((a, b) => a.date - b.date)[0];
 
-    el.fixtureCount.textContent = `${matches.length} tran`;
+    el.fixtureCount.textContent = `${matches.length} trận`;
 
     el.fixtures.innerHTML = matches.map((m) => {
       const isDone = isFinishedMatch(m);
@@ -601,7 +601,7 @@
         <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
 
         <div class="fixture-meta">
-          <span>${m.group ? `Bang ${m.group}` : "World Cup"}</span>
+          <span>${m.group ? `Bảng ${m.group}` : "World Cup"}</span>
           <span>${m.venue || "TBA"}</span>
         </div>
       </article>
@@ -645,7 +645,7 @@
     el.countdownMatch.innerHTML = `<span>${flagImg(match.home, "countdown-flag")} ${shortTeam(match.home)}</span>${center}<span>${flagImg(match.away, "countdown-flag")} ${shortTeam(match.away)}</span>`;
 
     const modeText = mode === "live" ? "DANG DA" : mode === "recent" ? "TRAN GAN NHAT" : "TRAN SAP DIEN RA";
-    el.countdownVenue.textContent = `${modeText} | ${fmtKickoff(match.date)} | ${match.group ? `Bang ${match.group}` : "World Cup"} | ${match.venue || "TBA"}`;
+    el.countdownVenue.textContent = `${modeText} | ${fmtKickoff(match.date)} | ${match.group ? `Bảng ${match.group}` : "World Cup"} | ${match.venue || "TBA"}`;
 
     if (mode === "next") {
       const diff = Math.max(0, match.date - now);
