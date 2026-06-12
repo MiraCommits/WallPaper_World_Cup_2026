@@ -39,6 +39,38 @@ jobs:
           TIMEZONE: Asia/Ho_Chi_Minh
         run: node scripts/update-data.js
 
+      - name: Fetch football-data.org and generate static data
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          COMPETITION: WC
+          SEASON: "2026"
+          TIMEZONE: Asia/Ho_Chi_Minh
+        run: node scripts/update-data.js
+
+      - name: Fetch football-data.org and generate static data
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          COMPETITION: WC
+          SEASON: "2026"
+          TIMEZONE: Asia/Ho_Chi_Minh
+        shell: bash
+        run: |
+          for i in 1 2 3 4 5; do
+            echo "Fetch attempt $i/5..."
+
+            if node scripts/update-data.js; then
+              echo "Fetch successful."
+              exit 0
+            fi
+
+            echo "Fetch failed. Waiting before retry..."
+            sleep $((i * 20))
+          done
+
+          echo "All fetch attempts failed."
+          exit 1
+
+      
       - name: Commit data changes
         shell: bash
         run: |
