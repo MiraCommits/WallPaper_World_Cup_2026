@@ -3,12 +3,12 @@ name: Update football-data.org data
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - ".github/workflows/update-football-data.yml"
       - "scripts/update-data.js"
       - "package.json"
       - "package-lock.json"
-
   schedule:
     - cron: "2-59/5 * * * *"
 
