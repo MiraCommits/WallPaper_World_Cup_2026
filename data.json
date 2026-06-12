@@ -3,7 +3,7 @@
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-12T20:36:48.449Z",
+  "updatedAt": "2026-06-12T20:54:24.901Z",
   "groups": [
     {
       "name": "A",
@@ -13,12 +13,6 @@
           "name": "Mexico",
           "logo": "https://crests.football-data.org/769.svg",
           "flagCode": "mx"
-        },
-        {
-          "code": "RSA",
-          "name": "South Africa",
-          "logo": "https://crests.football-data.org/9396.svg",
-          "flagCode": "za"
         },
         {
           "code": "KOR",
@@ -31,18 +25,18 @@
           "name": "Czechia",
           "logo": "https://crests.football-data.org/798.svg",
           "flagCode": "cz"
+        },
+        {
+          "code": "RSA",
+          "name": "South Africa",
+          "logo": "https://crests.football-data.org/9396.svg",
+          "flagCode": "za"
         }
       ]
     },
     {
       "name": "B",
       "teams": [
-        {
-          "code": "CAN",
-          "name": "Canada",
-          "logo": "https://crests.football-data.org/canada.svg",
-          "flagCode": "ca"
-        },
         {
           "code": "BIH",
           "name": "Bosnia-H.",
@@ -60,6 +54,12 @@
           "name": "Switzerland",
           "logo": "https://crests.football-data.org/788.svg",
           "flagCode": "ch"
+        },
+        {
+          "code": "CAN",
+          "name": "Canada",
+          "logo": "https://crests.football-data.org/canada.svg",
+          "flagCode": "ca"
         }
       ]
     },
@@ -73,16 +73,16 @@
           "flagCode": "br"
         },
         {
-          "code": "MAR",
-          "name": "Morocco",
-          "logo": "https://crests.football-data.org/morocco.svg",
-          "flagCode": "ma"
-        },
-        {
           "code": "HAI",
           "name": "Haiti",
           "logo": "https://crests.football-data.org/haiti.svg",
           "flagCode": "ht"
+        },
+        {
+          "code": "MAR",
+          "name": "Morocco",
+          "logo": "https://crests.football-data.org/morocco.svg",
+          "flagCode": "ma"
         },
         {
           "code": "SCO",
@@ -96,10 +96,10 @@
       "name": "D",
       "teams": [
         {
-          "code": "USA",
-          "name": "USA",
-          "logo": "https://crests.football-data.org/usa.svg",
-          "flagCode": "us"
+          "code": "AUS",
+          "name": "Australia",
+          "logo": "https://crests.football-data.org/779.svg",
+          "flagCode": "au"
         },
         {
           "code": "PAR",
@@ -108,16 +108,16 @@
           "flagCode": "py"
         },
         {
-          "code": "AUS",
-          "name": "Australia",
-          "logo": "https://crests.football-data.org/779.svg",
-          "flagCode": "au"
-        },
-        {
           "code": "TUR",
           "name": "Turkey",
           "logo": "https://crests.football-data.org/803.svg",
           "flagCode": "tr"
+        },
+        {
+          "code": "USA",
+          "name": "USA",
+          "logo": "https://crests.football-data.org/usa.svg",
+          "flagCode": "us"
         }
       ]
     },
@@ -125,28 +125,28 @@
       "name": "E",
       "teams": [
         {
-          "code": "GER",
-          "name": "Germany",
-          "logo": "https://crests.football-data.org/759.svg",
-          "flagCode": "de"
-        },
-        {
           "code": "CUW",
           "name": "Curaçao",
           "logo": "https://crests.football-data.org/curacao.svg",
           "flagCode": "cw"
         },
         {
-          "code": "CIV",
-          "name": "Ivory Coast",
-          "logo": "https://crests.football-data.org/787.svg",
-          "flagCode": "ci"
+          "code": "GER",
+          "name": "Germany",
+          "logo": "https://crests.football-data.org/759.svg",
+          "flagCode": "de"
         },
         {
           "code": "ECU",
           "name": "Ecuador",
           "logo": "https://crests.football-data.org/791.svg",
           "flagCode": "ec"
+        },
+        {
+          "code": "CIV",
+          "name": "Ivory Coast",
+          "logo": "https://crests.football-data.org/787.svg",
+          "flagCode": "ci"
         }
       ]
     },
@@ -154,16 +154,16 @@
       "name": "F",
       "teams": [
         {
-          "code": "NED",
-          "name": "Netherlands",
-          "logo": "https://crests.football-data.org/8601.svg",
-          "flagCode": "nl"
-        },
-        {
           "code": "JPN",
           "name": "Japan",
           "logo": "https://crests.football-data.org/766.svg",
           "flagCode": "jp"
+        },
+        {
+          "code": "NED",
+          "name": "Netherlands",
+          "logo": "https://crests.football-data.org/8601.svg",
+          "flagCode": "nl"
         },
         {
           "code": "SWE",
@@ -183,16 +183,16 @@
       "name": "G",
       "teams": [
         {
-          "code": "BEL",
-          "name": "Belgium",
-          "logo": "https://crests.football-data.org/805.svg",
-          "flagCode": "be"
-        },
-        {
           "code": "EGY",
           "name": "Egypt",
           "logo": "https://crests.football-data.org/825.svg",
           "flagCode": "eg"
+        },
+        {
+          "code": "BEL",
+          "name": "Belgium",
+          "logo": "https://crests.football-data.org/805.svg",
+          "flagCode": "be"
         },
         {
           "code": "IRN",
@@ -212,12 +212,6 @@
       "name": "H",
       "teams": [
         {
-          "code": "ESP",
-          "name": "Spain",
-          "logo": "https://crests.football-data.org/760.svg",
-          "flagCode": "es"
-        },
-        {
           "code": "CPV",
           "name": "Cape Verde",
           "logo": "https://crests.football-data.org/cape_verde.svg",
@@ -228,6 +222,12 @@
           "name": "Saudi Arabia",
           "logo": "https://crests.football-data.org/saudi_arabia.svg",
           "flagCode": ""
+        },
+        {
+          "code": "ESP",
+          "name": "Spain",
+          "logo": "https://crests.football-data.org/760.svg",
+          "flagCode": "es"
         },
         {
           "code": "URY",
@@ -247,12 +247,6 @@
           "flagCode": "fr"
         },
         {
-          "code": "SEN",
-          "name": "Senegal",
-          "logo": "https://crests.football-data.org/senegal.svg",
-          "flagCode": "sn"
-        },
-        {
           "code": "IRQ",
           "name": "Iraq",
           "logo": "https://crests.football-data.org/iraq.svg",
@@ -263,6 +257,12 @@
           "name": "Norway",
           "logo": "https://crests.football-data.org/813.svg",
           "flagCode": "no"
+        },
+        {
+          "code": "SEN",
+          "name": "Senegal",
+          "logo": "https://crests.football-data.org/senegal.svg",
+          "flagCode": "sn"
         }
       ]
     },
@@ -270,15 +270,21 @@
       "name": "J",
       "teams": [
         {
+          "code": "ALG",
+          "name": "Algeria",
+          "logo": "https://crests.football-data.org/algeria.svg",
+          "flagCode": ""
+        },
+        {
           "code": "ARG",
           "name": "Argentina",
           "logo": "https://crests.football-data.org/762.png",
           "flagCode": "ar"
         },
         {
-          "code": "ALG",
-          "name": "Algeria",
-          "logo": "https://crests.football-data.org/algeria.svg",
+          "code": "JOR",
+          "name": "Jordan",
+          "logo": "https://crests.football-data.org/8049.png",
           "flagCode": ""
         },
         {
@@ -286,12 +292,6 @@
           "name": "Austria",
           "logo": "https://crests.football-data.org/816.svg",
           "flagCode": "at"
-        },
-        {
-          "code": "JOR",
-          "name": "Jordan",
-          "logo": "https://crests.football-data.org/8049.png",
-          "flagCode": ""
         }
       ]
     },
@@ -299,28 +299,28 @@
       "name": "K",
       "teams": [
         {
-          "code": "POR",
-          "name": "Portugal",
-          "logo": "https://crests.football-data.org/765.svg",
-          "flagCode": "pt"
-        },
-        {
           "code": "COD",
           "name": "Congo DR",
           "logo": "https://crests.football-data.org/congo_dr.svg",
           "flagCode": ""
         },
         {
-          "code": "UZB",
-          "name": "Uzbekistan",
-          "logo": "https://crests.football-data.org/8070.png",
-          "flagCode": "uz"
-        },
-        {
           "code": "COL",
           "name": "Colombia",
           "logo": "https://crests.football-data.org/818.svg",
           "flagCode": "co"
+        },
+        {
+          "code": "POR",
+          "name": "Portugal",
+          "logo": "https://crests.football-data.org/765.svg",
+          "flagCode": "pt"
+        },
+        {
+          "code": "UZB",
+          "name": "Uzbekistan",
+          "logo": "https://crests.football-data.org/8070.png",
+          "flagCode": "uz"
         }
       ]
     },
@@ -334,16 +334,16 @@
           "flagCode": "gb-eng"
         },
         {
-          "code": "CRO",
-          "name": "Croatia",
-          "logo": "https://crests.football-data.org/799.svg",
-          "flagCode": "hr"
-        },
-        {
           "code": "GHA",
           "name": "Ghana",
           "logo": "https://crests.football-data.org/ghana.svg",
           "flagCode": "gh"
+        },
+        {
+          "code": "CRO",
+          "name": "Croatia",
+          "logo": "https://crests.football-data.org/799.svg",
+          "flagCode": "hr"
         },
         {
           "code": "PAN",
@@ -387,18 +387,11 @@
     ],
     "B": [
       {
-        "team": "CAN",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "BIH",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
+        "played": 1,
+        "goalDiff": 1,
+        "points": 3,
+        "goalsFor": 1
       },
       {
         "team": "QAT",
@@ -413,6 +406,13 @@
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
+      },
+      {
+        "team": "CAN",
+        "played": 1,
+        "goalDiff": -1,
+        "points": 0,
+        "goalsFor": 0
       }
     ],
     "C": [
@@ -424,14 +424,14 @@
         "goalsFor": 0
       },
       {
-        "team": "MAR",
+        "team": "HAI",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "HAI",
+        "team": "MAR",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -447,7 +447,7 @@
     ],
     "D": [
       {
-        "team": "USA",
+        "team": "AUS",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -461,14 +461,14 @@
         "goalsFor": 0
       },
       {
-        "team": "AUS",
+        "team": "TUR",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "TUR",
+        "team": "USA",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -477,13 +477,6 @@
     ],
     "E": [
       {
-        "team": "GER",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "CUW",
         "played": 0,
         "goalDiff": 0,
@@ -491,7 +484,7 @@
         "goalsFor": 0
       },
       {
-        "team": "CIV",
+        "team": "GER",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -503,18 +496,25 @@
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
+      },
+      {
+        "team": "CIV",
+        "played": 0,
+        "goalDiff": 0,
+        "points": 0,
+        "goalsFor": 0
       }
     ],
     "F": [
       {
-        "team": "NED",
+        "team": "JPN",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "JPN",
+        "team": "NED",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -537,14 +537,14 @@
     ],
     "G": [
       {
-        "team": "BEL",
+        "team": "EGY",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "EGY",
+        "team": "BEL",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -567,13 +567,6 @@
     ],
     "H": [
       {
-        "team": "ESP",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "CPV",
         "played": 0,
         "goalDiff": 0,
@@ -582,6 +575,13 @@
       },
       {
         "team": "KSA",
+        "played": 0,
+        "goalDiff": 0,
+        "points": 0,
+        "goalsFor": 0
+      },
+      {
+        "team": "ESP",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -604,13 +604,6 @@
         "goalsFor": 0
       },
       {
-        "team": "SEN",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "IRQ",
         "played": 0,
         "goalDiff": 0,
@@ -623,16 +616,16 @@
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      }
-    ],
-    "J": [
+      },
       {
-        "team": "ARG",
+        "team": "SEN",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      },
+      }
+    ],
+    "J": [
       {
         "team": "ALG",
         "played": 0,
@@ -641,7 +634,7 @@
         "goalsFor": 0
       },
       {
-        "team": "AUT",
+        "team": "ARG",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -653,16 +646,16 @@
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      }
-    ],
-    "K": [
+      },
       {
-        "team": "POR",
+        "team": "AUT",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      },
+      }
+    ],
+    "K": [
       {
         "team": "COD",
         "played": 0,
@@ -671,14 +664,21 @@
         "goalsFor": 0
       },
       {
-        "team": "UZB",
+        "team": "COL",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "COL",
+        "team": "POR",
+        "played": 0,
+        "goalDiff": 0,
+        "points": 0,
+        "goalsFor": 0
+      },
+      {
+        "team": "UZB",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -694,14 +694,14 @@
         "goalsFor": 0
       },
       {
-        "team": "CRO",
+        "team": "GHA",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "GHA",
+        "team": "CRO",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -781,10 +781,10 @@
       "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-12T20:35:50Z",
+      "lastUpdated": "2026-06-12T20:53:56Z",
       "homeTeam": {
         "code": "CAN",
         "name": "Canada",
@@ -811,7 +811,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "USA",
         "name": "USA",
@@ -838,7 +838,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "QAT",
         "name": "Qatar",
@@ -865,7 +865,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "BRA",
         "name": "Brazil",
@@ -892,7 +892,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "HAI",
         "name": "Haiti",
@@ -919,7 +919,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "AUS",
         "name": "Australia",
@@ -946,7 +946,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "GER",
         "name": "Germany",
@@ -973,7 +973,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "NED",
         "name": "Netherlands",
@@ -1000,7 +1000,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "CIV",
         "name": "Ivory Coast",
@@ -1027,7 +1027,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "SWE",
         "name": "Sweden",
@@ -1054,7 +1054,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ESP",
         "name": "Spain",
@@ -1081,7 +1081,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "BEL",
         "name": "Belgium",
@@ -1108,7 +1108,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "KSA",
         "name": "Saudi Arabia",
@@ -1135,7 +1135,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "IRN",
         "name": "Iran",
@@ -1162,7 +1162,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "FRA",
         "name": "France",
@@ -1189,7 +1189,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "IRQ",
         "name": "Iraq",
@@ -1216,7 +1216,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ARG",
         "name": "Argentina",
@@ -1243,7 +1243,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "AUT",
         "name": "Austria",
@@ -1270,7 +1270,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "POR",
         "name": "Portugal",
@@ -1297,7 +1297,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ENG",
         "name": "England",
@@ -1324,7 +1324,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "GHA",
         "name": "Ghana",
@@ -1351,7 +1351,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "UZB",
         "name": "Uzbekistan",
@@ -1378,7 +1378,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T01:32:00Z",
       "homeTeam": {
         "code": "CZE",
         "name": "Czechia",
@@ -1405,7 +1405,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "SUI",
         "name": "Switzerland",
@@ -1432,7 +1432,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "CAN",
         "name": "Canada",
@@ -1459,7 +1459,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T01:32:00Z",
       "homeTeam": {
         "code": "MEX",
         "name": "Mexico",
@@ -1486,7 +1486,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "USA",
         "name": "USA",
@@ -1513,7 +1513,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "SCO",
         "name": "Scotland",
@@ -1540,7 +1540,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "BRA",
         "name": "Brazil",
@@ -1567,7 +1567,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TUR",
         "name": "Turkey",
@@ -1594,7 +1594,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "NED",
         "name": "Netherlands",
@@ -1621,7 +1621,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "GER",
         "name": "Germany",
@@ -1648,7 +1648,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ECU",
         "name": "Ecuador",
@@ -1675,7 +1675,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TUN",
         "name": "Tunisia",
@@ -1702,7 +1702,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ESP",
         "name": "Spain",
@@ -1729,7 +1729,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "BEL",
         "name": "Belgium",
@@ -1756,7 +1756,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "URY",
         "name": "Uruguay",
@@ -1783,7 +1783,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "NZL",
         "name": "New Zealand",
@@ -1810,7 +1810,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ARG",
         "name": "Argentina",
@@ -1837,7 +1837,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "FRA",
         "name": "France",
@@ -1864,7 +1864,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "NOR",
         "name": "Norway",
@@ -1891,7 +1891,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "JOR",
         "name": "Jordan",
@@ -1918,7 +1918,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "POR",
         "name": "Portugal",
@@ -1945,7 +1945,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ENG",
         "name": "England",
@@ -1972,7 +1972,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "PAN",
         "name": "Panama",
@@ -1999,7 +1999,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "COL",
         "name": "Colombia",
@@ -2026,7 +2026,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "SUI",
         "name": "Switzerland",
@@ -2053,7 +2053,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "BIH",
         "name": "Bosnia-H.",
@@ -2080,7 +2080,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "MAR",
         "name": "Morocco",
@@ -2107,7 +2107,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "SCO",
         "name": "Scotland",
@@ -2134,7 +2134,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "CZE",
         "name": "Czechia",
@@ -2161,7 +2161,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "RSA",
         "name": "South Africa",
@@ -2188,7 +2188,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ECU",
         "name": "Ecuador",
@@ -2215,7 +2215,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "CUW",
         "name": "Curaçao",
@@ -2242,7 +2242,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TUN",
         "name": "Tunisia",
@@ -2269,7 +2269,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "JPN",
         "name": "Japan",
@@ -2296,7 +2296,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TUR",
         "name": "Turkey",
@@ -2323,7 +2323,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "PAR",
         "name": "Paraguay",
@@ -2350,7 +2350,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "NOR",
         "name": "Norway",
@@ -2377,7 +2377,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "SEN",
         "name": "Senegal",
@@ -2404,7 +2404,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "URY",
         "name": "Uruguay",
@@ -2431,7 +2431,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "CPV",
         "name": "Cape Verde",
@@ -2458,7 +2458,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "NZL",
         "name": "New Zealand",
@@ -2485,7 +2485,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "EGY",
         "name": "Egypt",
@@ -2512,7 +2512,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "PAN",
         "name": "Panama",
@@ -2539,7 +2539,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "CRO",
         "name": "Croatia",
@@ -2566,7 +2566,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "COL",
         "name": "Colombia",
@@ -2593,7 +2593,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "COD",
         "name": "Congo DR",
@@ -2620,7 +2620,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "JOR",
         "name": "Jordan",
@@ -2647,7 +2647,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "ALG",
         "name": "Algeria",
@@ -2674,7 +2674,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2701,7 +2701,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2728,7 +2728,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2755,7 +2755,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2782,7 +2782,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2809,7 +2809,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2836,7 +2836,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2863,7 +2863,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2890,7 +2890,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2917,7 +2917,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2944,7 +2944,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2971,7 +2971,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -2998,7 +2998,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3025,7 +3025,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3052,7 +3052,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3079,7 +3079,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3106,7 +3106,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3133,7 +3133,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3160,7 +3160,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3187,7 +3187,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3214,7 +3214,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3241,7 +3241,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3268,7 +3268,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3295,7 +3295,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3322,7 +3322,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3349,7 +3349,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3376,7 +3376,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3403,7 +3403,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3430,7 +3430,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3457,7 +3457,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3484,7 +3484,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
@@ -3511,7 +3511,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-09T10:20:22Z",
+      "lastUpdated": "2026-06-12T00:20:17Z",
       "homeTeam": {
         "code": "TBD",
         "name": "TBD",
