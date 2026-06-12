@@ -532,13 +532,111 @@
 
 
 
+  // function getMatchDate(m) {
+  //   return m.date instanceof Date ? m.date : new Date(m.kickoff);
+  // }
+
+  // function isFinishedMatch(m) {
+  //   const status = String(m.status || "").toUpperCase();
+  //   return ["FT", "FINISHED", "AET", "PEN", "AWARDED"].includes(status);
+  // }
+
+  // function isFinished(m) {
+  //   return isFinishedMatch(m);
+  // }
+
+  // function isApiLiveStatus(m) {
+  //   const status = String(m.status || "").toUpperCase();
+  //   return ["LIVE", "IN_PLAY", "PAUSED", "HALF_TIME", "HT"].includes(status);
+  // }
+
+  // function isLive(m, now = new Date()) {
+  //   if (isFinishedMatch(m)) return false;
+  //   if (isApiLiveStatus(m)) return true;
+
+  //   const d = getMatchDate(m);
+  //   if (!d || Number.isNaN(d.getTime())) return false;
+
+  //   const liveWindowMs = (config.MATCH_LIVE_WINDOW_MINUTES || 130) * 60 * 1000;
+
+  //   return d <= now && now - d <= liveWindowMs;
+  // }
+
+  // function isUpcomingMatch(m, now = new Date()) {
+  //   const d = getMatchDate(m);
+  //   if (!d || Number.isNaN(d.getTime())) return false;
+
+  //   return d > now && !isFinishedMatch(m) && !isLive(m, now);
+  // }
+
+  // function hasScore(m) {
+  //   return (
+  //     m.homeGoals !== null &&
+  //     m.homeGoals !== undefined &&
+  //     m.awayGoals !== null &&
+  //     m.awayGoals !== undefined
+  //   );
+  // }
+
+  // function liveMinuteLabel(m, now = new Date()) {
+  //   if (m.minute) {
+  //     return `${m.minute}${m.injuryTime ? `+${m.injuryTime}` : ""}'`;
+  //   }
+
+  //   const d = getMatchDate(m);
+  //   if (!d || Number.isNaN(d.getTime())) return "LIVE";
+
+  //   const minute = Math.max(1, Math.floor((now - d) / 60000) + 1);
+  //   return `${Math.min(minute, config.MATCH_LIVE_WINDOW_MINUTES || 130)}'`;
+  // }
+
+  // function statusLabel(m) {
+  //   const now = new Date();
+
+  //   if (isLive(m, now)) return liveMinuteLabel(m, now);
+  //   if (isFinishedMatch(m)) return "FT";
+
+  //   const status = String(m.status || "").toUpperCase();
+  //   if (status === "PP") return "Hoãn";
+  //   if (status === "CANCEL") return "Hủy";
+
+  //   return "Sắp diễn ra";
+  // }
+
+  // function scoreText(m) {
+  //   if (hasScore(m)) return `${m.homeGoals} - ${m.awayGoals}`;
+  //   if (isLive(m)) return "LIVE";
+  //   return "VS";
+  // }
+
+  // function matchCenterText(m) {
+  //   const now = new Date();
+
+  //   if (hasScore(m)) {
+  //     return `<span class="score-badge ${isLive(m, now) ? "is-live" : ""}">${m.homeGoals} - ${m.awayGoals}</span>`;
+  //   }
+
+  //   if (isLive(m, now)) {
+  //     return `<span class="score-badge is-live">${liveMinuteLabel(m, now)}</span>`;
+  //   }
+
+  //   return `<span class="vs-badge">vs</span>`;
+  // }
+
   function getMatchDate(m) {
     return m.date instanceof Date ? m.date : new Date(m.kickoff);
   }
 
+  function matchStatus(m) {
+    return String(m.status || "").toUpperCase();
+  }
+
+  function isBlockedStatus(m) {
+    return ["PP", "POSTPONED", "CANCEL", "CANCELED", "CANCELLED", "SUSP", "SUSPENDED"].includes(matchStatus(m));
+  }
+
   function isFinishedMatch(m) {
-    const status = String(m.status || "").toUpperCase();
-    return ["FT", "FINISHED", "AET", "PEN", "AWARDED"].includes(status);
+    return ["FT", "FINISHED", "AET", "PEN", "AWARDED"].includes(matchStatus(m));
   }
 
   function isFinished(m) {
@@ -546,27 +644,45 @@
   }
 
   function isApiLiveStatus(m) {
-    const status = String(m.status || "").toUpperCase();
-    return ["LIVE", "IN_PLAY", "PAUSED", "HALF_TIME", "HT"].includes(status);
+    return ["LIVE", "IN_PLAY", "PAUSED", "HALF_TIME", "HT"].includes(matchStatus(m));
+  }
+
+  function elapsedSinceKickoffMs(m, now = new Date()) {
+    const d = getMatchDate(m);
+    if (!d || Number.isNaN(d.getTime())) return null;
+    return now - d;
   }
 
   function isLive(m, now = new Date()) {
-    if (isFinishedMatch(m)) return false;
+    if (isFinishedMatch(m) || isBlockedStatus(m)) return false;
     if (isApiLiveStatus(m)) return true;
 
-    const d = getMatchDate(m);
-    if (!d || Number.isNaN(d.getTime())) return false;
+    const elapsed = elapsedSinceKickoffMs(m, now);
+    if (elapsed === null || elapsed < 0) return false;
 
-    const liveWindowMs = (config.MATCH_LIVE_WINDOW_MINUTES || 130) * 60 * 1000;
+    const maxLiveMs = (config.MATCH_INFERRED_LIVE_MINUTES || 115) * 60 * 1000;
 
-    return d <= now && now - d <= liveWindowMs;
+    return elapsed <= maxLiveMs;
   }
 
   function isUpcomingMatch(m, now = new Date()) {
     const d = getMatchDate(m);
     if (!d || Number.isNaN(d.getTime())) return false;
 
-    return d > now && !isFinishedMatch(m) && !isLive(m, now);
+    return d > now && !isFinishedMatch(m) && !isBlockedStatus(m);
+  }
+
+  function isWaitingResult(m, now = new Date()) {
+    if (isFinishedMatch(m) || isBlockedStatus(m)) return false;
+    if (isLive(m, now)) return false;
+    if (isUpcomingMatch(m, now)) return false;
+
+    const elapsed = elapsedSinceKickoffMs(m, now);
+    if (elapsed === null || elapsed < 0) return false;
+
+    const pendingMs = (config.RESULT_PENDING_HOURS || 4) * 60 * 60 * 1000;
+
+    return elapsed <= pendingMs;
   }
 
   function hasScore(m) {
@@ -578,27 +694,28 @@
     );
   }
 
-  function liveMinuteLabel(m, now = new Date()) {
-    if (m.minute) {
-      return `${m.minute}${m.injuryTime ? `+${m.injuryTime}` : ""}'`;
+  function liveMinuteLabel(m) {
+    const minute = Number(m.minute);
+    const injuryTime = Number(m.injuryTime);
+
+    if (Number.isFinite(minute) && minute > 0) {
+      return `${minute}${Number.isFinite(injuryTime) && injuryTime > 0 ? `+${injuryTime}` : ""}'`;
     }
 
-    const d = getMatchDate(m);
-    if (!d || Number.isNaN(d.getTime())) return "LIVE";
-
-    const minute = Math.max(1, Math.floor((now - d) / 60000) + 1);
-    return `${Math.min(minute, config.MATCH_LIVE_WINDOW_MINUTES || 130)}'`;
+    return "LIVE";
   }
 
   function statusLabel(m) {
     const now = new Date();
+    const status = matchStatus(m);
 
-    if (isLive(m, now)) return liveMinuteLabel(m, now);
+    if (status === "PP" || status === "POSTPONED") return "Hoãn";
+    if (status === "CANCEL" || status === "CANCELED" || status === "CANCELLED") return "Hủy";
     if (isFinishedMatch(m)) return "FT";
 
-    const status = String(m.status || "").toUpperCase();
-    if (status === "PP") return "Hoãn";
-    if (status === "CANCEL") return "Hủy";
+    if (isLive(m, now)) return liveMinuteLabel(m);
+
+    if (isWaitingResult(m, now)) return "Chờ KQ";
 
     return "Sắp diễn ra";
   }
@@ -606,6 +723,7 @@
   function scoreText(m) {
     if (hasScore(m)) return `${m.homeGoals} - ${m.awayGoals}`;
     if (isLive(m)) return "LIVE";
+    if (isWaitingResult(m)) return "...";
     return "VS";
   }
 
@@ -617,7 +735,7 @@
     }
 
     if (isLive(m, now)) {
-      return `<span class="score-badge is-live">${liveMinuteLabel(m, now)}</span>`;
+      return `<span class="score-badge is-live">${liveMinuteLabel(m)}</span>`;
     }
 
     return `<span class="vs-badge">vs</span>`;
@@ -634,6 +752,36 @@
     return Array.from(map.values());
   }
 
+  // function getSidebarFixtures() {
+  //   const now = new Date();
+  //   const max = config.MAX_FIXTURES || 6;
+
+  //   const all = fixturesWithDates()
+  //     .map((m) => ({
+  //       ...m,
+  //       date: getMatchDate(m)
+  //     }))
+  //     .filter((m) => !Number.isNaN(m.date.getTime()));
+
+  //   const live = all
+  //     .filter((m) => isLive(m, now))
+  //     .sort((a, b) => a.date - b.date);
+
+  //   const finished = all
+  //     .filter((m) => isFinishedMatch(m))
+  //     .sort((a, b) => b.date - a.date)
+  //     .slice(0, 2);
+
+  //   const upcoming = all
+  //     .filter((m) => isUpcomingMatch(m, now))
+  //     .sort((a, b) => a.date - b.date)
+  //     .slice(0, 3);
+
+  //   return uniqueMatches([...finished, ...live, ...upcoming])
+  // .sort((a, b) => a.date - b.date)
+  // .slice(0, max);
+  // }
+
   function getSidebarFixtures() {
     const now = new Date();
     const max = config.MAX_FIXTURES || 6;
@@ -649,6 +797,10 @@
       .filter((m) => isLive(m, now))
       .sort((a, b) => a.date - b.date);
 
+    const waiting = all
+      .filter((m) => isWaitingResult(m, now))
+      .sort((a, b) => a.date - b.date);
+
     const finished = all
       .filter((m) => isFinishedMatch(m))
       .sort((a, b) => b.date - a.date)
@@ -659,9 +811,9 @@
       .sort((a, b) => a.date - b.date)
       .slice(0, 3);
 
-    return uniqueMatches([...finished, ...live, ...upcoming])
-  .sort((a, b) => a.date - b.date)
-  .slice(0, max);
+    return uniqueMatches([...finished, ...live, ...waiting, ...upcoming])
+      .sort((a, b) => a.date - b.date)
+      .slice(0, max);
   }
 
   function renderFixtures() {
@@ -676,8 +828,7 @@
       const done = isFinishedMatch(m);
       const score = scoreText(m);
 
-      const centerClass = live || done ? "fixture-score" : "fixture-vs";
-
+      const centerClass = live || done || hasScore(m) ? "fixture-score" : "fixture-vs";
       return `
       <article class="fixture-card ${live ? "is-live is-next" : ""}">
         <div class="fixture-top">
