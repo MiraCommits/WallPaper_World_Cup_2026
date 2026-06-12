@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World Cup 2026 Live Wallpaper</title>
+    <link rel="stylesheet" href="./styles.css?v=3" />
+  </head>
+  <body>
+    <div id="particles" class="particles" aria-hidden="true"></div>
+    <main class="wallpaper" aria-label="World Cup 2026 live wallpaper">
+      <section class="panel standings" aria-label="Bang xep hang">
+        <div class="panel-head">
+          <span>Bang dau</span>
+          <strong>World Cup 2026</strong>
+        </div>
+        <div id="groupTabs" class="group-tabs" role="tablist" aria-label="Chon cum bang dau"></div>
+        <div id="standings" class="standings-list"></div>
+      </section>
+
+      <section class="center-stage" aria-label="Dong ho va dem nguoc">
+        <div class="brand-line">FIFA World Cup 2026</div>
+        <div id="clock" class="clock">--:--:--</div>
+        <div id="dateLine" class="date-line">Dang tai ngay...</div>
+
+        <div class="countdown-shell">
+          <div class="next-label">Tran sap dien ra</div>
+          <div id="countdownMatch" class="countdown-match">Dang tai lich...</div>
+          <div id="countdownVenue" class="countdown-venue"></div>
+          <div class="countdown-grid" aria-label="Dem nguoc">
+            <div><strong id="days">00</strong><span>Ngay</span></div>
+            <div><strong id="hours">00</strong><span>Gio</span></div>
+            <div><strong id="minutes">00</strong><span>Phut</span></div>
+            <div><strong id="seconds">00</strong><span>Giay</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel fixtures" aria-label="Tran dau sap dien ra">
+        <div class="panel-head">
+          <span>Lich & ti so gan nhat</span>
+          <strong id="fixtureCount">0 tran</strong>
+        </div>
+        <div id="fixtures" class="fixtures-list"></div>
+      </section>
+    </main>
+
+    <script src="./data.js?v=3"></script>
+    <script src="./config.js?v=3"></script>
+    <script src="./app.js?v=3"></script>
+
+  </body>
+</html>
