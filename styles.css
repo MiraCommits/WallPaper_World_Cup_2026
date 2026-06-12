@@ -718,3 +718,13 @@ body::before {
   background: var(--green);
   border-color: rgba(65, 211, 125, 0.85);
 }
+
+.flag-fallback {
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}

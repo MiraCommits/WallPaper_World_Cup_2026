@@ -463,59 +463,49 @@
       fmtDate(b, { year: "numeric", month: "2-digit", day: "2-digit" });
   }
 
-  // function isFinished(m) {
-  //   return ["FT", "AET", "PEN"].includes(m.status);
-  // }
 
-  // function isLive(m) {
-  //   return m.status === "LIVE";
-  // }
+  function teamByCode(code) {
+  return teams.get(String(code)) || {
+    code: String(code || "TBD"),
+    name: String(code || "TBD"),
+    logo: "",
+    flagCode: ""
+  };
+}
 
-  // function hasScore(m) {
-  //   return m.homeGoals !== null && m.homeGoals !== undefined && m.awayGoals !== null && m.awayGoals !== undefined;
-  // }
+function shortTeam(code) {
+  const t = teamByCode(code);
+  return String(t.code).length > 4 ? shortCode(t.name) : t.code;
+}
 
-  // function getRelevantFixtures(now) {
-  //   const recentLimitMs = (config.RECENT_FINISHED_HOURS || 36) * 60 * 60 * 1000;
-  //   return fixturesWithDates()
-  //     .filter((m) =>
-  //       isLive(m) ||
-  //       sameLocalDay(m.date, now) ||
-  //       m.date > now ||
-  //       (isFinished(m) && now - m.date <= recentLimitMs)
-  //     )
-  //     .sort((a, b) => {
-  //       if (isLive(a) !== isLive(b)) return isLive(a) ? -1 : 1;
-  //       if (sameLocalDay(a.date, now) !== sameLocalDay(b.date, now)) return sameLocalDay(a.date, now) ? -1 : 1;
-  //       return a.date - b.date;
-  //     });
-  // }
+function fullTeam(code) {
+  return teamByCode(code).name;
+}
 
-  // function statusLabel(m) {
-  //   if (isLive(m)) {
-  //     const min = m.minute ? `${m.minute}${m.injuryTime ? `+${m.injuryTime}` : ""}'` : "LIVE";
-  //     return min;
-  //   }
-  //   if (m.status === "FT") return "FT";
-  //   if (m.status === "PP") return "Hoãn";
-  //   if (m.status === "CANCEL") return "Hủy";
-  //   return "Sắp diễn ra";
-  // }
+function defaultRows(group) {
+  return (group.teams || []).map((team) => ({
+    team: team.code,
+    played: 0,
+    goalDiff: 0,
+    points: 0,
+    goalsFor: 0
+  }));
+}
 
-  // function matchCenterText(m) {
-  //   return hasScore(m)
-  //     ? `<span class="score-badge ${isLive(m) ? "is-live" : ""}">${m.homeGoals} - ${m.awayGoals}</span>`
-  //     : `<span class="vs-badge">vs</span>`;
-  // }
-  // function teamByCode(code) { return teams.get(String(code)) || { code, name: code, flag: "" }; }
-  // function shortTeam(code) { const t = teamByCode(code); return String(t.code).length > 4 ? shortCode(t.name) : t.code; }
-  // function fullTeam(code) { return teamByCode(code).name; }
+function flagImg(code, className = "flag-img") {
+  const team = teamByCode(code);
 
-  // function bandRects(colors, vertical = false, weights) { const total = (weights || colors.map(() => 1)).reduce((s, n) => s + n, 0); let offset = 0; return colors.map((color, i) => { const size = ((weights?.[i] || 1) / total) * 100; const rect = vertical ? `<rect x="${offset}%" y="0" width="${size}%" height="100%" fill="${color}"/>` : `<rect x="0" y="${offset}%" width="100%" height="${size}%" fill="${color}"/>`; offset += size; return rect; }).join(""); }
-  // function flagSvg(s = { type: "solid", color: "#273143" }) { let body = ""; if (s.type === "h") body = bandRects(s.colors, false, s.weights); if (s.type === "v") body = bandRects(s.colors, true, s.weights); if (s.type === "solid") body = `<rect width="120" height="80" fill="${s.color}"/>`; if (s.type === "circle") { body = `<rect width="120" height="80" fill="${s.base}"/><circle cx="60" cy="40" r="20" fill="${s.circle}"/>`; if (s.lower) body += `<path d="M40 40a20 20 0 0 0 40 0z" fill="${s.lower}"/>`; } if (s.type === "diamond") body = `<rect width="120" height="80" fill="${s.base}"/><path d="M60 10 110 40 60 70 10 40z" fill="${s.diamond}"/><circle cx="60" cy="40" r="16" fill="${s.circle}"/>`; if (s.type === "cross") body = `<rect width="120" height="80" fill="${s.base}"/><rect x="50" y="18" width="20" height="44" fill="${s.cross}"/><rect x="38" y="30" width="44" height="20" fill="${s.cross}"/>`; if (s.type === "nordic") body = `<rect width="120" height="80" fill="${s.base}"/><rect x="34" width="14" height="80" fill="${s.cross}"/><rect y="33" width="120" height="14" fill="${s.cross}"/>${s.inner ? `<rect x="38" width="6" height="80" fill="${s.inner}"/><rect y="37" width="120" height="6" fill="${s.inner}"/>` : ""}`; if (s.type === "saltire") body = `<rect width="120" height="80" fill="${s.base}"/><path d="M0 0h18l102 68v12h-18L0 12zM120 0h-18L0 68v12h18L120 12z" fill="${s.cross}"/>`; if (s.type === "england") body = `<rect width="120" height="80" fill="#fff"/><rect x="52" width="16" height="80" fill="#ce1126"/><rect y="32" width="120" height="16" fill="#ce1126"/>`; if (s.type === "chevron") body = `${bandRects(s.colors)}<path d="M0 0 48 40 0 80z" fill="${s.chevron}"/>`; if (s.type === "diag") body = `<rect width="120" height="80" fill="${s.colors[0]}"/><path d="M0 80 120 0v18L18 80z" fill="${s.colors[1]}"/>${s.colors[2] ? `<path d="M0 80 120 0v8L8 80z" fill="${s.colors[2]}"/>` : ""}`; if (s.type === "quarters") body = `<rect width="60" height="40" fill="${s.colors[0]}"/><rect x="60" width="60" height="40" fill="${s.colors[1]}"/><rect y="40" width="60" height="40" fill="${s.colors[2]}"/><rect x="60" y="40" width="60" height="40" fill="${s.colors[3]}"/>`; if (s.type === "serrated") body = `<rect width="120" height="80" fill="${s.colors[1]}"/><path d="M0 0h34l-13 4 13 4-13 4 13 4-13 4 13 4-13 4 13 4-13 4 13 4-13 4 13 4-13 4 13 4-13 4 13 4-13 4 13 4-13 4 13 4H0z" fill="${s.colors[0]}"/>`; if (s.type === "usa") body = `${bandRects(["#b22234", "#fff", "#b22234", "#fff", "#b22234", "#fff", "#b22234", "#fff", "#b22234", "#fff", "#b22234", "#fff", "#b22234"])}<rect width="52" height="43" fill="#3c3b6e"/>`; if (s.canton) body += `<rect width="48" height="34" fill="${s.canton}" opacity="0.92"/>`; if (s.stars) body += `<circle cx="83" cy="24" r="4" fill="${s.stars}"/><circle cx="96" cy="40" r="4" fill="${s.stars}"/><circle cx="79" cy="56" r="4" fill="${s.stars}"/>`; if (s.mark && !["circle", "cross"].includes(s.type)) body += `<circle cx="60" cy="40" r="7" fill="${s.mark}" opacity="0.88"/>`; return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80">${body}</svg>`; }
-  // function flagImg(code, className = "flag-img") { const team = teamByCode(code); if (team.logo) return `<img class="${className}" src="${team.logo}" alt="${team.name} logo"/>`; const key = (team.flagCode || "").replace("-", "_"); return `<span class="${className}" role="img" aria-label="${team.name} flag">${flagSvg(flagStyles[key])}</span>`; }
-  // function defaultRows(group) { return group.teams.map((team) => ({ team: team.code, played: 0, goalDiff: 0, points: 0 })); }
+  if (team.logo) {
+    return `<img class="${className}" src="${team.logo}" alt="${team.name} logo" />`;
+  }
 
+  return `
+    <span class="${className} flag-fallback" title="${team.name}">
+      ${String(team.code || "").slice(0, 3)}
+    </span>
+  `;
+}
+  
   function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
   function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bảng ${group.name}</div><div class="team-head"><span>Đội</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
   function renderFixtures() {
@@ -540,104 +530,7 @@
       </article>`).join("") || `<div class="empty-state">Chua co lich / ti so de hien thi</div>`;
   }
 
-  // function isFinishedMatch(m) {
-  //   return ["FT", "FINISHED", "AET", "PEN"].includes(String(m.status).toUpperCase());
-  // }
-
-  // function isUpcomingMatch(m, now = new Date()) {
-  //   const d = new Date(m.kickoff);
-  //   return d > now && !isFinishedMatch(m);
-  // }
-
-  // function getSidebarFixtures() {
-  //   const now = new Date();
-
-  //   const all = (data.fixtures || [])
-  //     .map((m) => ({
-  //       ...m,
-  //       date: new Date(m.kickoff)
-  //     }))
-  //     .filter((m) => !Number.isNaN(m.date.getTime()));
-
-  //   const finished = all
-  //     .filter((m) => isFinishedMatch(m))
-  //     .sort((a, b) => b.date - a.date)
-  //     .slice(0, 2);
-
-  //   const upcoming = all
-  //     .filter((m) => isUpcomingMatch(m, now))
-  //     .sort((a, b) => a.date - b.date)
-  //     .slice(0, 3);
-
-  //   return [...finished, ...upcoming].sort((a, b) => a.date - b.date);
-  // }
-
-  // function scoreText(m) {
-  //   const hg = m.homeGoals;
-  //   const ag = m.awayGoals;
-
-  //   if (hg !== null && hg !== undefined && ag !== null && ag !== undefined) {
-  //     return `${hg} - ${ag}`;
-  //   }
-
-  //   return "VS";
-  // }
-
-  // function statusLabel(m) {
-  //   if (isFinishedMatch(m)) return "FT";
-  //   if (String(m.status).toUpperCase() === "LIVE") return "LIVE";
-  //   return "Sắp diễn ra";
-  // }
-
-  // function renderFixtures() {
-  //   const matches = getSidebarFixtures();
-  //   const now = new Date();
-
-  //   const nextUpcoming = matches
-  //     .filter((m) => isUpcomingMatch(m, now))
-  //     .sort((a, b) => a.date - b.date)[0];
-
-  //   el.fixtureCount.textContent = `${matches.length} trận`;
-
-  //   el.fixtures.innerHTML = matches.map((m) => {
-  //     const isDone = isFinishedMatch(m);
-  //     const score = scoreText(m);
-
-  //     const isNextUpcoming =
-  //       nextUpcoming &&
-  //       String(m.id || m.kickoff) === String(nextUpcoming.id || nextUpcoming.kickoff);
-
-  //     return `
-  //   <article class="fixture-card ${isNextUpcoming ? "is-next" : ""}">
-  //       <div class="fixture-top">
-  //         <div class="fixture-time">${fmtKickoff(m.date)}</div>
-  //         <div class="fixture-status">${statusLabel(m)}</div>
-  //       </div>
-
-  //       <div class="fixture-teams">
-  //         <strong>
-  //           ${flagImg(m.home, "fixture-flag")}
-  //           <span>${shortTeam(m.home)}</span>
-  //         </strong>
-
-  //         <span class="${isDone ? "fixture-score" : "fixture-vs"}">${score}</span>
-
-  //         <strong>
-  //           ${flagImg(m.away, "fixture-flag")}
-  //           <span>${shortTeam(m.away)}</span>
-  //         </strong>
-  //       </div>
-
-  //       <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
-
-  //       <div class="fixture-meta">
-  //         <span>${m.group ? `Bảng ${m.group}` : "World Cup"}</span>
-  //         <span>${m.venue || "TBA"}</span>
-  //       </div>
-  //     </article>
-  //   `;
-  //   }).join("") || `<div class="empty-state">Chua co du lieu tran dau</div>`;
-  // }
+ 
 
   function getMatchDate(m) {
   return m.date instanceof Date ? m.date : new Date(m.kickoff);
