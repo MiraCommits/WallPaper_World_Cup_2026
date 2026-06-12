@@ -705,3 +705,16 @@ body::before {
   margin-top: 6px;
   font-size: 11px;
 }
+
+.fixture-card.is-live {
+  border-color: rgba(65, 211, 125, 0.8);
+  background: linear-gradient(135deg, rgba(65, 211, 125, 0.22), rgba(255, 255, 255, 0.06));
+}
+
+.fixture-status.is-live,
+.fixture-score.is-live,
+.score-badge.is-live {
+  color: #061018;
+  background: var(--green);
+  border-color: rgba(65, 211, 125, 0.85);
+}
