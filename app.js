@@ -4,6 +4,36 @@
   const locale = "vi-VN";
   const tz = config.TIMEZONE || fallbackData.timezone || "Asia/Saigon";
 
+  //bg
+  const backgroundImages = Array.isArray(config.BACKGROUND_IMAGES)
+    ? config.BACKGROUND_IMAGES.filter(Boolean)
+    : [];
+
+  const backgroundInterval = config.BACKGROUND_INTERVAL || 30 * 60 * 1000;
+
+  function applyRotatingBackground() {
+    if (!backgroundImages.length) return;
+
+    const slot = Math.floor(Date.now() / backgroundInterval);
+    const index = slot % backgroundImages.length;
+    const image = backgroundImages[index];
+
+    document.documentElement.style.setProperty(
+      "--stadium-bg",
+      `url("${image}")`
+    );
+
+    preloadNextBackground(index);
+  }
+
+  function preloadNextBackground(currentIndex) {
+    if (backgroundImages.length < 2) return;
+
+    const nextIndex = (currentIndex + 1) % backgroundImages.length;
+    const img = new Image();
+    img.src = backgroundImages[nextIndex];
+  }
+
   const el = {
     clock: document.querySelector("#clock"),
     dateLine: document.querySelector("#dateLine"),
@@ -487,7 +517,7 @@
   function defaultRows(group) { return group.teams.map((team) => ({ team: team.code, played: 0, goalDiff: 0, points: 0 })); }
 
   function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
-  function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bang ${group.name}</div><div class="team-head"><span>Doi</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
+  function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bảng ${group.name}</div><div class="team-head"><span>Đội</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
   // function renderFixtures() {
   //   const now = new Date();
   //   const matches = getRelevantFixtures(now).slice(0, config.MAX_FIXTURES || 8);
@@ -644,7 +674,7 @@
 
     el.countdownMatch.innerHTML = `<span>${flagImg(match.home, "countdown-flag")} ${shortTeam(match.home)}</span>${center}<span>${flagImg(match.away, "countdown-flag")} ${shortTeam(match.away)}</span>`;
 
-    const modeText = mode === "live" ? "DANG DA" : mode === "recent" ? "TRAN GAN NHAT" : "TRAN SAP DIEN RA";
+    const modeText = mode === "live" ? "Đang Đá" : mode === "recent" ? "Trận Gần Nhất" : "Trận Sắp Diễn Ra";
     el.countdownVenue.textContent = `${modeText} | ${fmtKickoff(match.date)} | ${match.group ? `Bảng ${match.group}` : "World Cup"} | ${match.venue || "TBA"}`;
 
     if (mode === "next") {
@@ -710,6 +740,8 @@
   function tick() { updateClock(); updateCountdown(); }
   function renderParticles() { el.particles.innerHTML = Array.from({ length: 42 }, (_, i) => `<span style="--x:${Math.round((i * 37) % 100)}%;--delay:${((i * 0.41) % 8).toFixed(2)}s;--duration:${(7 + (i % 9) * 0.7).toFixed(2)}s;--size:${2 + (i % 3)}px"></span>`).join(""); }
 
+  applyRotatingBackground();
+
   renderParticles(); renderTabs(); renderStandings(); renderFixtures(); tick();
 
   if (config.DATA_MODE === "github-actions" || config.DATA_JSON_URL) {
@@ -722,4 +754,5 @@
 
   setInterval(tick, 1000);
   setInterval(renderFixtures, 60000);
+  setInterval(applyRotatingBackground, 60 * 1000);
 })();

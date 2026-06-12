@@ -2,8 +2,13 @@ name: Update football-data.org data
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/update-football-data.yml"
+      - "scripts/update-data.js"
+      - "package.json"
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "7-59/10 * * * *"
 
 permissions:
   contents: write

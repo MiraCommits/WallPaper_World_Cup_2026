@@ -7,6 +7,8 @@
   --gold: #f6c95f;
   --green: #41d37d;
   --red: #ff6b6b;
+  --stadium-bg: url("./assets/stadium-bg.png");
+
 }
 
 * {
@@ -31,7 +33,7 @@ body::before {
   background:
     linear-gradient(90deg, rgba(3, 8, 16, 0.9), rgba(3, 8, 16, 0.12) 32%, rgba(3, 8, 16, 0.16) 64%, rgba(3, 8, 16, 0.9)),
     linear-gradient(180deg, rgba(3, 8, 16, 0.18), rgba(3, 8, 16, 0.78)),
-    url("./assets/stadium-bg.png") center / cover no-repeat;
+    var(--stadium-bg) center / cover no-repeat;
   transform: scale(1.015);
 }
 
@@ -636,7 +638,7 @@ body::before {
   font-size: 13px;
 }
 .fixtures {
-  width: min(390px, 24vw);
+  width: min(360px, 22vw);
   max-height: calc(100vh - 70px);
   overflow: hidden;
 }
@@ -696,10 +698,10 @@ body::before {
 
 .fixture-names {
   margin-top: 3px;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .fixture-meta {
   margin-top: 6px;
-  font-size: 9px;
+  font-size: 11px;
 }
