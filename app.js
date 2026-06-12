@@ -516,29 +516,29 @@
   // function flagImg(code, className = "flag-img") { const team = teamByCode(code); if (team.logo) return `<img class="${className}" src="${team.logo}" alt="${team.name} logo"/>`; const key = (team.flagCode || "").replace("-", "_"); return `<span class="${className}" role="img" aria-label="${team.name} flag">${flagSvg(flagStyles[key])}</span>`; }
   // function defaultRows(group) { return group.teams.map((team) => ({ team: team.code, played: 0, goalDiff: 0, points: 0 })); }
 
-  // function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
-  // function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bảng ${group.name}</div><div class="team-head"><span>Đội</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
-  // // function renderFixtures() {
-  // //   const now = new Date();
-  // //   const matches = getRelevantFixtures(now).slice(0, config.MAX_FIXTURES || 8);
-  // //   const liveCount = matches.filter(isLive).length;
-  // //   el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} tran`;
+  function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
+  function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bảng ${group.name}</div><div class="team-head"><span>Đội</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
+  function renderFixtures() {
+    const now = new Date();
+    const matches = getRelevantFixtures(now).slice(0, config.MAX_FIXTURES || 8);
+    const liveCount = matches.filter(isLive).length;
+    el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} tran`;
 
-  // //   el.fixtures.innerHTML = matches.map((m, i) => `
-  // //     <article class="fixture-card ${isLive(m) ? "is-live" : i === 0 ? "is-next" : ""}">
-  // //       <div class="fixture-time">
-  // //         <span>${fmtKickoff(m.date)}</span>
-  // //         <span class="status-pill ${isLive(m) ? "is-live" : ""}">${statusLabel(m)}</span>
-  // //       </div>
-  // //       <div class="fixture-teams">
-  // //         <strong>${flagImg(m.home, "fixture-flag")}<span>${shortTeam(m.home)}</span></strong>
-  // //         ${matchCenterText(m)}
-  // //         <strong>${flagImg(m.away, "fixture-flag")}<span>${shortTeam(m.away)}</span></strong>
-  // //       </div>
-  // //       <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
-  // //       <div class="fixture-meta"><span>${m.group ? `Bang ${m.group}` : "World Cup"}</span><span>${m.venue || "TBA"}</span></div>
-  // //     </article>`).join("") || `<div class="empty-state">Chua co lich / ti so de hien thi</div>`;
-  // // }
+    el.fixtures.innerHTML = matches.map((m, i) => `
+      <article class="fixture-card ${isLive(m) ? "is-live" : i === 0 ? "is-next" : ""}">
+        <div class="fixture-time">
+          <span>${fmtKickoff(m.date)}</span>
+          <span class="status-pill ${isLive(m) ? "is-live" : ""}">${statusLabel(m)}</span>
+        </div>
+        <div class="fixture-teams">
+          <strong>${flagImg(m.home, "fixture-flag")}<span>${shortTeam(m.home)}</span></strong>
+          ${matchCenterText(m)}
+          <strong>${flagImg(m.away, "fixture-flag")}<span>${shortTeam(m.away)}</span></strong>
+        </div>
+        <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
+        <div class="fixture-meta"><span>${m.group ? `Bang ${m.group}` : "World Cup"}</span><span>${m.venue || "TBA"}</span></div>
+      </article>`).join("") || `<div class="empty-state">Chua co lich / ti so de hien thi</div>`;
+  }
 
   // function isFinishedMatch(m) {
   //   return ["FT", "FINISHED", "AET", "PEN"].includes(String(m.status).toUpperCase());

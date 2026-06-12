@@ -7,8 +7,7 @@
   --gold: #f6c95f;
   --green: #41d37d;
   --red: #ff6b6b;
-  --stadium-bg: url("./assets/stadium-bg.png");
-
+  --stadium-bg: url("./assets/1.jpg");
 }
 
 * {
@@ -34,6 +33,7 @@ body::before {
     linear-gradient(90deg, rgba(3, 8, 16, 0.9), rgba(3, 8, 16, 0.12) 32%, rgba(3, 8, 16, 0.16) 64%, rgba(3, 8, 16, 0.9)),
     linear-gradient(180deg, rgba(3, 8, 16, 0.18), rgba(3, 8, 16, 0.78)),
     var(--stadium-bg) center / cover no-repeat;
+    
   transform: scale(1.015);
 }
 
