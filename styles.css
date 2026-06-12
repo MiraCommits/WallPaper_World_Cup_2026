@@ -635,3 +635,71 @@ body::before {
   color: var(--muted);
   font-size: 13px;
 }
+.fixtures {
+  width: min(390px, 24vw);
+  max-height: calc(100vh - 70px);
+  overflow: hidden;
+}
+
+.fixtures-list {
+  max-height: calc(100vh - 130px);
+  overflow-y: auto;
+  gap: 7px;
+  padding: 8px 10px 10px;
+}
+
+.fixture-card {
+  padding: 8px 10px;
+  border-radius: 7px;
+}
+
+.fixture-top {
+  margin-bottom: 4px;
+}
+
+.fixture-time {
+  font-size: 10px;
+}
+
+.fixture-status {
+  padding: 3px 9px;
+  font-size: 9px;
+}
+
+.fixture-teams {
+  grid-template-columns: 1fr 52px 1fr;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: clamp(14px, 0.95vw, 18px);
+}
+
+.fixture-teams strong {
+  gap: 6px;
+}
+
+.fixture-flag {
+  width: 30px;
+  height: 20px;
+}
+
+.fixture-score,
+.fixture-vs {
+  min-width: 48px;
+  padding: 5px 8px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.fixture-vs {
+  font-size: 11px;
+}
+
+.fixture-names {
+  margin-top: 3px;
+  font-size: 9px;
+}
+
+.fixture-meta {
+  margin-top: 6px;
+  font-size: 9px;
+}
