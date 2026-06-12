@@ -465,47 +465,47 @@
 
 
   function teamByCode(code) {
-  return teams.get(String(code)) || {
-    code: String(code || "TBD"),
-    name: String(code || "TBD"),
-    logo: "",
-    flagCode: ""
-  };
-}
-
-function shortTeam(code) {
-  const t = teamByCode(code);
-  return String(t.code).length > 4 ? shortCode(t.name) : t.code;
-}
-
-function fullTeam(code) {
-  return teamByCode(code).name;
-}
-
-function defaultRows(group) {
-  return (group.teams || []).map((team) => ({
-    team: team.code,
-    played: 0,
-    goalDiff: 0,
-    points: 0,
-    goalsFor: 0
-  }));
-}
-
-function flagImg(code, className = "flag-img") {
-  const team = teamByCode(code);
-
-  if (team.logo) {
-    return `<img class="${className}" src="${team.logo}" alt="${team.name} logo" />`;
+    return teams.get(String(code)) || {
+      code: String(code || "TBD"),
+      name: String(code || "TBD"),
+      logo: "",
+      flagCode: ""
+    };
   }
 
-  return `
+  function shortTeam(code) {
+    const t = teamByCode(code);
+    return String(t.code).length > 4 ? shortCode(t.name) : t.code;
+  }
+
+  function fullTeam(code) {
+    return teamByCode(code).name;
+  }
+
+  function defaultRows(group) {
+    return (group.teams || []).map((team) => ({
+      team: team.code,
+      played: 0,
+      goalDiff: 0,
+      points: 0,
+      goalsFor: 0
+    }));
+  }
+
+  function flagImg(code, className = "flag-img") {
+    const team = teamByCode(code);
+
+    if (team.logo) {
+      return `<img class="${className}" src="${team.logo}" alt="${team.name} logo" />`;
+    }
+
+    return `
     <span class="${className} flag-fallback" title="${team.name}">
       ${String(team.code || "").slice(0, 3)}
     </span>
   `;
-}
-  
+  }
+
   function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
   function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bảng ${group.name}</div><div class="team-head"><span>Đội</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
   function renderFixtures() {
@@ -530,167 +530,167 @@ function flagImg(code, className = "flag-img") {
       </article>`).join("") || `<div class="empty-state">Chua co lich / ti so de hien thi</div>`;
   }
 
- 
+
 
   function getMatchDate(m) {
-  return m.date instanceof Date ? m.date : new Date(m.kickoff);
-}
-
-function isFinishedMatch(m) {
-  const status = String(m.status || "").toUpperCase();
-  return ["FT", "FINISHED", "AET", "PEN", "AWARDED"].includes(status);
-}
-
-function isFinished(m) {
-  return isFinishedMatch(m);
-}
-
-function isApiLiveStatus(m) {
-  const status = String(m.status || "").toUpperCase();
-  return ["LIVE", "IN_PLAY", "PAUSED", "HALF_TIME", "HT"].includes(status);
-}
-
-function isLive(m, now = new Date()) {
-  if (isFinishedMatch(m)) return false;
-  if (isApiLiveStatus(m)) return true;
-
-  const d = getMatchDate(m);
-  if (!d || Number.isNaN(d.getTime())) return false;
-
-  const liveWindowMs = (config.MATCH_LIVE_WINDOW_MINUTES || 130) * 60 * 1000;
-
-  return d <= now && now - d <= liveWindowMs;
-}
-
-function isUpcomingMatch(m, now = new Date()) {
-  const d = getMatchDate(m);
-  if (!d || Number.isNaN(d.getTime())) return false;
-
-  return d > now && !isFinishedMatch(m) && !isLive(m, now);
-}
-
-function hasScore(m) {
-  return (
-    m.homeGoals !== null &&
-    m.homeGoals !== undefined &&
-    m.awayGoals !== null &&
-    m.awayGoals !== undefined
-  );
-}
-
-function liveMinuteLabel(m, now = new Date()) {
-  if (m.minute) {
-    return `${m.minute}${m.injuryTime ? `+${m.injuryTime}` : ""}'`;
+    return m.date instanceof Date ? m.date : new Date(m.kickoff);
   }
 
-  const d = getMatchDate(m);
-  if (!d || Number.isNaN(d.getTime())) return "LIVE";
-
-  const minute = Math.max(1, Math.floor((now - d) / 60000) + 1);
-  return `${Math.min(minute, config.MATCH_LIVE_WINDOW_MINUTES || 130)}'`;
-}
-
-function statusLabel(m) {
-  const now = new Date();
-
-  if (isLive(m, now)) return liveMinuteLabel(m, now);
-  if (isFinishedMatch(m)) return "FT";
-
-  const status = String(m.status || "").toUpperCase();
-  if (status === "PP") return "Hoãn";
-  if (status === "CANCEL") return "Hủy";
-
-  return "Sắp diễn ra";
-}
-
-function scoreText(m) {
-  if (hasScore(m)) return `${m.homeGoals} - ${m.awayGoals}`;
-  if (isLive(m)) return "LIVE";
-  return "VS";
-}
-
-function matchCenterText(m) {
-  const now = new Date();
-
-  if (hasScore(m)) {
-    return `<span class="score-badge ${isLive(m, now) ? "is-live" : ""}">${m.homeGoals} - ${m.awayGoals}</span>`;
+  function isFinishedMatch(m) {
+    const status = String(m.status || "").toUpperCase();
+    return ["FT", "FINISHED", "AET", "PEN", "AWARDED"].includes(status);
   }
 
-  if (isLive(m, now)) {
-    return `<span class="score-badge is-live">${liveMinuteLabel(m, now)}</span>`;
+  function isFinished(m) {
+    return isFinishedMatch(m);
   }
 
-  return `<span class="vs-badge">vs</span>`;
-}
+  function isApiLiveStatus(m) {
+    const status = String(m.status || "").toUpperCase();
+    return ["LIVE", "IN_PLAY", "PAUSED", "HALF_TIME", "HT"].includes(status);
+  }
 
-function uniqueMatches(matches) {
-  const map = new Map();
+  function isLive(m, now = new Date()) {
+    if (isFinishedMatch(m)) return false;
+    if (isApiLiveStatus(m)) return true;
 
-  matches.forEach((m) => {
-    const key = String(m.id || `${m.home}-${m.away}-${m.kickoff}`);
-    if (!map.has(key)) map.set(key, m);
-  });
+    const d = getMatchDate(m);
+    if (!d || Number.isNaN(d.getTime())) return false;
 
-  return Array.from(map.values());
-}
+    const liveWindowMs = (config.MATCH_LIVE_WINDOW_MINUTES || 130) * 60 * 1000;
 
-function getSidebarFixtures() {
-  const now = new Date();
-  const max = config.MAX_FIXTURES || 6;
+    return d <= now && now - d <= liveWindowMs;
+  }
 
-  const all = fixturesWithDates()
-    .map((m) => ({
-      ...m,
-      date: getMatchDate(m)
-    }))
-    .filter((m) => !Number.isNaN(m.date.getTime()));
+  function isUpcomingMatch(m, now = new Date()) {
+    const d = getMatchDate(m);
+    if (!d || Number.isNaN(d.getTime())) return false;
 
-  const live = all
-    .filter((m) => isLive(m, now))
-    .sort((a, b) => a.date - b.date);
+    return d > now && !isFinishedMatch(m) && !isLive(m, now);
+  }
 
-  const finished = all
-    .filter((m) => isFinishedMatch(m))
-    .sort((a, b) => b.date - a.date)
-    .slice(0, 2);
+  function hasScore(m) {
+    return (
+      m.homeGoals !== null &&
+      m.homeGoals !== undefined &&
+      m.awayGoals !== null &&
+      m.awayGoals !== undefined
+    );
+  }
 
-  const upcoming = all
-    .filter((m) => isUpcomingMatch(m, now))
-    .sort((a, b) => a.date - b.date)
-    .slice(0, 3);
+  function liveMinuteLabel(m, now = new Date()) {
+    if (m.minute) {
+      return `${m.minute}${m.injuryTime ? `+${m.injuryTime}` : ""}'`;
+    }
 
-  return uniqueMatches([...live, ...finished, ...upcoming])
-    .sort((a, b) => {
-      const aLive = isLive(a, now);
-      const bLive = isLive(b, now);
+    const d = getMatchDate(m);
+    if (!d || Number.isNaN(d.getTime())) return "LIVE";
 
-      if (aLive !== bLive) return aLive ? -1 : 1;
+    const minute = Math.max(1, Math.floor((now - d) / 60000) + 1);
+    return `${Math.min(minute, config.MATCH_LIVE_WINDOW_MINUTES || 130)}'`;
+  }
 
-      const aFinished = isFinishedMatch(a);
-      const bFinished = isFinishedMatch(b);
+  function statusLabel(m) {
+    const now = new Date();
 
-      if (aFinished !== bFinished) return aFinished ? -1 : 1;
+    if (isLive(m, now)) return liveMinuteLabel(m, now);
+    if (isFinishedMatch(m)) return "FT";
 
-      return a.date - b.date;
-    })
-    .slice(0, max);
-}
+    const status = String(m.status || "").toUpperCase();
+    if (status === "PP") return "Hoãn";
+    if (status === "CANCEL") return "Hủy";
 
-function renderFixtures() {
-  const now = new Date();
-  const matches = getSidebarFixtures();
+    return "Sắp diễn ra";
+  }
 
-  const liveCount = matches.filter((m) => isLive(m, now)).length;
-  el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} trận`;
+  function scoreText(m) {
+    if (hasScore(m)) return `${m.homeGoals} - ${m.awayGoals}`;
+    if (isLive(m)) return "LIVE";
+    return "VS";
+  }
 
-  el.fixtures.innerHTML = matches.map((m) => {
-    const live = isLive(m, now);
-    const done = isFinishedMatch(m);
-    const score = scoreText(m);
+  function matchCenterText(m) {
+    const now = new Date();
 
-    const centerClass = live || done ? "fixture-score" : "fixture-vs";
+    if (hasScore(m)) {
+      return `<span class="score-badge ${isLive(m, now) ? "is-live" : ""}">${m.homeGoals} - ${m.awayGoals}</span>`;
+    }
 
-    return `
+    if (isLive(m, now)) {
+      return `<span class="score-badge is-live">${liveMinuteLabel(m, now)}</span>`;
+    }
+
+    return `<span class="vs-badge">vs</span>`;
+  }
+
+  function uniqueMatches(matches) {
+    const map = new Map();
+
+    matches.forEach((m) => {
+      const key = String(m.id || `${m.home}-${m.away}-${m.kickoff}`);
+      if (!map.has(key)) map.set(key, m);
+    });
+
+    return Array.from(map.values());
+  }
+
+  function getSidebarFixtures() {
+    const now = new Date();
+    const max = config.MAX_FIXTURES || 6;
+
+    const all = fixturesWithDates()
+      .map((m) => ({
+        ...m,
+        date: getMatchDate(m)
+      }))
+      .filter((m) => !Number.isNaN(m.date.getTime()));
+
+    const live = all
+      .filter((m) => isLive(m, now))
+      .sort((a, b) => a.date - b.date);
+
+    const finished = all
+      .filter((m) => isFinishedMatch(m))
+      .sort((a, b) => b.date - a.date)
+      .slice(0, 2);
+
+    const upcoming = all
+      .filter((m) => isUpcomingMatch(m, now))
+      .sort((a, b) => a.date - b.date)
+      .slice(0, 3);
+
+    return uniqueMatches([...live, ...finished, ...upcoming])
+      .sort((a, b) => {
+        const aLive = isLive(a, now);
+        const bLive = isLive(b, now);
+
+        if (aLive !== bLive) return aLive ? -1 : 1;
+
+        const aFinished = isFinishedMatch(a);
+        const bFinished = isFinishedMatch(b);
+
+        if (aFinished !== bFinished) return aFinished ? -1 : 1;
+
+        return a.date - b.date;
+      })
+      .slice(0, max);
+  }
+
+  function renderFixtures() {
+    const now = new Date();
+    const matches = getSidebarFixtures();
+
+    const liveCount = matches.filter((m) => isLive(m, now)).length;
+    el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} trận`;
+
+    el.fixtures.innerHTML = matches.map((m) => {
+      const live = isLive(m, now);
+      const done = isFinishedMatch(m);
+      const score = scoreText(m);
+
+      const centerClass = live || done ? "fixture-score" : "fixture-vs";
+
+      return `
       <article class="fixture-card ${live ? "is-live is-next" : ""}">
         <div class="fixture-top">
           <div class="fixture-time">${fmtKickoff(m.date)}</div>
@@ -719,33 +719,60 @@ function renderFixtures() {
         </div>
       </article>
     `;
-  }).join("") || `<div class="empty-state">Chưa có dữ liệu trận đấu</div>`;
-}
+    }).join("") || `<div class="empty-state">Chưa có dữ liệu trận đấu</div>`;
+  }
 
   function updateClock() { const now = new Date(); el.clock.textContent = fmtDate(now, { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }); el.dateLine.textContent = fmtDate(now, { weekday: "long", day: "2-digit", month: "long", year: "numeric" }); }
-function getFeaturedMatch(now) {
-  const dated = fixturesWithDates();
+  // function getFeaturedMatch(now) {
+  //   const dated = fixturesWithDates();
 
-  const live = dated
-    .filter((m) => isLive(m, now))
-    .sort((a, b) => a.date - b.date)[0];
+  //   const live = dated
+  //     .filter((m) => isLive(m, now))
+  //     .sort((a, b) => a.date - b.date)[0];
 
-  if (live) return { match: live, mode: "live" };
+  //   if (live) return { match: live, mode: "live" };
 
-  const next = dated
-    .filter((m) => isUpcomingMatch(m, now))
-    .sort((a, b) => a.date - b.date)[0];
+  //   const next = dated
+  //     .filter((m) => isUpcomingMatch(m, now))
+  //     .sort((a, b) => a.date - b.date)[0];
 
-  if (next) return { match: next, mode: "next" };
+  //   if (next) return { match: next, mode: "next" };
 
-  const finished = dated
-    .filter((m) => isFinishedMatch(m) || hasScore(m))
-    .sort((a, b) => b.date - a.date)[0];
+  //   const finished = dated
+  //     .filter((m) => isFinishedMatch(m) || hasScore(m))
+  //     .sort((a, b) => b.date - a.date)[0];
 
-  if (finished) return { match: finished, mode: "recent" };
+  //   if (finished) return { match: finished, mode: "recent" };
 
-  return { match: null, mode: "empty" };
-}
+  //   return { match: null, mode: "empty" };
+  // }
+
+  function getFeaturedMatch(now) {
+    const dated = fixturesWithDates();
+
+    // Panel giữa luôn ưu tiên trận SẮP DIỄN RA tiếp theo
+    const next = dated
+      .filter((m) => isUpcomingMatch(m, now))
+      .sort((a, b) => a.date - b.date)[0];
+
+    if (next) return { match: next, mode: "next" };
+
+    // Nếu không còn trận sắp diễn ra, mới hiện trận đang đá
+    const live = dated
+      .filter((m) => isLive(m, now))
+      .sort((a, b) => a.date - b.date)[0];
+
+    if (live) return { match: live, mode: "live" };
+
+    // Nếu hết live và hết lịch, hiện trận gần nhất
+    const finished = dated
+      .filter((m) => isFinishedMatch(m) || hasScore(m))
+      .sort((a, b) => b.date - a.date)[0];
+
+    if (finished) return { match: finished, mode: "recent" };
+
+    return { match: null, mode: "empty" };
+  }
 
   function updateCountdown() {
     const now = new Date();

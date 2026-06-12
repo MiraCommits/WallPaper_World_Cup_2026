@@ -91,7 +91,7 @@ body::before {
 }
 
 .panel {
-  align-self: start;
+  align-self: center;
   min-height: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -727,4 +727,8 @@ body::before {
   font-size: 7px;
   font-weight: 900;
   letter-spacing: -0.04em;
+}
+.fixtures {
+  justify-self: end;
+  margin-right: 8px;
 }
