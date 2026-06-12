@@ -3,7 +3,7 @@
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-12T20:54:24.901Z",
+  "updatedAt": "2026-06-12T21:13:25.009Z",
   "groups": [
     {
       "name": "A",
@@ -44,6 +44,12 @@
           "flagCode": "ba"
         },
         {
+          "code": "CAN",
+          "name": "Canada",
+          "logo": "https://crests.football-data.org/canada.svg",
+          "flagCode": "ca"
+        },
+        {
           "code": "QAT",
           "name": "Qatar",
           "logo": "https://crests.football-data.org/8030.svg",
@@ -54,12 +60,6 @@
           "name": "Switzerland",
           "logo": "https://crests.football-data.org/788.svg",
           "flagCode": "ch"
-        },
-        {
-          "code": "CAN",
-          "name": "Canada",
-          "logo": "https://crests.football-data.org/canada.svg",
-          "flagCode": "ca"
         }
       ]
     },
@@ -389,8 +389,15 @@
       {
         "team": "BIH",
         "played": 1,
-        "goalDiff": 1,
-        "points": 3,
+        "goalDiff": 0,
+        "points": 1,
+        "goalsFor": 1
+      },
+      {
+        "team": "CAN",
+        "played": 1,
+        "goalDiff": 0,
+        "points": 1,
         "goalsFor": 1
       },
       {
@@ -404,13 +411,6 @@
         "team": "SUI",
         "played": 0,
         "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
-        "team": "CAN",
-        "played": 1,
-        "goalDiff": -1,
         "points": 0,
         "goalsFor": 0
       }
@@ -778,13 +778,13 @@
       "away": "BIH",
       "venue": "TBA",
       "kickoff": "2026-06-12T19:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-12T20:53:56Z",
+      "lastUpdated": "2026-06-12T21:04:08Z",
       "homeTeam": {
         "code": "CAN",
         "name": "Canada",
