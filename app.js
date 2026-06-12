@@ -507,6 +507,70 @@ teams = buildTeamMap(data);
   };
 }
 
+function compareStandingRows(a, b) {
+  return (
+    b.points - a.points ||
+    b.goalDiff - a.goalDiff ||
+    b.goalsFor - a.goalsFor ||
+    String(a.team).localeCompare(String(b.team))
+  );
+}
+
+function getThirdPlaceRace(src = data) {
+  const thirds = [];
+
+  (src.groups || []).forEach((group) => {
+    const rows = (src.standings[group.name] || defaultRows(group))
+      .slice()
+      .sort(compareStandingRows);
+
+    const third = rows[2];
+
+    if (third) {
+      thirds.push({
+        ...third,
+        group: group.name
+      });
+    }
+  });
+
+  return thirds.sort(compareStandingRows);
+}
+
+function getBestThirdPlaceSet(src = data) {
+  return new Set(
+    getThirdPlaceRace(src)
+      .slice(0, 8)
+      .map((row) => `${row.group}:${row.team}`)
+  );
+}
+
+function qualificationClass(groupName, row, index, bestThirdSet) {
+  const key = `${groupName}:${row.team}`;
+
+  if (index < 2) return "is-qualified";
+  if (index === 2 && bestThirdSet.has(key)) return "is-third-qualified";
+  if (index === 2) return "is-third-waiting";
+
+  return "is-eliminated";
+}
+
+function qualificationLabel(groupName, row, index, bestThirdSet) {
+  const key = `${groupName}:${row.team}`;
+
+  if (index < 2) return "V32";
+  if (index === 2 && bestThirdSet.has(key)) return "3RD";
+  if (index === 2) return "3?";
+  return "OUT";
+}
+
+function qualificationTitle(className) {
+  if (className === "is-qualified") return "Vào vòng 32: top 2 bảng";
+  if (className === "is-third-qualified") return "Tạm vào vòng 32: thuộc 8 đội hạng 3 tốt nhất";
+  if (className === "is-third-waiting") return "Hạng 3 nhưng chưa thuộc nhóm 8 đội tốt nhất";
+  return "Tạm bị loại";
+}
+
   function registerTeam(team) { if (team?.code) seenTeams.set(String(team.code), team); }
   function teamObj(team) {
     const code = String(team.id || team.code || shortCode(team.name));
@@ -594,121 +658,53 @@ teams = buildTeamMap(data);
   }
 
   function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
-  function renderStandings() { const visible = new Set(groupPages[activePage].groups); const groups = data.groups.filter((g) => visible.has(g.name)).map((group) => { const rows = (data.standings[group.name] || defaultRows(group)).slice(0, 4); const teamRows = rows.map((row) => `<div class="team-row"><span class="team">${flagImg(row.team)}<span class="team-name">${teamByCode(row.team).name}</span></span><span>${row.played}</span><span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span><strong>${row.points}</strong></div>`).join(""); return `<article class="group-card"><div class="group-title">Bảng ${group.name}</div><div class="team-head"><span>Đội</span><span>TR</span><span>HS</span><span>D</span></div>${teamRows}</article>`; }).join(""); el.standings.innerHTML = groups || `<div class="empty-state">Dang doi du lieu bang dau...</div>`; }
-  function renderFixtures() {
-    const now = new Date();
-    const matches = getRelevantFixtures(now).slice(0, config.MAX_FIXTURES || 8);
-    const liveCount = matches.filter(isLive).length;
-    el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} tran`;
+  function renderStandings() {
+  const visible = new Set(groupPages[activePage].groups);
+  const bestThirdSet = getBestThirdPlaceSet(data);
 
-    el.fixtures.innerHTML = matches.map((m, i) => `
-      <article class="fixture-card ${isLive(m) ? "is-live" : i === 0 ? "is-next" : ""}">
-        <div class="fixture-time">
-          <span>${fmtKickoff(m.date)}</span>
-          <span class="status-pill ${isLive(m) ? "is-live" : ""}">${statusLabel(m)}</span>
-        </div>
-        <div class="fixture-teams">
-          <strong>${flagImg(m.home, "fixture-flag")}<span>${shortTeam(m.home)}</span></strong>
-          ${matchCenterText(m)}
-          <strong>${flagImg(m.away, "fixture-flag")}<span>${shortTeam(m.away)}</span></strong>
-        </div>
-        <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
-        <div class="fixture-meta"><span>${m.group ? `Bang ${m.group}` : "World Cup"}</span><span>${m.venue || "TBA"}</span></div>
-      </article>`).join("") || `<div class="empty-state">Chua co lich / ti so de hien thi</div>`;
-  }
+  const groups = data.groups
+    .filter((g) => visible.has(g.name))
+    .map((group) => {
+      const rows = (data.standings[group.name] || defaultRows(group))
+        .slice()
+        .sort(compareStandingRows)
+        .slice(0, 4);
 
+      const teamRows = rows.map((row, index) => {
+        const qClass = qualificationClass(group.name, row, index, bestThirdSet);
+        const qLabel = qualificationLabel(group.name, row, index, bestThirdSet);
+        const qTitle = qualificationTitle(qClass);
 
+        return `
+          <div class="team-row ${qClass}" title="${qTitle}">
+            <span class="team">
+              ${flagImg(row.team)}
+              <span class="team-name">${teamByCode(row.team).name}</span>
+              <span class="qual-chip ${qClass}">${qLabel}</span>
+            </span>
+            <span>${row.played}</span>
+            <span>${row.goalDiff > 0 ? "+" : ""}${row.goalDiff}</span>
+            <strong>${row.points}</strong>
+          </div>
+        `;
+      }).join("");
 
-  // function getMatchDate(m) {
-  //   return m.date instanceof Date ? m.date : new Date(m.kickoff);
-  // }
+      return `
+        <article class="group-card">
+          <div class="group-title">Bảng ${group.name}</div>
+          <div class="team-head">
+            <span>Đội</span>
+            <span>TR</span>
+            <span>HS</span>
+            <span>D</span>
+          </div>
+          ${teamRows}
+        </article>
+      `;
+    }).join("");
 
-  // function isFinishedMatch(m) {
-  //   const status = String(m.status || "").toUpperCase();
-  //   return ["FT", "FINISHED", "AET", "PEN", "AWARDED"].includes(status);
-  // }
-
-  // function isFinished(m) {
-  //   return isFinishedMatch(m);
-  // }
-
-  // function isApiLiveStatus(m) {
-  //   const status = String(m.status || "").toUpperCase();
-  //   return ["LIVE", "IN_PLAY", "PAUSED", "HALF_TIME", "HT"].includes(status);
-  // }
-
-  // function isLive(m, now = new Date()) {
-  //   if (isFinishedMatch(m)) return false;
-  //   if (isApiLiveStatus(m)) return true;
-
-  //   const d = getMatchDate(m);
-  //   if (!d || Number.isNaN(d.getTime())) return false;
-
-  //   const liveWindowMs = (config.MATCH_LIVE_WINDOW_MINUTES || 130) * 60 * 1000;
-
-  //   return d <= now && now - d <= liveWindowMs;
-  // }
-
-  // function isUpcomingMatch(m, now = new Date()) {
-  //   const d = getMatchDate(m);
-  //   if (!d || Number.isNaN(d.getTime())) return false;
-
-  //   return d > now && !isFinishedMatch(m) && !isLive(m, now);
-  // }
-
-  // function hasScore(m) {
-  //   return (
-  //     m.homeGoals !== null &&
-  //     m.homeGoals !== undefined &&
-  //     m.awayGoals !== null &&
-  //     m.awayGoals !== undefined
-  //   );
-  // }
-
-  // function liveMinuteLabel(m, now = new Date()) {
-  //   if (m.minute) {
-  //     return `${m.minute}${m.injuryTime ? `+${m.injuryTime}` : ""}'`;
-  //   }
-
-  //   const d = getMatchDate(m);
-  //   if (!d || Number.isNaN(d.getTime())) return "LIVE";
-
-  //   const minute = Math.max(1, Math.floor((now - d) / 60000) + 1);
-  //   return `${Math.min(minute, config.MATCH_LIVE_WINDOW_MINUTES || 130)}'`;
-  // }
-
-  // function statusLabel(m) {
-  //   const now = new Date();
-
-  //   if (isLive(m, now)) return liveMinuteLabel(m, now);
-  //   if (isFinishedMatch(m)) return "FT";
-
-  //   const status = String(m.status || "").toUpperCase();
-  //   if (status === "PP") return "Hoãn";
-  //   if (status === "CANCEL") return "Hủy";
-
-  //   return "Sắp diễn ra";
-  // }
-
-  // function scoreText(m) {
-  //   if (hasScore(m)) return `${m.homeGoals} - ${m.awayGoals}`;
-  //   if (isLive(m)) return "LIVE";
-  //   return "VS";
-  // }
-
-  // function matchCenterText(m) {
-  //   const now = new Date();
-
-  //   if (hasScore(m)) {
-  //     return `<span class="score-badge ${isLive(m, now) ? "is-live" : ""}">${m.homeGoals} - ${m.awayGoals}</span>`;
-  //   }
-
-  //   if (isLive(m, now)) {
-  //     return `<span class="score-badge is-live">${liveMinuteLabel(m, now)}</span>`;
-  //   }
-
-  //   return `<span class="vs-badge">vs</span>`;
-  // }
+  el.standings.innerHTML = groups || `<div class="empty-state">Đang đợi dữ liệu bảng đấu...</div>`;
+}
 
   function getMatchDate(m) {
     return m.date instanceof Date ? m.date : new Date(m.kickoff);
@@ -904,23 +900,49 @@ teams = buildTeamMap(data);
   }
 
   function renderFixtures() {
-    const now = new Date();
-    const matches = getSidebarFixtures();
+  const now = new Date();
+  const matches = getSidebarFixtures();
 
-    const liveCount = matches.filter((m) => isLive(m, now)).length;
-    el.fixtureCount.textContent = liveCount ? `${liveCount} LIVE` : `${matches.length} trận`;
+  const liveMatches = matches.filter((m) => isLive(m, now));
+  const liveCount = liveMatches.length;
 
-    el.fixtures.innerHTML = matches.map((m) => {
-      const live = isLive(m, now);
-      const done = isFinishedMatch(m);
-      const score = scoreText(m);
+  el.fixtureCount.textContent = liveCount
+    ? `${liveCount} LIVE`
+    : `${matches.length} trận`;
 
-      const centerClass = live || done || hasScore(m) ? "fixture-score" : "fixture-vs";
-      return `
-      <article class="fixture-card ${live ? "is-live is-next" : ""}">
+  const nextUpcoming = matches
+    .filter((m) => isUpcomingMatch(m, now))
+    .sort((a, b) => a.date - b.date)[0];
+
+  el.fixtures.innerHTML = matches.map((m) => {
+    const live = isLive(m, now);
+    const done = isFinishedMatch(m);
+    const waiting = isWaitingResult(m, now);
+    const score = scoreText(m);
+
+    const isNextUpcoming =
+      !liveCount &&
+      nextUpcoming &&
+      String(m.id || m.kickoff) === String(nextUpcoming.id || nextUpcoming.kickoff);
+
+    const stateClass = live
+      ? "is-live"
+      : isNextUpcoming
+        ? "is-next"
+        : done
+          ? "is-finished"
+          : "";
+
+    const centerClass =
+      live || done || waiting || hasScore(m)
+        ? "fixture-score"
+        : "fixture-vs";
+
+    return `
+      <article class="fixture-card ${stateClass}">
         <div class="fixture-top">
           <div class="fixture-time">${fmtKickoff(m.date)}</div>
-          <div class="fixture-status ${live ? "is-live" : ""}">${statusLabel(m)}</div>
+          <div class="fixture-status ${stateClass}">${statusLabel(m)}</div>
         </div>
 
         <div class="fixture-teams">
@@ -929,7 +951,7 @@ teams = buildTeamMap(data);
             <span>${shortTeam(m.home)}</span>
           </strong>
 
-          <span class="${centerClass} ${live ? "is-live" : ""}">${score}</span>
+          <span class="${centerClass} ${stateClass}">${score}</span>
 
           <strong>
             ${flagImg(m.away, "fixture-flag")}
@@ -945,8 +967,8 @@ teams = buildTeamMap(data);
         </div>
       </article>
     `;
-    }).join("") || `<div class="empty-state">Chưa có dữ liệu trận đấu</div>`;
-  }
+  }).join("") || `<div class="empty-state">Chưa có dữ liệu trận đấu</div>`;
+}
 
   function updateClock() { const now = new Date(); el.clock.textContent = fmtDate(now, { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }); el.dateLine.textContent = fmtDate(now, { weekday: "long", day: "2-digit", month: "long", year: "numeric" }); }
   // function getFeaturedMatch(now) {

@@ -22,7 +22,7 @@ window.CONFIG = {
   MATCH_INFERRED_LIVE_MINUTES: 115,
 RESULT_PENDING_HOURS: 4,
 
-  BACKGROUND_INTERVAL: 1 * 60 * 1000,
+  BACKGROUND_INTERVAL: 30 * 60 * 1000,
   BACKGROUND_IMAGES: [
     "./assets/1.jpg",
     "./assets/2.jpg",
@@ -39,7 +39,20 @@ RESULT_PENDING_HOURS: 4,
     "./assets/13.jpg",
     "./assets/14.jpg",
     "./assets/15.jpg",
-    "./assets/16.png",
+    "./assets/16.jpg",
+    "./assets/17.jpg",
+    "./assets/18.jpg",
+    "./assets/19.jpg",
+    "./assets/20.jpg",
+    "./assets/21.jpg",
+    "./assets/22.jpg",
+    "./assets/23.jpg",
+    "./assets/24.jpg",
+    "./assets/25.jpg",
+    "./assets/26.jpg",
+    "./assets/27.jpg",
+    "./assets/28.jpg",
+    "./assets/29.jpg"
     
   ]
 };

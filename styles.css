@@ -732,3 +732,589 @@ body::before {
   justify-self: end;
   margin-right: 8px;
 }
+
+.fixture-card.is-live {
+  border-color: rgba(65, 211, 125, 0.8);
+  background: linear-gradient(135deg, rgba(65, 211, 125, 0.22), rgba(255, 255, 255, 0.06));
+}
+
+.fixture-status.is-live,
+.fixture-score.is-live,
+.fixture-vs.is-live,
+.score-badge.is-live {
+  color: #061018;
+  background: var(--green);
+  border-color: rgba(65, 211, 125, 0.85);
+}
+
+/* ===== Professional broadcast polish ===== */
+
+:root {
+  --panel: rgba(6, 12, 22, 0.72);
+  --panel-strong: rgba(8, 16, 30, 0.9);
+  --line: rgba(255, 255, 255, 0.13);
+  --soft-line: rgba(255, 255, 255, 0.08);
+
+  --gold: #f7c85f;
+  --gold-soft: rgba(247, 200, 95, 0.16);
+  --green: #45d483;
+  --green-soft: rgba(69, 212, 131, 0.18);
+
+  --silver: rgba(226, 235, 245, 0.74);
+  --muted: rgba(226, 235, 245, 0.64);
+}
+
+/* Nền tối hơn một chút để chữ nổi hơn */
+body::before {
+  filter: saturate(1.08) contrast(1.04);
+  background:
+    radial-gradient(circle at 50% 32%, rgba(247, 200, 95, 0.1), transparent 32%),
+    linear-gradient(90deg, rgba(3, 8, 16, 0.94), rgba(3, 8, 16, 0.18) 33%, rgba(3, 8, 16, 0.2) 66%, rgba(3, 8, 16, 0.94)),
+    linear-gradient(180deg, rgba(3, 8, 16, 0.2), rgba(3, 8, 16, 0.84)),
+    var(--stadium-bg) center / cover no-repeat;
+}
+
+/* Panel kính mờ chuyên nghiệp hơn */
+.panel,
+.countdown-shell {
+  border-radius: 14px;
+  border-color: rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)),
+    rgba(6, 12, 22, 0.72);
+  box-shadow:
+    0 28px 90px rgba(0, 0, 0, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Header panel rõ nhưng không chói */
+.panel-head {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(90deg, rgba(247, 200, 95, 0.08), transparent 62%);
+}
+
+.panel-head span {
+  color: rgba(226, 235, 245, 0.72);
+}
+
+.panel-head strong {
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+/* Brand title có glow vàng nhẹ */
+.brand-line {
+  color: var(--gold);
+  text-shadow:
+    0 0 20px rgba(247, 200, 95, 0.22),
+    0 12px 34px rgba(0, 0, 0, 0.7);
+}
+
+/* Đồng hồ sáng hơn nhưng không neon quá mạnh */
+.clock {
+  color: #f2fbff;
+  text-shadow:
+    0 0 18px rgba(180, 235, 255, 0.22),
+    0 0 36px rgba(69, 212, 131, 0.14),
+    0 18px 44px rgba(0, 0, 0, 0.78);
+}
+
+/* Khung đếm ngược là điểm nhấn chính */
+.countdown-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-shell::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(247, 200, 95, 0.16), transparent 46%),
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+}
+
+.next-label {
+  position: relative;
+  color: var(--gold);
+  text-shadow: 0 0 16px rgba(247, 200, 95, 0.28);
+}
+
+.countdown-grid div {
+  border-color: rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.countdown-grid strong {
+  color: #ffffff;
+}
+
+/* Bảng đấu: đội đầu bảng nổi nhẹ */
+.group-card {
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.035));
+}
+
+.group-title {
+  color: var(--gold);
+  letter-spacing: 0.02em;
+}
+
+.team-row {
+  border-top-color: rgba(255, 255, 255, 0.065);
+}
+
+.team-head + .team-row {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(247, 200, 95, 0.12), transparent 70%);
+}
+
+.team-row strong {
+  display: inline-flex;
+  justify-content: center;
+  min-width: 20px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  color: var(--gold);
+  background: rgba(247, 200, 95, 0.08);
+}
+
+/* Tab active mềm hơn */
+.group-tab {
+  border-radius: 9px;
+}
+
+.group-tab.is-active {
+  color: #07111d;
+  background: linear-gradient(180deg, #ffe18a, var(--gold));
+  box-shadow: 0 8px 18px rgba(247, 200, 95, 0.18);
+}
+
+/* Fixture card nền sạch hơn */
+.fixture-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border-color: rgba(255, 255, 255, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.028));
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.fixture-card::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  content: "";
+  background: transparent;
+}
+
+/* LIVE: xanh, nổi nhất */
+.fixture-card.is-live {
+  border-color: rgba(69, 212, 131, 0.68);
+  background:
+    linear-gradient(135deg, rgba(69, 212, 131, 0.19), rgba(255, 255, 255, 0.045));
+  box-shadow:
+    0 0 0 1px rgba(69, 212, 131, 0.14),
+    0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.fixture-card.is-live::before {
+  background: var(--green);
+  box-shadow: 0 0 18px rgba(69, 212, 131, 0.8);
+}
+
+/* NEXT: vàng gold, vừa đủ nổi */
+.fixture-card.is-next {
+  border-color: rgba(247, 200, 95, 0.62);
+  background:
+    linear-gradient(135deg, rgba(247, 200, 95, 0.17), rgba(255, 255, 255, 0.045));
+  box-shadow:
+    0 0 0 1px rgba(247, 200, 95, 0.12),
+    0 18px 42px rgba(0, 0, 0, 0.24);
+}
+
+.fixture-card.is-next::before {
+  background: var(--gold);
+  box-shadow: 0 0 18px rgba(247, 200, 95, 0.72);
+}
+
+/* FT: trung tính */
+.fixture-card.is-finished {
+  opacity: 0.9;
+}
+
+.fixture-card.is-finished .fixture-status {
+  color: rgba(226, 235, 245, 0.72);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Badge trạng thái */
+.fixture-status {
+  min-width: 52px;
+  text-align: center;
+  letter-spacing: 0.045em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fixture-status.is-live,
+.fixture-score.is-live,
+.fixture-vs.is-live {
+  color: #05130d;
+  border-color: rgba(69, 212, 131, 0.86);
+  background: linear-gradient(180deg, #65f0a2, var(--green));
+  box-shadow: 0 0 18px rgba(69, 212, 131, 0.22);
+}
+
+.fixture-status.is-next,
+.fixture-score.is-next,
+.fixture-vs.is-next {
+  color: #160f02;
+  border-color: rgba(247, 200, 95, 0.86);
+  background: linear-gradient(180deg, #ffe18a, var(--gold));
+  box-shadow: 0 0 18px rgba(247, 200, 95, 0.18);
+}
+
+.fixture-status.is-finished,
+.fixture-score.is-finished {
+  color: rgba(226, 235, 245, 0.78);
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/* Score box gọn và cân đối */
+.fixture-score,
+.fixture-vs {
+  font-variant-numeric: tabular-nums;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.fixture-vs {
+  letter-spacing: 0.08em;
+}
+
+/* Tên trận dễ đọc hơn */
+.fixture-names {
+  color: rgba(247, 251, 255, 0.84);
+  letter-spacing: -0.01em;
+}
+
+.fixture-meta {
+  color: rgba(226, 235, 245, 0.58);
+}
+
+/* Scrollbar nhỏ, không chiếm mắt */
+.fixtures-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.fixtures-list::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.fixtures-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Particles giảm độ chói để không rối */
+.particles span {
+  opacity: 0.75;
+  background: rgba(247, 200, 95, 0.68);
+  box-shadow: 0 0 10px rgba(247, 200, 95, 0.44);
+}
+
+/* ===== Qualification highlights ===== */
+
+.team-row {
+  position: relative;
+  border-radius: 6px;
+  padding-left: 5px;
+}
+
+.team-row::before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  border-radius: 999px;
+  content: "";
+  background: transparent;
+}
+
+.team-row.is-qualified {
+  background: linear-gradient(90deg, rgba(69, 212, 131, 0.13), transparent 78%);
+}
+
+.team-row.is-qualified::before {
+  background: var(--green);
+  box-shadow: 0 0 10px rgba(69, 212, 131, 0.55);
+}
+
+.team-row.is-third-qualified {
+  background: linear-gradient(90deg, rgba(247, 200, 95, 0.14), transparent 78%);
+}
+
+.team-row.is-third-qualified::before {
+  background: var(--gold);
+  box-shadow: 0 0 10px rgba(247, 200, 95, 0.55);
+}
+
+.team-row.is-third-waiting {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.055), transparent 78%);
+}
+
+.team-row.is-third-waiting::before {
+  background: rgba(247, 200, 95, 0.36);
+}
+
+.team-row.is-eliminated {
+  opacity: 0.58;
+}
+
+.qual-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  margin-left: auto;
+  padding: 2px 5px;
+  border-radius: 999px;
+  font-size: 7px;
+  font-weight: 1000;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.qual-chip.is-qualified {
+  color: #04130c;
+  background: linear-gradient(180deg, #65f0a2, var(--green));
+  box-shadow: 0 0 10px rgba(69, 212, 131, 0.22);
+}
+
+.qual-chip.is-third-qualified {
+  color: #160f02;
+  background: linear-gradient(180deg, #ffe18a, var(--gold));
+  box-shadow: 0 0 10px rgba(247, 200, 95, 0.22);
+}
+
+.qual-chip.is-third-waiting {
+  color: rgba(247, 251, 255, 0.8);
+  border: 1px solid rgba(247, 200, 95, 0.32);
+  background: rgba(247, 200, 95, 0.08);
+}
+
+.qual-chip.is-eliminated {
+  color: rgba(247, 251, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.team-row.is-qualified strong,
+.team-row.is-third-qualified strong {
+  color: #fff;
+}
+/* ===== Eliminated / 4th place highlight ===== */
+
+.team-row.is-eliminated {
+  opacity: 0.82;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 107, 107, 0.15),
+    rgba(255, 255, 255, 0.025) 72%
+  );
+}
+
+.team-row.is-eliminated::before {
+  background: rgba(255, 107, 107, 0.72);
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.42);
+}
+
+.qual-chip.is-eliminated {
+  color: #ffe8e8;
+  border: 1px solid rgba(255, 107, 107, 0.38);
+  background: rgba(255, 107, 107, 0.16);
+}
+
+.team-row.is-eliminated strong {
+  color: rgba(255, 180, 180, 0.92);
+}
+
+/* ===== FINAL FIX: balanced 3-column layout + show team names ===== */
+
+/* Ẩn V32 / 3RD / OUT, giữ màu highlight theo hàng */
+.qual-chip {
+  display: none !important;
+}
+
+/* Layout cân lại: trái vừa đủ, giữa rộng hơn, phải giữ gọn */
+.wallpaper {
+  grid-template-columns: 450px minmax(490px, 1fr) 390px !important;
+  gap: 32px !important;
+  padding: 28px 36px !important;
+  align-items: center !important;
+}
+
+/* Panel trái đúng bằng cột trái, không tạo khoảng trống ảo */
+.panel.standings,
+.standings {
+  width: 420px !important;
+  max-width: 420px !important;
+  justify-self: start !important;
+}
+
+/* Panel giữa không bị co */
+.center-stage {
+  width: 100% !important;
+  min-width: 0 !important;
+  justify-self: center !important;
+  align-self: center !important;
+  padding-bottom: 0 !important;
+}
+
+.countdown-shell {
+  width: min(560px, 92%) !important;
+  max-width: 560px !important;
+}
+
+.countdown-venue {
+  max-width: 100% !important;
+  text-align: center !important;
+  line-height: 1.35 !important;
+}
+
+/* Panel phải */
+.fixtures {
+  width: 390px !important;
+  max-width: 390px !important;
+  justify-self: end !important;
+  margin-right: 0 !important;
+}
+
+/* Bảng đấu */
+.standings-list,
+#standings {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  padding: 10px 12px 12px !important;
+}
+
+.group-card {
+  padding: 10px 11px !important;
+  min-width: 0 !important;
+}
+
+/* Cột đội rộng hơn, cột số gọn lại */
+.team-head,
+.team-row {
+  grid-template-columns: minmax(50px, 1fr) 22px 24px 22px !important;
+  column-gap: 6px !important;
+  min-height: 26px !important;
+  font-size: 10.5px !important;
+}
+
+.team {
+  display: flex !important;
+  align-items: center !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  gap: 6px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.team-name {
+  display: block !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: var(--text) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  font-size: 10.5px !important;
+  font-weight: 900 !important;
+}
+
+.flag-img {
+  flex: 0 0 auto !important;
+  width: 18px !important;
+  height: 13px !important;
+}
+
+.team-row strong {
+  min-width: 24px !important;
+  justify-content: center !important;
+}
+
+/* Màn hình nhỏ hơn 1600px */
+@media (max-width: 1600px) {
+  .wallpaper {
+    grid-template-columns: 500px minmax(520px, 1fr) 360px !important;
+    gap: 22px !important;
+    padding: 24px !important;
+  }
+
+  .panel.standings,
+  .standings {
+    width: 500px !important;
+    max-width: 500px !important;
+  }
+
+  .fixtures {
+    width: 360px !important;
+    max-width: 360px !important;
+  }
+
+  .team-head,
+  .team-row {
+    grid-template-columns: minmax(102px, 1fr) 20px 26px 24px !important;
+    column-gap: 5px !important;
+    font-size: 10px !important;
+  }
+
+  .team-name {
+    font-size: 10px !important;
+  }
+
+  .countdown-shell {
+    width: min(540px, 94%) !important;
+  }
+}
+
+/* Tablet / cửa sổ nhỏ */
+@media (max-width: 1200px) {
+  .wallpaper {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto !important;
+    overflow: auto !important;
+  }
+
+  body {
+    overflow: auto !important;
+  }
+
+  .panel.standings,
+  .standings,
+  .fixtures {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .center-stage {
+    min-height: 60vh !important;
+  }
+}
