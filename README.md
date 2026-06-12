@@ -147,7 +147,7 @@ https://miracommits.github.io/WallPaper_World_Cup_2026/
 
 Bạn có thể chèn ảnh hướng dẫn thủ công tại đây, ví dụ:
 ### Tải ứng dụng Lively Wallpaper
-![Download Lively Wallpaper](./assets/add_lively.png)
+![Download Lively Wallpaper](./assets/app_lively.png)
 
 
 ### Thêm wallpaper trong Lively
