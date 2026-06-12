@@ -1,4 +1,5 @@
 name: Update football-data.org data
+run-name: ${{ github.event_name }} - update football-data.org data
 
 on:
   workflow_dispatch:
@@ -10,14 +11,14 @@ on:
       - "package.json"
       - "package-lock.json"
   schedule:
-    - cron: "2-59/5 * * * *"
+    - cron: "3,8,13,18,23,28,33,38,43,48,53,58 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
   group: update-football-data
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update-data:
@@ -83,3 +84,9 @@ jobs:
           else
             echo "No changes to commit."
           fi
+      - name: Show trigger info
+        run: |
+          echo "event_name=${{ github.event_name }}"
+          echo "ref=${{ github.ref }}"
+          echo "actor=${{ github.actor }}"
+          date -u

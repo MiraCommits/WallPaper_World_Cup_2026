@@ -198,8 +198,8 @@
         }
       }
 
-      data = normalized;
-      teams = buildTeamMap(data);
+      data = withLiveStandings(normalized);
+teams = buildTeamMap(data);
 
       console.log(`football-data.org loaded from ${matchesSource}`, data);
 
@@ -288,9 +288,10 @@
 
     const fixtures = apiFixtures.length ? apiFixtures : data.fixtures;
     const finalGroups = groups.length ? groups : buildGroupsFromFixtures(fixtures, [], data.groups || []);
-    const finalStandings = Object.keys(standings).length
-      ? standings
-      : computeStandingsFromFixtures(fixtures, finalGroups);
+    const finalStandings = computeStandingsFromFixtures(fixtures, finalGroups);
+    // const finalStandings = Object.keys(standings).length
+    //   ? standings
+    //   : computeStandingsFromFixtures(fixtures, finalGroups);
 
     return {
       timezone: tz,
@@ -365,60 +366,146 @@
     return fallbackGroups.length ? fallbackGroups : [{ name: "A", teams: apiTeams.slice(0, 4) }];
   }
 
-  function computeStandingsFromFixtures(fixtures, groups) {
-    const table = {};
+  // function computeStandingsFromFixtures(fixtures, groups) {
+  //   const table = {};
 
-    groups.forEach((group) => {
-      table[group.name] = group.teams.map((team) => ({
-        team: team.code,
+  //   groups.forEach((group) => {
+  //     table[group.name] = group.teams.map((team) => ({
+  //       team: team.code,
+  //       played: 0,
+  //       goalDiff: 0,
+  //       points: 0,
+  //       goalsFor: 0
+  //     }));
+  //   });
+
+  //   const findRow = (group, teamCode) =>
+  //     table[group]?.find((row) => String(row.team) === String(teamCode));
+
+  //   fixtures.forEach((m) => {
+  //     if (!["FT", "AET", "PEN"].includes(m.status)) return;
+
+  //     const homeGoals = Number(m.homeGoals ?? 0);
+  //     const awayGoals = Number(m.awayGoals ?? 0);
+
+  //     const home = findRow(m.group, m.home);
+  //     const away = findRow(m.group, m.away);
+  //     if (!home || !away) return;
+
+  //     home.played++;
+  //     away.played++;
+
+  //     home.goalDiff += homeGoals - awayGoals;
+  //     away.goalDiff += awayGoals - homeGoals;
+
+  //     home.goalsFor += homeGoals;
+  //     away.goalsFor += awayGoals;
+
+  //     if (homeGoals > awayGoals) home.points += 3;
+  //     else if (awayGoals > homeGoals) away.points += 3;
+  //     else {
+  //       home.points += 1;
+  //       away.points += 1;
+  //     }
+  //   });
+
+  //   Object.keys(table).forEach((group) => {
+  //     table[group].sort(
+  //       (a, b) =>
+  //         b.points - a.points ||
+  //         b.goalDiff - a.goalDiff ||
+  //         b.goalsFor - a.goalsFor
+  //     );
+  //   });
+
+  //   return table;
+  // }
+
+  function computeStandingsFromFixtures(fixtures, groups) {
+  const now = new Date();
+  const table = {};
+
+  groups.forEach((group) => {
+    table[group.name] = (group.teams || []).map((team) => {
+      const code = typeof team === "string" ? team : team.code;
+
+      return {
+        team: code,
         played: 0,
         goalDiff: 0,
         points: 0,
         goalsFor: 0
-      }));
+      };
     });
+  });
 
-    const findRow = (group, teamCode) =>
-      table[group]?.find((row) => String(row.team) === String(teamCode));
+  const findRow = (group, teamCode) =>
+    table[group]?.find((row) => String(row.team) === String(teamCode));
 
-    fixtures.forEach((m) => {
-      if (!["FT", "AET", "PEN"].includes(m.status)) return;
+  fixtures.forEach((m) => {
+    const shouldCount =
+      isFinishedMatch(m) ||
+      isLive(m, now) ||
+      isWaitingResult(m, now);
 
-      const homeGoals = Number(m.homeGoals ?? 0);
-      const awayGoals = Number(m.awayGoals ?? 0);
+    if (!shouldCount) return;
+    if (!hasScore(m)) return;
 
-      const home = findRow(m.group, m.home);
-      const away = findRow(m.group, m.away);
-      if (!home || !away) return;
+    const homeGoals = Number(m.homeGoals);
+    const awayGoals = Number(m.awayGoals);
 
-      home.played++;
-      away.played++;
+    if (!Number.isFinite(homeGoals) || !Number.isFinite(awayGoals)) return;
 
-      home.goalDiff += homeGoals - awayGoals;
-      away.goalDiff += awayGoals - homeGoals;
+    const home = findRow(m.group, m.home);
+    const away = findRow(m.group, m.away);
 
-      home.goalsFor += homeGoals;
-      away.goalsFor += awayGoals;
+    if (!home || !away) return;
 
-      if (homeGoals > awayGoals) home.points += 3;
-      else if (awayGoals > homeGoals) away.points += 3;
-      else {
-        home.points += 1;
-        away.points += 1;
-      }
-    });
+    home.played++;
+    away.played++;
 
-    Object.keys(table).forEach((group) => {
-      table[group].sort(
-        (a, b) =>
-          b.points - a.points ||
-          b.goalDiff - a.goalDiff ||
-          b.goalsFor - a.goalsFor
-      );
-    });
+    home.goalDiff += homeGoals - awayGoals;
+    away.goalDiff += awayGoals - homeGoals;
 
-    return table;
-  }
+    home.goalsFor += homeGoals;
+    away.goalsFor += awayGoals;
+
+    if (homeGoals > awayGoals) {
+      home.points += 3;
+    } else if (awayGoals > homeGoals) {
+      away.points += 3;
+    } else {
+      home.points += 1;
+      away.points += 1;
+    }
+  });
+
+  Object.keys(table).forEach((group) => {
+    table[group].sort(
+      (a, b) =>
+        b.points - a.points ||
+        b.goalDiff - a.goalDiff ||
+        b.goalsFor - a.goalsFor ||
+        String(a.team).localeCompare(String(b.team))
+    );
+  });
+
+  return table;
+}
+
+  function withLiveStandings(src) {
+  const fixtures = src.fixtures || [];
+
+  const groups = (src.groups || []).length
+    ? src.groups
+    : buildGroupsFromFixtures(fixtures, [], []);
+
+  return {
+    ...src,
+    groups,
+    standings: computeStandingsFromFixtures(fixtures, groups)
+  };
+}
 
   function registerTeam(team) { if (team?.code) seenTeams.set(String(team.code), team); }
   function teamObj(team) {
@@ -982,8 +1069,11 @@
       if (signature === staticDataLastSignature) return;
       staticDataLastSignature = signature;
 
-      data = normalizeLocalData(nextData);
-      teams = buildTeamMap(data);
+data = normalizeLocalData(nextData);
+teams = buildTeamMap(data);
+
+data = withLiveStandings(data);
+teams = buildTeamMap(data);
 
       console.log("Loaded data.json from GitHub Actions", data.updatedAt, data);
       renderTabs();
