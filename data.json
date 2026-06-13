@@ -3,7 +3,7 @@
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T19:20:27.260Z",
+  "updatedAt": "2026-06-13T19:25:26.660Z",
   "groups": [
     {
       "name": "A",
@@ -838,7 +838,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-13T19:19:38Z",
+      "lastUpdated": "2026-06-13T19:25:02Z",
       "homeTeam": {
         "code": "QAT",
         "name": "Qatar",
