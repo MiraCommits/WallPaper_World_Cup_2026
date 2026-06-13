@@ -199,7 +199,7 @@
       }
 
       data = withLiveStandings(normalized);
-teams = buildTeamMap(data);
+      teams = buildTeamMap(data);
 
       console.log(`football-data.org loaded from ${matchesSource}`, data);
 
@@ -422,154 +422,154 @@ teams = buildTeamMap(data);
   // }
 
   function computeStandingsFromFixtures(fixtures, groups) {
-  const now = new Date();
-  const table = {};
+    const now = new Date();
+    const table = {};
 
-  groups.forEach((group) => {
-    table[group.name] = (group.teams || []).map((team) => {
-      const code = typeof team === "string" ? team : team.code;
+    groups.forEach((group) => {
+      table[group.name] = (group.teams || []).map((team) => {
+        const code = typeof team === "string" ? team : team.code;
 
-      return {
-        team: code,
-        played: 0,
-        goalDiff: 0,
-        points: 0,
-        goalsFor: 0
-      };
+        return {
+          team: code,
+          played: 0,
+          goalDiff: 0,
+          points: 0,
+          goalsFor: 0
+        };
+      });
     });
-  });
 
-  const findRow = (group, teamCode) =>
-    table[group]?.find((row) => String(row.team) === String(teamCode));
+    const findRow = (group, teamCode) =>
+      table[group]?.find((row) => String(row.team) === String(teamCode));
 
-  fixtures.forEach((m) => {
-    const shouldCount =
-      isFinishedMatch(m) ||
-      isLive(m, now) ||
-      isWaitingResult(m, now);
+    fixtures.forEach((m) => {
+      const shouldCount =
+        isFinishedMatch(m) ||
+        isLive(m, now) ||
+        isWaitingResult(m, now);
 
-    if (!shouldCount) return;
-    if (!hasScore(m)) return;
+      if (!shouldCount) return;
+      if (!hasScore(m)) return;
 
-    const homeGoals = Number(m.homeGoals);
-    const awayGoals = Number(m.awayGoals);
+      const homeGoals = Number(m.homeGoals);
+      const awayGoals = Number(m.awayGoals);
 
-    if (!Number.isFinite(homeGoals) || !Number.isFinite(awayGoals)) return;
+      if (!Number.isFinite(homeGoals) || !Number.isFinite(awayGoals)) return;
 
-    const home = findRow(m.group, m.home);
-    const away = findRow(m.group, m.away);
+      const home = findRow(m.group, m.home);
+      const away = findRow(m.group, m.away);
 
-    if (!home || !away) return;
+      if (!home || !away) return;
 
-    home.played++;
-    away.played++;
+      home.played++;
+      away.played++;
 
-    home.goalDiff += homeGoals - awayGoals;
-    away.goalDiff += awayGoals - homeGoals;
+      home.goalDiff += homeGoals - awayGoals;
+      away.goalDiff += awayGoals - homeGoals;
 
-    home.goalsFor += homeGoals;
-    away.goalsFor += awayGoals;
+      home.goalsFor += homeGoals;
+      away.goalsFor += awayGoals;
 
-    if (homeGoals > awayGoals) {
-      home.points += 3;
-    } else if (awayGoals > homeGoals) {
-      away.points += 3;
-    } else {
-      home.points += 1;
-      away.points += 1;
-    }
-  });
+      if (homeGoals > awayGoals) {
+        home.points += 3;
+      } else if (awayGoals > homeGoals) {
+        away.points += 3;
+      } else {
+        home.points += 1;
+        away.points += 1;
+      }
+    });
 
-  Object.keys(table).forEach((group) => {
-    table[group].sort(
-      (a, b) =>
-        b.points - a.points ||
-        b.goalDiff - a.goalDiff ||
-        b.goalsFor - a.goalsFor ||
-        String(a.team).localeCompare(String(b.team))
-    );
-  });
+    Object.keys(table).forEach((group) => {
+      table[group].sort(
+        (a, b) =>
+          b.points - a.points ||
+          b.goalDiff - a.goalDiff ||
+          b.goalsFor - a.goalsFor ||
+          String(a.team).localeCompare(String(b.team))
+      );
+    });
 
-  return table;
-}
+    return table;
+  }
 
   function withLiveStandings(src) {
-  const fixtures = src.fixtures || [];
+    const fixtures = src.fixtures || [];
 
-  const groups = (src.groups || []).length
-    ? src.groups
-    : buildGroupsFromFixtures(fixtures, [], []);
+    const groups = (src.groups || []).length
+      ? src.groups
+      : buildGroupsFromFixtures(fixtures, [], []);
 
-  return {
-    ...src,
-    groups,
-    standings: computeStandingsFromFixtures(fixtures, groups)
-  };
-}
+    return {
+      ...src,
+      groups,
+      standings: computeStandingsFromFixtures(fixtures, groups)
+    };
+  }
 
-function compareStandingRows(a, b) {
-  return (
-    b.points - a.points ||
-    b.goalDiff - a.goalDiff ||
-    b.goalsFor - a.goalsFor ||
-    String(a.team).localeCompare(String(b.team))
-  );
-}
+  function compareStandingRows(a, b) {
+    return (
+      b.points - a.points ||
+      b.goalDiff - a.goalDiff ||
+      b.goalsFor - a.goalsFor ||
+      String(a.team).localeCompare(String(b.team))
+    );
+  }
 
-function getThirdPlaceRace(src = data) {
-  const thirds = [];
+  function getThirdPlaceRace(src = data) {
+    const thirds = [];
 
-  (src.groups || []).forEach((group) => {
-    const rows = (src.standings[group.name] || defaultRows(group))
-      .slice()
-      .sort(compareStandingRows);
+    (src.groups || []).forEach((group) => {
+      const rows = (src.standings[group.name] || defaultRows(group))
+        .slice()
+        .sort(compareStandingRows);
 
-    const third = rows[2];
+      const third = rows[2];
 
-    if (third) {
-      thirds.push({
-        ...third,
-        group: group.name
-      });
-    }
-  });
+      if (third) {
+        thirds.push({
+          ...third,
+          group: group.name
+        });
+      }
+    });
 
-  return thirds.sort(compareStandingRows);
-}
+    return thirds.sort(compareStandingRows);
+  }
 
-function getBestThirdPlaceSet(src = data) {
-  return new Set(
-    getThirdPlaceRace(src)
-      .slice(0, 8)
-      .map((row) => `${row.group}:${row.team}`)
-  );
-}
+  function getBestThirdPlaceSet(src = data) {
+    return new Set(
+      getThirdPlaceRace(src)
+        .slice(0, 8)
+        .map((row) => `${row.group}:${row.team}`)
+    );
+  }
 
-function qualificationClass(groupName, row, index, bestThirdSet) {
-  const key = `${groupName}:${row.team}`;
+  function qualificationClass(groupName, row, index, bestThirdSet) {
+    const key = `${groupName}:${row.team}`;
 
-  if (index < 2) return "is-qualified";
-  if (index === 2 && bestThirdSet.has(key)) return "is-third-qualified";
-  if (index === 2) return "is-third-waiting";
+    if (index < 2) return "is-qualified";
+    if (index === 2 && bestThirdSet.has(key)) return "is-third-qualified";
+    if (index === 2) return "is-third-waiting";
 
-  return "is-eliminated";
-}
+    return "is-eliminated";
+  }
 
-function qualificationLabel(groupName, row, index, bestThirdSet) {
-  const key = `${groupName}:${row.team}`;
+  function qualificationLabel(groupName, row, index, bestThirdSet) {
+    const key = `${groupName}:${row.team}`;
 
-  if (index < 2) return "V32";
-  if (index === 2 && bestThirdSet.has(key)) return "3RD";
-  if (index === 2) return "3?";
-  return "OUT";
-}
+    if (index < 2) return "V32";
+    if (index === 2 && bestThirdSet.has(key)) return "3RD";
+    if (index === 2) return "3?";
+    return "OUT";
+  }
 
-function qualificationTitle(className) {
-  if (className === "is-qualified") return "Vào vòng 32: top 2 bảng";
-  if (className === "is-third-qualified") return "Tạm vào vòng 32: thuộc 8 đội hạng 3 tốt nhất";
-  if (className === "is-third-waiting") return "Hạng 3 nhưng chưa thuộc nhóm 8 đội tốt nhất";
-  return "Tạm bị loại";
-}
+  function qualificationTitle(className) {
+    if (className === "is-qualified") return "Vào vòng 32: top 2 bảng";
+    if (className === "is-third-qualified") return "Tạm vào vòng 32: thuộc 8 đội hạng 3 tốt nhất";
+    if (className === "is-third-waiting") return "Hạng 3 nhưng chưa thuộc nhóm 8 đội tốt nhất";
+    return "Tạm bị loại";
+  }
 
   function registerTeam(team) { if (team?.code) seenTeams.set(String(team.code), team); }
   function teamObj(team) {
@@ -659,23 +659,23 @@ function qualificationTitle(className) {
 
   function renderTabs() { el.groupTabs.innerHTML = groupPages.map((p, i) => `<button class="group-tab ${i === activePage ? "is-active" : ""}" type="button" data-page="${i}">${p.label}</button>`).join(""); el.groupTabs.querySelectorAll(".group-tab").forEach((b) => b.addEventListener("click", () => { activePage = Number(b.dataset.page); renderTabs(); renderStandings(); })); }
   function renderStandings() {
-  const visible = new Set(groupPages[activePage].groups);
-  const bestThirdSet = getBestThirdPlaceSet(data);
+    const visible = new Set(groupPages[activePage].groups);
+    const bestThirdSet = getBestThirdPlaceSet(data);
 
-  const groups = data.groups
-    .filter((g) => visible.has(g.name))
-    .map((group) => {
-      const rows = (data.standings[group.name] || defaultRows(group))
-        .slice()
-        .sort(compareStandingRows)
-        .slice(0, 4);
+    const groups = data.groups
+      .filter((g) => visible.has(g.name))
+      .map((group) => {
+        const rows = (data.standings[group.name] || defaultRows(group))
+          .slice()
+          .sort(compareStandingRows)
+          .slice(0, 4);
 
-      const teamRows = rows.map((row, index) => {
-        const qClass = qualificationClass(group.name, row, index, bestThirdSet);
-        const qLabel = qualificationLabel(group.name, row, index, bestThirdSet);
-        const qTitle = qualificationTitle(qClass);
+        const teamRows = rows.map((row, index) => {
+          const qClass = qualificationClass(group.name, row, index, bestThirdSet);
+          const qLabel = qualificationLabel(group.name, row, index, bestThirdSet);
+          const qTitle = qualificationTitle(qClass);
 
-        return `
+          return `
           <div class="team-row ${qClass}" title="${qTitle}">
             <span class="team">
               ${flagImg(row.team)}
@@ -687,9 +687,9 @@ function qualificationTitle(className) {
             <strong>${row.points}</strong>
           </div>
         `;
-      }).join("");
+        }).join("");
 
-      return `
+        return `
         <article class="group-card">
           <div class="group-title">Bảng ${group.name}</div>
           <div class="team-head">
@@ -701,10 +701,10 @@ function qualificationTitle(className) {
           ${teamRows}
         </article>
       `;
-    }).join("");
+      }).join("");
 
-  el.standings.innerHTML = groups || `<div class="empty-state">Đang đợi dữ liệu bảng đấu...</div>`;
-}
+    el.standings.innerHTML = groups || `<div class="empty-state">Đang đợi dữ liệu bảng đấu...</div>`;
+  }
 
   function getMatchDate(m) {
     return m.date instanceof Date ? m.date : new Date(m.kickoff);
@@ -900,45 +900,45 @@ function qualificationTitle(className) {
   }
 
   function renderFixtures() {
-  const now = new Date();
-  const matches = getSidebarFixtures();
+    const now = new Date();
+    const matches = getSidebarFixtures();
 
-  const liveMatches = matches.filter((m) => isLive(m, now));
-  const liveCount = liveMatches.length;
+    const liveMatches = matches.filter((m) => isLive(m, now));
+    const liveCount = liveMatches.length;
 
-  el.fixtureCount.textContent = liveCount
-    ? `${liveCount} LIVE`
-    : `${matches.length} trận`;
+    el.fixtureCount.textContent = liveCount
+      ? `${liveCount} LIVE`
+      : `${matches.length} trận`;
 
-  const nextUpcoming = matches
-    .filter((m) => isUpcomingMatch(m, now))
-    .sort((a, b) => a.date - b.date)[0];
+    const nextUpcoming = matches
+      .filter((m) => isUpcomingMatch(m, now))
+      .sort((a, b) => a.date - b.date)[0];
 
-  el.fixtures.innerHTML = matches.map((m) => {
-    const live = isLive(m, now);
-    const done = isFinishedMatch(m);
-    const waiting = isWaitingResult(m, now);
-    const score = scoreText(m);
+    el.fixtures.innerHTML = matches.map((m) => {
+      const live = isLive(m, now);
+      const done = isFinishedMatch(m);
+      const waiting = isWaitingResult(m, now);
+      const score = scoreText(m);
 
-    const isNextUpcoming =
-      !liveCount &&
-      nextUpcoming &&
-      String(m.id || m.kickoff) === String(nextUpcoming.id || nextUpcoming.kickoff);
+      const isNextUpcoming =
+        !liveCount &&
+        nextUpcoming &&
+        String(m.id || m.kickoff) === String(nextUpcoming.id || nextUpcoming.kickoff);
 
-    const stateClass = live
-      ? "is-live"
-      : isNextUpcoming
-        ? "is-next"
-        : done
-          ? "is-finished"
-          : "";
+      const stateClass = live
+        ? "is-live"
+        : isNextUpcoming
+          ? "is-next"
+          : done
+            ? "is-finished"
+            : "";
 
-    const centerClass =
-      live || done || waiting || hasScore(m)
-        ? "fixture-score"
-        : "fixture-vs";
+      const centerClass =
+        live || done || waiting || hasScore(m)
+          ? "fixture-score"
+          : "fixture-vs";
 
-    return `
+      return `
       <article class="fixture-card ${stateClass}">
         <div class="fixture-top">
           <div class="fixture-time">${fmtKickoff(m.date)}</div>
@@ -967,8 +967,8 @@ function qualificationTitle(className) {
         </div>
       </article>
     `;
-  }).join("") || `<div class="empty-state">Chưa có dữ liệu trận đấu</div>`;
-}
+    }).join("") || `<div class="empty-state">Chưa có dữ liệu trận đấu</div>`;
+  }
 
   function updateClock() { const now = new Date(); el.clock.textContent = fmtDate(now, { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false }); el.dateLine.textContent = fmtDate(now, { weekday: "long", day: "2-digit", month: "long", year: "numeric" }); }
   // function getFeaturedMatch(now) {
@@ -1079,11 +1079,13 @@ function qualificationTitle(className) {
         groups: (nextData.groups || []).length,
         fixtures: (nextData.fixtures || []).length,
         standings: Object.keys(nextData.standings || {}).length,
-        sample: (nextData.fixtures || []).slice(0, 12).map((m) => [
+        matches: (nextData.fixtures || []).map((m) => [
           m.id,
           m.status,
           m.homeGoals,
           m.awayGoals,
+          m.minute,
+          m.injuryTime,
           m.lastUpdated
         ])
       });
@@ -1091,11 +1093,11 @@ function qualificationTitle(className) {
       if (signature === staticDataLastSignature) return;
       staticDataLastSignature = signature;
 
-data = normalizeLocalData(nextData);
-teams = buildTeamMap(data);
+      data = normalizeLocalData(nextData);
+      teams = buildTeamMap(data);
 
-data = withLiveStandings(data);
-teams = buildTeamMap(data);
+      data = withLiveStandings(data);
+      teams = buildTeamMap(data);
 
       console.log("Loaded data.json from GitHub Actions", data.updatedAt, data);
       renderTabs();
