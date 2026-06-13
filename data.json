@@ -3,7 +3,7 @@
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T22:15:34.107Z",
+  "updatedAt": "2026-06-13T22:20:33.022Z",
   "groups": [
     {
       "name": "A",
@@ -865,7 +865,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-13T22:14:59Z",
+      "lastUpdated": "2026-06-13T22:19:47Z",
       "homeTeam": {
         "code": "BRA",
         "name": "Brazil",
