@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T02:40:33.715Z",
+  "updatedAt": "2026-06-13T02:45:25.629Z",
   "groups": [
     {
       "name": "A",
@@ -809,9 +809,9 @@ window.WC2026_DATA = {
       "minute": null,
       "injuryTime": null,
       "homeGoals": 3,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-13T02:39:50Z",
+      "lastUpdated": "2026-06-13T02:45:02Z",
       "homeTeam": {
         "code": "USA",
         "name": "USA",
