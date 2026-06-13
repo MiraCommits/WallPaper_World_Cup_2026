@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T20:45:26.151Z",
+  "updatedAt": "2026-06-13T20:50:28.612Z",
   "groups": [
     {
       "name": "A",
@@ -838,7 +838,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-13T20:45:14Z",
+      "lastUpdated": "2026-06-13T20:50:02Z",
       "homeTeam": {
         "code": "QAT",
         "name": "Qatar",
