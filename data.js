@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T22:35:24.401Z",
+  "updatedAt": "2026-06-13T22:40:33.819Z",
   "groups": [
     {
       "name": "A",
@@ -865,7 +865,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-13T22:34:35Z",
+      "lastUpdated": "2026-06-13T22:40:02Z",
       "homeTeam": {
         "code": "BRA",
         "name": "Brazil",
