@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T21:25:24.071Z",
+  "updatedAt": "2026-06-13T21:30:34.986Z",
   "groups": [
     {
       "name": "A",
@@ -38,12 +38,6 @@ window.WC2026_DATA = {
       "name": "B",
       "teams": [
         {
-          "code": "SUI",
-          "name": "Switzerland",
-          "logo": "https://crests.football-data.org/788.svg",
-          "flagCode": "ch"
-        },
-        {
           "code": "BIH",
           "name": "Bosnia-H.",
           "logo": "https://crests.football-data.org/bosnia.svg",
@@ -60,6 +54,12 @@ window.WC2026_DATA = {
           "name": "Qatar",
           "logo": "https://crests.football-data.org/8030.svg",
           "flagCode": "qa"
+        },
+        {
+          "code": "SUI",
+          "name": "Switzerland",
+          "logo": "https://crests.football-data.org/788.svg",
+          "flagCode": "ch"
         }
       ]
     },
@@ -387,13 +387,6 @@ window.WC2026_DATA = {
     ],
     "B": [
       {
-        "team": "SUI",
-        "played": 1,
-        "goalDiff": 1,
-        "points": 3,
-        "goalsFor": 1
-      },
-      {
         "team": "BIH",
         "played": 1,
         "goalDiff": 0,
@@ -410,9 +403,16 @@ window.WC2026_DATA = {
       {
         "team": "QAT",
         "played": 1,
-        "goalDiff": -1,
-        "points": 0,
-        "goalsFor": 0
+        "goalDiff": 0,
+        "points": 1,
+        "goalsFor": 1
+      },
+      {
+        "team": "SUI",
+        "played": 1,
+        "goalDiff": 0,
+        "points": 1,
+        "goalsFor": 1
       }
     ],
     "C": [
