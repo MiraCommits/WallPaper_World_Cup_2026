@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T08:45:27.640Z",
+  "updatedAt": "2026-06-13T08:50:32.399Z",
   "groups": [
     {
       "name": "A",
@@ -13,12 +13,6 @@ window.WC2026_DATA = {
           "name": "Mexico",
           "logo": "https://crests.football-data.org/769.svg",
           "flagCode": "mx"
-        },
-        {
-          "code": "RSA",
-          "name": "South Africa",
-          "logo": "https://crests.football-data.org/9396.svg",
-          "flagCode": "za"
         },
         {
           "code": "KOR",
@@ -31,6 +25,12 @@ window.WC2026_DATA = {
           "name": "Czechia",
           "logo": "https://crests.football-data.org/798.svg",
           "flagCode": "cz"
+        },
+        {
+          "code": "RSA",
+          "name": "South Africa",
+          "logo": "https://crests.football-data.org/9396.svg",
+          "flagCode": "za"
         }
       ]
     },
@@ -38,16 +38,16 @@ window.WC2026_DATA = {
       "name": "B",
       "teams": [
         {
-          "code": "CAN",
-          "name": "Canada",
-          "logo": "https://crests.football-data.org/canada.svg",
-          "flagCode": "ca"
-        },
-        {
           "code": "BIH",
           "name": "Bosnia-H.",
           "logo": "https://crests.football-data.org/bosnia.svg",
           "flagCode": "ba"
+        },
+        {
+          "code": "CAN",
+          "name": "Canada",
+          "logo": "https://crests.football-data.org/canada.svg",
+          "flagCode": "ca"
         },
         {
           "code": "QAT",
@@ -73,16 +73,16 @@ window.WC2026_DATA = {
           "flagCode": "br"
         },
         {
-          "code": "MAR",
-          "name": "Morocco",
-          "logo": "https://crests.football-data.org/morocco.svg",
-          "flagCode": "ma"
-        },
-        {
           "code": "HAI",
           "name": "Haiti",
           "logo": "https://crests.football-data.org/haiti.svg",
           "flagCode": "ht"
+        },
+        {
+          "code": "MAR",
+          "name": "Morocco",
+          "logo": "https://crests.football-data.org/morocco.svg",
+          "flagCode": "ma"
         },
         {
           "code": "SCO",
@@ -102,12 +102,6 @@ window.WC2026_DATA = {
           "flagCode": "us"
         },
         {
-          "code": "PAR",
-          "name": "Paraguay",
-          "logo": "https://crests.football-data.org/761.svg",
-          "flagCode": "py"
-        },
-        {
           "code": "AUS",
           "name": "Australia",
           "logo": "https://crests.football-data.org/779.svg",
@@ -118,6 +112,12 @@ window.WC2026_DATA = {
           "name": "Turkey",
           "logo": "https://crests.football-data.org/803.svg",
           "flagCode": "tr"
+        },
+        {
+          "code": "PAR",
+          "name": "Paraguay",
+          "logo": "https://crests.football-data.org/761.svg",
+          "flagCode": "py"
         }
       ]
     },
@@ -125,28 +125,28 @@ window.WC2026_DATA = {
       "name": "E",
       "teams": [
         {
-          "code": "GER",
-          "name": "Germany",
-          "logo": "https://crests.football-data.org/759.svg",
-          "flagCode": "de"
-        },
-        {
           "code": "CUW",
           "name": "Curaçao",
           "logo": "https://crests.football-data.org/curacao.svg",
           "flagCode": "cw"
         },
         {
-          "code": "CIV",
-          "name": "Ivory Coast",
-          "logo": "https://crests.football-data.org/787.svg",
-          "flagCode": "ci"
+          "code": "GER",
+          "name": "Germany",
+          "logo": "https://crests.football-data.org/759.svg",
+          "flagCode": "de"
         },
         {
           "code": "ECU",
           "name": "Ecuador",
           "logo": "https://crests.football-data.org/791.svg",
           "flagCode": "ec"
+        },
+        {
+          "code": "CIV",
+          "name": "Ivory Coast",
+          "logo": "https://crests.football-data.org/787.svg",
+          "flagCode": "ci"
         }
       ]
     },
@@ -154,16 +154,16 @@ window.WC2026_DATA = {
       "name": "F",
       "teams": [
         {
-          "code": "NED",
-          "name": "Netherlands",
-          "logo": "https://crests.football-data.org/8601.svg",
-          "flagCode": "nl"
-        },
-        {
           "code": "JPN",
           "name": "Japan",
           "logo": "https://crests.football-data.org/766.svg",
           "flagCode": "jp"
+        },
+        {
+          "code": "NED",
+          "name": "Netherlands",
+          "logo": "https://crests.football-data.org/8601.svg",
+          "flagCode": "nl"
         },
         {
           "code": "SWE",
@@ -183,16 +183,16 @@ window.WC2026_DATA = {
       "name": "G",
       "teams": [
         {
-          "code": "BEL",
-          "name": "Belgium",
-          "logo": "https://crests.football-data.org/805.svg",
-          "flagCode": "be"
-        },
-        {
           "code": "EGY",
           "name": "Egypt",
           "logo": "https://crests.football-data.org/825.svg",
           "flagCode": "eg"
+        },
+        {
+          "code": "BEL",
+          "name": "Belgium",
+          "logo": "https://crests.football-data.org/805.svg",
+          "flagCode": "be"
         },
         {
           "code": "IRN",
@@ -212,12 +212,6 @@ window.WC2026_DATA = {
       "name": "H",
       "teams": [
         {
-          "code": "ESP",
-          "name": "Spain",
-          "logo": "https://crests.football-data.org/760.svg",
-          "flagCode": "es"
-        },
-        {
           "code": "CPV",
           "name": "Cape Verde",
           "logo": "https://crests.football-data.org/cape_verde.svg",
@@ -228,6 +222,12 @@ window.WC2026_DATA = {
           "name": "Saudi Arabia",
           "logo": "https://crests.football-data.org/saudi_arabia.svg",
           "flagCode": ""
+        },
+        {
+          "code": "ESP",
+          "name": "Spain",
+          "logo": "https://crests.football-data.org/760.svg",
+          "flagCode": "es"
         },
         {
           "code": "URY",
@@ -247,12 +247,6 @@ window.WC2026_DATA = {
           "flagCode": "fr"
         },
         {
-          "code": "SEN",
-          "name": "Senegal",
-          "logo": "https://crests.football-data.org/senegal.svg",
-          "flagCode": "sn"
-        },
-        {
           "code": "IRQ",
           "name": "Iraq",
           "logo": "https://crests.football-data.org/iraq.svg",
@@ -263,6 +257,12 @@ window.WC2026_DATA = {
           "name": "Norway",
           "logo": "https://crests.football-data.org/813.svg",
           "flagCode": "no"
+        },
+        {
+          "code": "SEN",
+          "name": "Senegal",
+          "logo": "https://crests.football-data.org/senegal.svg",
+          "flagCode": "sn"
         }
       ]
     },
@@ -270,15 +270,21 @@ window.WC2026_DATA = {
       "name": "J",
       "teams": [
         {
+          "code": "ALG",
+          "name": "Algeria",
+          "logo": "https://crests.football-data.org/algeria.svg",
+          "flagCode": ""
+        },
+        {
           "code": "ARG",
           "name": "Argentina",
           "logo": "https://crests.football-data.org/762.png",
           "flagCode": "ar"
         },
         {
-          "code": "ALG",
-          "name": "Algeria",
-          "logo": "https://crests.football-data.org/algeria.svg",
+          "code": "JOR",
+          "name": "Jordan",
+          "logo": "https://crests.football-data.org/8049.png",
           "flagCode": ""
         },
         {
@@ -286,12 +292,6 @@ window.WC2026_DATA = {
           "name": "Austria",
           "logo": "https://crests.football-data.org/816.svg",
           "flagCode": "at"
-        },
-        {
-          "code": "JOR",
-          "name": "Jordan",
-          "logo": "https://crests.football-data.org/8049.png",
-          "flagCode": ""
         }
       ]
     },
@@ -299,28 +299,28 @@ window.WC2026_DATA = {
       "name": "K",
       "teams": [
         {
-          "code": "POR",
-          "name": "Portugal",
-          "logo": "https://crests.football-data.org/765.svg",
-          "flagCode": "pt"
-        },
-        {
           "code": "COD",
           "name": "Congo DR",
           "logo": "https://crests.football-data.org/congo_dr.svg",
           "flagCode": ""
         },
         {
-          "code": "UZB",
-          "name": "Uzbekistan",
-          "logo": "https://crests.football-data.org/8070.png",
-          "flagCode": "uz"
-        },
-        {
           "code": "COL",
           "name": "Colombia",
           "logo": "https://crests.football-data.org/818.svg",
           "flagCode": "co"
+        },
+        {
+          "code": "POR",
+          "name": "Portugal",
+          "logo": "https://crests.football-data.org/765.svg",
+          "flagCode": "pt"
+        },
+        {
+          "code": "UZB",
+          "name": "Uzbekistan",
+          "logo": "https://crests.football-data.org/8070.png",
+          "flagCode": "uz"
         }
       ]
     },
@@ -334,16 +334,16 @@ window.WC2026_DATA = {
           "flagCode": "gb-eng"
         },
         {
-          "code": "CRO",
-          "name": "Croatia",
-          "logo": "https://crests.football-data.org/799.svg",
-          "flagCode": "hr"
-        },
-        {
           "code": "GHA",
           "name": "Ghana",
           "logo": "https://crests.football-data.org/ghana.svg",
           "flagCode": "gh"
+        },
+        {
+          "code": "CRO",
+          "name": "Croatia",
+          "logo": "https://crests.football-data.org/799.svg",
+          "flagCode": "hr"
         },
         {
           "code": "PAN",
@@ -387,14 +387,14 @@ window.WC2026_DATA = {
     ],
     "B": [
       {
-        "team": "CAN",
+        "team": "BIH",
         "played": 1,
         "goalDiff": 0,
         "points": 1,
         "goalsFor": 1
       },
       {
-        "team": "BIH",
+        "team": "CAN",
         "played": 1,
         "goalDiff": 0,
         "points": 1,
@@ -424,14 +424,14 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "MAR",
+        "team": "HAI",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "HAI",
+        "team": "MAR",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -477,13 +477,6 @@ window.WC2026_DATA = {
     ],
     "E": [
       {
-        "team": "GER",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "CUW",
         "played": 0,
         "goalDiff": 0,
@@ -491,7 +484,7 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "CIV",
+        "team": "GER",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -503,18 +496,25 @@ window.WC2026_DATA = {
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
+      },
+      {
+        "team": "CIV",
+        "played": 0,
+        "goalDiff": 0,
+        "points": 0,
+        "goalsFor": 0
       }
     ],
     "F": [
       {
-        "team": "NED",
+        "team": "JPN",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "JPN",
+        "team": "NED",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -537,14 +537,14 @@ window.WC2026_DATA = {
     ],
     "G": [
       {
-        "team": "BEL",
+        "team": "EGY",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "EGY",
+        "team": "BEL",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -567,13 +567,6 @@ window.WC2026_DATA = {
     ],
     "H": [
       {
-        "team": "ESP",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "CPV",
         "played": 0,
         "goalDiff": 0,
@@ -582,6 +575,13 @@ window.WC2026_DATA = {
       },
       {
         "team": "KSA",
+        "played": 0,
+        "goalDiff": 0,
+        "points": 0,
+        "goalsFor": 0
+      },
+      {
+        "team": "ESP",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -604,13 +604,6 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "SEN",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "IRQ",
         "played": 0,
         "goalDiff": 0,
@@ -623,16 +616,16 @@ window.WC2026_DATA = {
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      }
-    ],
-    "J": [
+      },
       {
-        "team": "ARG",
+        "team": "SEN",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      },
+      }
+    ],
+    "J": [
       {
         "team": "ALG",
         "played": 0,
@@ -641,7 +634,7 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "AUT",
+        "team": "ARG",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -653,16 +646,16 @@ window.WC2026_DATA = {
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      }
-    ],
-    "K": [
+      },
       {
-        "team": "POR",
+        "team": "AUT",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
-      },
+      }
+    ],
+    "K": [
       {
         "team": "COD",
         "played": 0,
@@ -671,14 +664,21 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "UZB",
+        "team": "COL",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "COL",
+        "team": "POR",
+        "played": 0,
+        "goalDiff": 0,
+        "points": 0,
+        "goalsFor": 0
+      },
+      {
+        "team": "UZB",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
@@ -694,14 +694,14 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "CRO",
+        "team": "GHA",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
       },
       {
-        "team": "GHA",
+        "team": "CRO",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
