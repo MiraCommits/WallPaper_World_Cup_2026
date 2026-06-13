@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-13T00:55:23.536Z",
+  "updatedAt": "2026-06-13T01:00:32.865Z",
   "groups": [
     {
       "name": "A",
@@ -96,28 +96,28 @@ window.WC2026_DATA = {
       "name": "D",
       "teams": [
         {
-          "code": "AUS",
-          "name": "Australia",
-          "logo": "https://crests.football-data.org/779.svg",
-          "flagCode": "au"
-        },
-        {
           "code": "PAR",
           "name": "Paraguay",
           "logo": "https://crests.football-data.org/761.svg",
           "flagCode": "py"
         },
         {
-          "code": "TUR",
-          "name": "Turkey",
-          "logo": "https://crests.football-data.org/803.svg",
-          "flagCode": "tr"
-        },
-        {
           "code": "USA",
           "name": "USA",
           "logo": "https://crests.football-data.org/usa.svg",
           "flagCode": "us"
+        },
+        {
+          "code": "AUS",
+          "name": "Australia",
+          "logo": "https://crests.football-data.org/779.svg",
+          "flagCode": "au"
+        },
+        {
+          "code": "TUR",
+          "name": "Turkey",
+          "logo": "https://crests.football-data.org/803.svg",
+          "flagCode": "tr"
         }
       ]
     },
@@ -447,6 +447,20 @@ window.WC2026_DATA = {
     ],
     "D": [
       {
+        "team": "PAR",
+        "played": 1,
+        "goalDiff": 0,
+        "points": 1,
+        "goalsFor": 0
+      },
+      {
+        "team": "USA",
+        "played": 1,
+        "goalDiff": 0,
+        "points": 1,
+        "goalsFor": 0
+      },
+      {
         "team": "AUS",
         "played": 0,
         "goalDiff": 0,
@@ -454,21 +468,7 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "PAR",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "TUR",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
-        "team": "USA",
         "played": 0,
         "goalDiff": 0,
         "points": 0,
