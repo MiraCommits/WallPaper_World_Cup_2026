@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T05:55:28.900Z",
+  "updatedAt": "2026-06-14T06:00:37.308Z",
   "groups": [
     {
       "name": "A",
@@ -456,14 +456,14 @@ window.WC2026_DATA = {
       {
         "team": "AUS",
         "played": 1,
-        "goalDiff": 1,
+        "goalDiff": 2,
         "points": 3,
-        "goalsFor": 1
+        "goalsFor": 2
       },
       {
         "team": "TUR",
         "played": 1,
-        "goalDiff": -1,
+        "goalDiff": -2,
         "points": 0,
         "goalsFor": 0
       },
@@ -919,7 +919,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T05:54:26Z",
+      "lastUpdated": "2026-06-14T06:00:26Z",
       "homeTeam": {
         "code": "AUS",
         "name": "Australia",
