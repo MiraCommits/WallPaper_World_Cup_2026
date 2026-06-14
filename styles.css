@@ -1348,3 +1348,106 @@ body::before {
   color: var(--gold);
   font-size: 10px;
 }
+.fixture-goals-grid {
+  display: grid;
+  gap: 6px;
+  margin-top: 6px;
+  align-items: start;
+}
+
+.fixture-goals-spacer {
+  min-height: 1px;
+}
+
+.fixture-goals-col {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+    max-height: 40px;
+
+   overflow: hidden;
+}
+
+.fixture-goals-col.is-home {
+  text-align: left;
+}
+
+.fixture-goals-col.is-away {
+  text-align: right;
+}
+
+.goal-line {
+  display: flex;
+  gap: 4px;
+  min-width: 0;
+  font-size: 8px;
+  line-height: 1.25;
+  color: rgba(247, 251, 255, 0.78);
+}
+
+.fixture-goals-col.is-home .goal-line {
+  justify-content: flex-start;
+}
+
+.fixture-goals-col.is-away .goal-line {
+  justify-content: flex-end;
+}
+
+.goal-minute {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.goal-player {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+:root {
+  --fixture-center-col: 52px;
+}
+
+.fixture-teams,
+.fixture-names-grid,
+.fixture-goals-grid {
+  display: grid;
+  grid-template-columns: 1fr var(--fixture-center-col) 1fr;
+  gap: 6px;
+}
+
+.fixture-names-grid {
+  margin-top: 4px;
+  align-items: start;
+}
+
+.fixture-name-col {
+  min-width: 0;
+  overflow: hidden;
+  color: rgba(247, 251, 255, 0.84);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fixture-name-col.is-home {
+  text-align: left;
+}
+
+.fixture-name-col.is-away {
+  text-align: right;
+}
+
+.fixture-name-vs {
+  color: rgba(247, 251, 255, 0.46);
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+}
