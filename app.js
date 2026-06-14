@@ -915,6 +915,15 @@ function goalEventParts(goal = {}) {
 
   return { minute, name };
 }
+function renderFixtureFullNames(m) {
+  return `
+    <div class="fixture-names-grid">
+      <div class="fixture-name-col is-home">${escapeHtml(fullTeam(m.home))}</div>
+      <div class="fixture-name-vs">vs</div>
+      <div class="fixture-name-col is-away">${escapeHtml(fullTeam(m.away))}</div>
+    </div>
+  `;
+}
 
 function renderGoalColumn(goals = [], side = "home") {
   if (!goals.length) {
@@ -958,15 +967,7 @@ function renderFixtureGoals(m) {
     </div>
   `;
 }
-function renderFixtureFullNames(m) {
-  return `
-    <div class="fixture-names-grid">
-      <div class="fixture-name-col is-home">${escapeHtml(fullTeam(m.home))}</div>
-      <div class="fixture-name-vs">vs</div>
-      <div class="fixture-name-col is-away">${escapeHtml(fullTeam(m.away))}</div>
-    </div>
-  `;
-}
+
 
   function renderFixtures() {
     const now = new Date();
