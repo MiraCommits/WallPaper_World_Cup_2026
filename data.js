@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T01:35:28.426Z",
+  "updatedAt": "2026-06-14T01:40:28.666Z",
   "groups": [
     {
       "name": "A",
@@ -890,9 +890,9 @@ window.WC2026_DATA = {
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T01:34:47Z",
+      "lastUpdated": "2026-06-14T01:39:50Z",
       "homeTeam": {
         "code": "HAI",
         "name": "Haiti",
