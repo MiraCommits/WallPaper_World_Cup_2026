@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T04:55:30.492Z",
+  "updatedAt": "2026-06-14T05:00:35.198Z",
   "groups": [
     {
       "name": "A",
@@ -919,7 +919,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T04:55:02Z",
+      "lastUpdated": "2026-06-14T04:56:14Z",
       "homeTeam": {
         "code": "AUS",
         "name": "Australia",
