@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T17:55:29.501Z",
+  "updatedAt": "2026-06-14T18:00:39.477Z",
   "groups": [
     {
       "name": "A",
@@ -125,12 +125,6 @@ window.WC2026_DATA = {
       "name": "E",
       "teams": [
         {
-          "code": "CUW",
-          "name": "Curaçao",
-          "logo": "https://crests.football-data.org/curacao.svg",
-          "flagCode": "cw"
-        },
-        {
           "code": "GER",
           "name": "Germany",
           "logo": "https://crests.football-data.org/759.svg",
@@ -147,6 +141,12 @@ window.WC2026_DATA = {
           "name": "Ivory Coast",
           "logo": "https://crests.football-data.org/787.svg",
           "flagCode": "ci"
+        },
+        {
+          "code": "CUW",
+          "name": "Curaçao",
+          "logo": "https://crests.football-data.org/curacao.svg",
+          "flagCode": "cw"
         }
       ]
     },
@@ -477,18 +477,11 @@ window.WC2026_DATA = {
     ],
     "E": [
       {
-        "team": "CUW",
-        "played": 1,
-        "goalDiff": 0,
-        "points": 1,
-        "goalsFor": 1
-      },
-      {
         "team": "GER",
         "played": 1,
-        "goalDiff": 0,
-        "points": 1,
-        "goalsFor": 1
+        "goalDiff": 2,
+        "points": 3,
+        "goalsFor": 3
       },
       {
         "team": "ECU",
@@ -503,6 +496,13 @@ window.WC2026_DATA = {
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
+      },
+      {
+        "team": "CUW",
+        "played": 1,
+        "goalDiff": -2,
+        "points": 0,
+        "goalsFor": 1
       }
     ],
     "F": [
@@ -943,10 +943,10 @@ window.WC2026_DATA = {
       "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T17:53:53Z",
+      "lastUpdated": "2026-06-14T17:57:23Z",
       "homeTeam": {
         "code": "GER",
         "name": "Germany",
