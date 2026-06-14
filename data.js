@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T20:45:30.399Z",
+  "updatedAt": "2026-06-14T20:50:33.391Z",
   "groups": [
     {
       "name": "A",
@@ -973,7 +973,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T20:44:47Z",
+      "lastUpdated": "2026-06-14T20:50:17Z",
       "homeTeam": {
         "code": "NED",
         "name": "Netherlands",
