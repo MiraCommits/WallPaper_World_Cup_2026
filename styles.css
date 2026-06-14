@@ -1159,7 +1159,7 @@ body::before {
 
 /* Layout cân lại: trái vừa đủ, giữa rộng hơn, phải giữ gọn */
 .wallpaper {
-  grid-template-columns: 450px minmax(490px, 1fr) 390px !important;
+  grid-template-columns: 450px minmax(490px, 1fr) 450px !important;
   gap: 32px !important;
   padding: 28px 36px !important;
   align-items: center !important;
@@ -1168,8 +1168,8 @@ body::before {
 /* Panel trái đúng bằng cột trái, không tạo khoảng trống ảo */
 .panel.standings,
 .standings {
-  width: 420px !important;
-  max-width: 420px !important;
+  width: 230px !important;
+  max-width: 230px !important;
   justify-self: start !important;
 }
 
@@ -1195,19 +1195,27 @@ body::before {
 
 /* Panel phải */
 .fixtures {
-  width: 390px !important;
-  max-width: 390px !important;
+  width: 350px !important;
+  max-width: 350px !important;
   justify-self: end !important;
   margin-right: 0 !important;
 }
 
 /* Bảng đấu */
-.standings-list,
+/* .standings-list,
 #standings {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 8px !important;
   padding: 10px 12px 12px !important;
+} */
+
+.standings-list,
+#standings {
+  grid-template-columns: 1fr !important;   /* 1 cột */
+  grid-auto-rows: auto !important;
+  gap: 10px !important;
+  padding: 8px 10px 10px !important;
 }
 
 .group-card {
