@@ -899,6 +899,49 @@
       .slice(0, max);
   }
 
+  function escapeHtml(value = "") {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function goalEventText(goal) {
+    const minute = goal.minute ? `${escapeHtml(goal.minute)}' ` : "";
+    const tag = goal.penalty
+      ? " pen"
+      : goal.ownGoal
+        ? " OG"
+        : "";
+
+    return `${minute}${escapeHtml(goal.name)}${tag}`;
+  }
+
+  function renderFixtureGoals(m) {
+    const goals = Array.isArray(m.goals) ? m.goals : [];
+    if (!goals.length) return "";
+
+    const homeGoals = goals
+      .filter((g) => g.side === "home" || String(g.team) === String(m.home))
+      .map(goalEventText)
+      .join(", ");
+
+    const awayGoals = goals
+      .filter((g) => g.side === "away" || String(g.team) === String(m.away))
+      .map(goalEventText)
+      .join(", ");
+
+    return `
+    <div class="fixture-goals">
+      ${homeGoals ? `<div><strong>${shortTeam(m.home)}</strong>: ${homeGoals}</div>` : ""}
+      ${awayGoals ? `<div><strong>${shortTeam(m.away)}</strong>: ${awayGoals}</div>` : ""}
+    </div>
+  `;
+  }
+
+
   function renderFixtures() {
     const now = new Date();
     const matches = getSidebarFixtures();
@@ -961,9 +1004,11 @@
 
         <div class="fixture-names">${fullTeam(m.home)} vs ${fullTeam(m.away)}</div>
 
+        ${renderFixtureGoals(m)}
+
         <div class="fixture-meta">
           <span>${m.group ? `Bảng ${m.group}` : "World Cup"}</span>
-          <span>${m.venue || "TBA"}</span>
+          <span>${m.ground || m.venue || "TBA"}</span>
         </div>
       </article>
     `;
@@ -1086,6 +1131,9 @@
           m.awayGoals,
           m.minute,
           m.injuryTime,
+          m.venue,
+          m.ground,
+          JSON.stringify(m.goals || []),
           m.lastUpdated
         ])
       });

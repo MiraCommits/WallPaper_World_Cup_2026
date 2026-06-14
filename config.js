@@ -9,6 +9,9 @@ window.CONFIG = {
   FOOTBALL_DATA_TOKEN: "",
   API_HOST: "",
 
+  OPENFOOTBALL_JSON_URL:
+  "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+
   COMPETITION: "WC",
   SEASON: "2026",
   WORLD_CUP_DATE_FROM: "2026-06-01",
