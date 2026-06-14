@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T18:15:29.472Z",
+  "updatedAt": "2026-06-14T18:20:39.228Z",
   "groups": [
     {
       "name": "A",
@@ -946,7 +946,7 @@ window.WC2026_DATA = {
       "homeGoals": 4,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T18:15:05Z",
+      "lastUpdated": "2026-06-14T18:20:11Z",
       "homeTeam": {
         "code": "GER",
         "name": "Germany",
