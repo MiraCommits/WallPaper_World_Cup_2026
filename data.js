@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T17:25:26.382Z",
+  "updatedAt": "2026-06-14T17:30:36.181Z",
   "groups": [
     {
       "name": "A",
@@ -481,14 +481,14 @@ window.WC2026_DATA = {
         "played": 1,
         "goalDiff": 0,
         "points": 1,
-        "goalsFor": 0
+        "goalsFor": 1
       },
       {
         "team": "GER",
         "played": 1,
         "goalDiff": 0,
         "points": 1,
-        "goalsFor": 0
+        "goalsFor": 1
       },
       {
         "team": "ECU",
@@ -944,9 +944,9 @@ window.WC2026_DATA = {
       "minute": null,
       "injuryTime": null,
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T17:24:17Z",
+      "lastUpdated": "2026-06-14T17:28:47Z",
       "homeTeam": {
         "code": "GER",
         "name": "Germany",
