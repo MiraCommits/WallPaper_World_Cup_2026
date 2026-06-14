@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-14T19:01:01.100Z",
+  "updatedAt": "2026-06-14T19:05:33.038Z",
   "groups": [
     {
       "name": "A",
@@ -940,13 +940,13 @@ window.WC2026_DATA = {
       "away": "CUW",
       "venue": "TBA",
       "kickoff": "2026-06-14T17:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 7,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T18:59:56Z",
+      "lastUpdated": "2026-06-14T19:03:57Z",
       "homeTeam": {
         "code": "GER",
         "name": "Germany",
