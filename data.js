@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-15T01:10:29.552Z",
+  "updatedAt": "2026-06-15T01:15:35.117Z",
   "groups": [
     {
       "name": "A",
@@ -485,15 +485,15 @@ window.WC2026_DATA = {
       },
       {
         "team": "CIV",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
+        "played": 1,
+        "goalDiff": 1,
+        "points": 3,
+        "goalsFor": 1
       },
       {
         "team": "ECU",
-        "played": 0,
-        "goalDiff": 0,
+        "played": 1,
+        "goalDiff": -1,
         "points": 0,
         "goalsFor": 0
       },
@@ -1314,13 +1314,13 @@ window.WC2026_DATA = {
       "venue": "Philadelphia",
       "ground": "Philadelphia",
       "kickoff": "2026-06-14T23:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-15T02:59:31Z",
+      "lastUpdated": "2026-06-15T01:09:23Z",
       "goals": [
         {
           "team": "CIV",
