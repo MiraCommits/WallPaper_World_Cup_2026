@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-15T22:20:39.431Z",
+  "updatedAt": "2026-06-15T22:25:26.820Z",
   "groups": [
     {
       "name": "A",
@@ -1527,7 +1527,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-15T22:19:37Z",
+      "lastUpdated": "2026-06-15T22:24:19Z",
       "goals": [],
       "homeTeam": {
         "code": "KSA",
