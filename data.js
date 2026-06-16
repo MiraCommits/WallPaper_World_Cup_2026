@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-16T22:40:34.658Z",
+  "updatedAt": "2026-06-16T22:45:29.107Z",
   "groups": [
     {
       "name": "A",
@@ -131,7 +131,7 @@ window.WC2026_DATA = {
           "flagCode": ""
         },
         {
-          "code": "CUR",
+          "code": "CUW",
           "name": "Curaçao",
           "logo": "https://crests.football-data.org/curacao.svg",
           "flagCode": ""
@@ -230,7 +230,7 @@ window.WC2026_DATA = {
           "flagCode": ""
         },
         {
-          "code": "URY",
+          "code": "URU",
           "name": "Uruguay",
           "logo": "https://crests.football-data.org/758.svg",
           "flagCode": ""
@@ -498,7 +498,7 @@ window.WC2026_DATA = {
         "goalsFor": 0
       },
       {
-        "team": "CUR",
+        "team": "CUW",
         "played": 1,
         "goalDiff": -6,
         "points": 0,
@@ -574,7 +574,7 @@ window.WC2026_DATA = {
         "goalsFor": 1
       },
       {
-        "team": "URY",
+        "team": "URU",
         "played": 1,
         "goalDiff": 0,
         "points": 1,
@@ -732,7 +732,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-12T08:25:00Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "MEX",
@@ -782,7 +782,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-12T08:25:00Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "KOR",
@@ -840,7 +840,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-12T22:25:00Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "CAN",
@@ -890,7 +890,7 @@ window.WC2026_DATA = {
       "homeGoals": 4,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-13T03:25:00Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "USA",
@@ -964,7 +964,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-13T21:09:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "QAT",
@@ -1014,7 +1014,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T00:10:33Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "BRA",
@@ -1064,7 +1064,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T03:09:14Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "SCO",
@@ -1106,7 +1106,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-14T06:03:26Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "AUS",
@@ -1146,7 +1146,7 @@ window.WC2026_DATA = {
       "group": "E",
       "round": "Matchday 4",
       "home": "GER",
-      "away": "CUR",
+      "away": "CUW",
       "venue": "Houston",
       "ground": "Houston",
       "kickoff": "2026-06-14T17:00:00Z",
@@ -1156,7 +1156,7 @@ window.WC2026_DATA = {
       "homeGoals": 7,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-15T08:25:00Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "GER",
@@ -1215,7 +1215,7 @@ window.WC2026_DATA = {
           "ownGoal": false
         },
         {
-          "team": "CUR",
+          "team": "CUW",
           "side": "away",
           "name": "Livano Comenencia",
           "minute": "21",
@@ -1230,7 +1230,7 @@ window.WC2026_DATA = {
         "flagCode": ""
       },
       "awayTeam": {
-        "code": "CUR",
+        "code": "CUW",
         "name": "Curaçao",
         "logo": "https://crests.football-data.org/curacao.svg",
         "flagCode": ""
@@ -1254,7 +1254,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-15T08:25:01Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "NED",
@@ -1320,7 +1320,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-15T08:25:01Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "CIV",
@@ -1362,7 +1362,7 @@ window.WC2026_DATA = {
       "homeGoals": 5,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-15T08:25:01Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [
         {
           "team": "SWE",
@@ -1517,7 +1517,7 @@ window.WC2026_DATA = {
       "group": "H",
       "round": "Matchday 5",
       "home": "KSA",
-      "away": "URY",
+      "away": "URU",
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-06-15T22:00:00Z",
@@ -1538,7 +1538,7 @@ window.WC2026_DATA = {
           "ownGoal": false
         },
         {
-          "team": "URY",
+          "team": "URU",
           "side": "away",
           "name": "Maxi Araújo",
           "minute": "80",
@@ -1553,7 +1553,7 @@ window.WC2026_DATA = {
         "flagCode": ""
       },
       "awayTeam": {
-        "code": "URY",
+        "code": "URU",
         "name": "Uruguay",
         "logo": "https://crests.football-data.org/758.svg",
         "flagCode": ""
@@ -1709,7 +1709,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-16T22:40:22Z",
+      "lastUpdated": "2026-06-16T22:44:34Z",
       "goals": [],
       "homeTeam": {
         "code": "IRQ",
@@ -1742,7 +1742,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ARG",
@@ -1775,7 +1775,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "AUT",
@@ -1808,7 +1808,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T10:21:10Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "POR",
@@ -1841,7 +1841,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ENG",
@@ -1874,7 +1874,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "GHA",
@@ -1907,7 +1907,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "UZB",
@@ -1940,7 +1940,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T00:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "CZE",
@@ -1973,7 +1973,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T00:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "SUI",
@@ -2006,7 +2006,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "CAN",
@@ -2039,7 +2039,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-03-30T20:21:10Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "MEX",
@@ -2072,7 +2072,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "USA",
@@ -2105,7 +2105,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "SCO",
@@ -2138,7 +2138,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "BRA",
@@ -2171,7 +2171,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T15:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TUR",
@@ -2204,7 +2204,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T00:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "NED",
@@ -2237,7 +2237,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "GER",
@@ -2260,7 +2260,7 @@ window.WC2026_DATA = {
       "group": "E",
       "round": "Matchday 10",
       "home": "ECU",
-      "away": "CUR",
+      "away": "CUW",
       "venue": "Kansas City",
       "ground": "Kansas City",
       "kickoff": "2026-06-21T00:00:00Z",
@@ -2270,7 +2270,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ECU",
@@ -2279,7 +2279,7 @@ window.WC2026_DATA = {
         "flagCode": ""
       },
       "awayTeam": {
-        "code": "CUR",
+        "code": "CUW",
         "name": "Curaçao",
         "logo": "https://crests.football-data.org/curacao.svg",
         "flagCode": ""
@@ -2303,7 +2303,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-03-30T20:21:10Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TUN",
@@ -2336,7 +2336,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ESP",
@@ -2369,7 +2369,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "BEL",
@@ -2391,7 +2391,7 @@ window.WC2026_DATA = {
       "id": "537372",
       "group": "H",
       "round": "Matchday 11",
-      "home": "URY",
+      "home": "URU",
       "away": "CPV",
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
@@ -2402,10 +2402,10 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
-        "code": "URY",
+        "code": "URU",
         "name": "Uruguay",
         "logo": "https://crests.football-data.org/758.svg",
         "flagCode": ""
@@ -2435,7 +2435,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "NZL",
@@ -2468,7 +2468,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ARG",
@@ -2501,7 +2501,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "FRA",
@@ -2534,7 +2534,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "NOR",
@@ -2567,7 +2567,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-03-30T20:21:10Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "JOR",
@@ -2600,7 +2600,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "POR",
@@ -2633,7 +2633,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ENG",
@@ -2666,7 +2666,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "PAN",
@@ -2699,7 +2699,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T10:21:10Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "COL",
@@ -2732,7 +2732,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "SUI",
@@ -2765,7 +2765,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T00:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "BIH",
@@ -2798,7 +2798,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "MAR",
@@ -2831,7 +2831,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "SCO",
@@ -2864,7 +2864,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T00:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "CZE",
@@ -2897,7 +2897,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "RSA",
@@ -2930,7 +2930,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ECU",
@@ -2952,7 +2952,7 @@ window.WC2026_DATA = {
       "id": "537356",
       "group": "E",
       "round": "Matchday 15",
-      "home": "CUR",
+      "home": "CUW",
       "away": "CIV",
       "venue": "Philadelphia",
       "ground": "Philadelphia",
@@ -2963,10 +2963,10 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
-        "code": "CUR",
+        "code": "CUW",
         "name": "Curaçao",
         "logo": "https://crests.football-data.org/curacao.svg",
         "flagCode": ""
@@ -2996,7 +2996,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TUN",
@@ -3029,7 +3029,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T00:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "JPN",
@@ -3062,7 +3062,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T00:21:07Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TUR",
@@ -3095,7 +3095,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "PAR",
@@ -3128,7 +3128,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "NOR",
@@ -3161,7 +3161,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T10:21:10Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "SEN",
@@ -3183,7 +3183,7 @@ window.WC2026_DATA = {
       "id": "537373",
       "group": "H",
       "round": "Matchday 16",
-      "home": "URY",
+      "home": "URU",
       "away": "ESP",
       "venue": "Guadalajara (Zapopan)",
       "ground": "Guadalajara (Zapopan)",
@@ -3194,10 +3194,10 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
-        "code": "URY",
+        "code": "URU",
         "name": "Uruguay",
         "logo": "https://crests.football-data.org/758.svg",
         "flagCode": ""
@@ -3227,7 +3227,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "CPV",
@@ -3260,7 +3260,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "NZL",
@@ -3293,7 +3293,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "EGY",
@@ -3326,7 +3326,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "PAN",
@@ -3359,7 +3359,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "CRO",
@@ -3392,7 +3392,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "COL",
@@ -3425,7 +3425,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-04-01T10:21:10Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "COD",
@@ -3458,7 +3458,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "JOR",
@@ -3491,7 +3491,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2025-12-06T20:20:44Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "ALG",
@@ -3524,7 +3524,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3554,7 +3554,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3584,7 +3584,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3614,7 +3614,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3644,7 +3644,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3674,7 +3674,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3704,7 +3704,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3734,7 +3734,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3764,7 +3764,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3794,7 +3794,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3824,7 +3824,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3854,7 +3854,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3884,7 +3884,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3914,7 +3914,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3944,7 +3944,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -3974,7 +3974,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4004,7 +4004,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4034,7 +4034,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4064,7 +4064,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4094,7 +4094,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4124,7 +4124,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4154,7 +4154,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4184,7 +4184,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4214,7 +4214,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4244,7 +4244,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4274,7 +4274,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4304,7 +4304,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4334,7 +4334,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4364,7 +4364,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4394,7 +4394,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4424,7 +4424,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
@@ -4454,7 +4454,7 @@ window.WC2026_DATA = {
       "homeGoals": null,
       "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-05-11T05:21:09Z",
+      "lastUpdated": "2026-06-15T15:20:14Z",
       "goals": [],
       "homeTeam": {
         "code": "TBD",
