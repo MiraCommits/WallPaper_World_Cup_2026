@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-17T22:00:39.554Z",
+  "updatedAt": "2026-06-17T22:06:20.120Z",
   "groups": [
     {
       "name": "A",
@@ -687,18 +687,11 @@
     ],
     "L": [
       {
-        "team": "CRO",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
-      },
-      {
         "team": "ENG",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
+        "played": 1,
+        "goalDiff": 2,
+        "points": 3,
+        "goalsFor": 4
       },
       {
         "team": "GHA",
@@ -713,6 +706,13 @@
         "goalDiff": 0,
         "points": 0,
         "goalsFor": 0
+      },
+      {
+        "team": "CRO",
+        "played": 1,
+        "goalDiff": -2,
+        "points": 0,
+        "goalsFor": 2
       }
     ]
   },
@@ -1951,13 +1951,13 @@
       "venue": "Dallas (Arlington)",
       "ground": "Dallas (Arlington)",
       "kickoff": "2026-06-17T20:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 4,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-17T21:58:31Z",
+      "lastUpdated": "2026-06-17T22:05:39Z",
       "goals": [],
       "homeTeam": {
         "code": "ENG",
