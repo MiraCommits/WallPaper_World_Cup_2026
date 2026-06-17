@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-17T18:30:39.993Z",
+  "updatedAt": "2026-06-17T18:35:31.468Z",
   "groups": [
     {
       "name": "A",
@@ -1907,7 +1907,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-17T18:30:34Z",
+      "lastUpdated": "2026-06-17T18:35:25Z",
       "goals": [],
       "homeTeam": {
         "code": "POR",
