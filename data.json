@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-17T06:10:28.594Z",
+  "updatedAt": "2026-06-17T06:15:37.129Z",
   "groups": [
     {
       "name": "A",
@@ -635,17 +635,17 @@
       },
       {
         "team": "AUT",
-        "played": 0,
-        "goalDiff": 0,
-        "points": 0,
-        "goalsFor": 0
+        "played": 1,
+        "goalDiff": 2,
+        "points": 3,
+        "goalsFor": 3
       },
       {
         "team": "JOR",
-        "played": 0,
-        "goalDiff": 0,
+        "played": 1,
+        "goalDiff": -2,
         "points": 0,
-        "goalsFor": 0
+        "goalsFor": 1
       },
       {
         "team": "ALG",
@@ -1643,7 +1643,7 @@
       "homeGoals": 3,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-16T23:07:52Z",
+      "lastUpdated": "2026-06-16T21:10:25Z",
       "goals": [
         {
           "team": "FRA",
@@ -1709,7 +1709,7 @@
       "homeGoals": 1,
       "awayGoals": 4,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-17T02:22:52Z",
+      "lastUpdated": "2026-06-17T00:07:58Z",
       "goals": [
         {
           "team": "IRQ",
@@ -1835,14 +1835,47 @@
       "venue": "San Francisco Bay Area (Santa Clara)",
       "ground": "San Francisco Bay Area (Santa Clara)",
       "kickoff": "2026-06-17T04:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-17T06:09:28Z",
-      "goals": [],
+      "lastUpdated": "2026-06-17T06:14:52Z",
+      "goals": [
+        {
+          "team": "AUT",
+          "side": "home",
+          "name": "Romano Schmid",
+          "minute": "21",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "AUT",
+          "side": "home",
+          "name": "Yazan Al-Arab",
+          "minute": "76",
+          "penalty": false,
+          "ownGoal": true
+        },
+        {
+          "team": "AUT",
+          "side": "home",
+          "name": "Marko Arnautovic",
+          "minute": "90+12",
+          "penalty": true,
+          "ownGoal": false
+        },
+        {
+          "team": "JOR",
+          "side": "away",
+          "name": "Ali Olwan",
+          "minute": "50",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "AUT",
         "name": "Austria",
