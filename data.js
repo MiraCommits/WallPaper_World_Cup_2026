@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-17T06:00:36.655Z",
+  "updatedAt": "2026-06-17T06:05:25.729Z",
   "groups": [
     {
       "name": "A",
@@ -1643,7 +1643,7 @@ window.WC2026_DATA = {
       "homeGoals": 3,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-16T21:10:25Z",
+      "lastUpdated": "2026-06-16T23:07:52Z",
       "goals": [
         {
           "team": "FRA",
@@ -1709,7 +1709,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 4,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-17T00:07:58Z",
+      "lastUpdated": "2026-06-17T02:22:52Z",
       "goals": [
         {
           "team": "IRQ",
@@ -1841,7 +1841,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-17T05:59:52Z",
+      "lastUpdated": "2026-06-17T06:04:40Z",
       "goals": [],
       "homeTeam": {
         "code": "AUT",
