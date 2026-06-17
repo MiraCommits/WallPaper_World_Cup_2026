@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-17T00:00:43.617Z",
+  "updatedAt": "2026-06-17T00:05:32.392Z",
   "groups": [
     {
       "name": "A",
@@ -1709,8 +1709,49 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-16T23:58:58Z",
-      "goals": [],
+      "lastUpdated": "2026-06-17T00:04:58Z",
+      "goals": [
+        {
+          "team": "IRQ",
+          "side": "home",
+          "name": "Aymen Hussein",
+          "minute": "39",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Erling Haaland",
+          "minute": "29",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Erling Haaland",
+          "minute": "43",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Leo Østigard",
+          "minute": "76",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Aymen Hussein",
+          "minute": "90+6",
+          "penalty": false,
+          "ownGoal": true
+        }
+      ],
       "homeTeam": {
         "code": "IRQ",
         "name": "Iraq",
