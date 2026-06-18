@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-18T02:15:27.883Z",
+  "updatedAt": "2026-06-18T02:20:27.932Z",
   "groups": [
     {
       "name": "A",
@@ -2081,7 +2081,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-18T02:15:04Z",
+      "lastUpdated": "2026-06-18T02:19:52Z",
       "goals": [],
       "homeTeam": {
         "code": "UZB",
