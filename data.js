@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-19T01:10:32.375Z",
+  "updatedAt": "2026-06-19T01:15:30.565Z",
   "groups": [
     {
       "name": "A",
@@ -2347,13 +2347,13 @@ window.WC2026_DATA = {
       "venue": "Guadalajara (Zapopan)",
       "ground": "Guadalajara (Zapopan)",
       "kickoff": "2026-06-19T01:00:00Z",
-      "status": "LIVE",
+      "status": "NS",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 0,
-      "awayGoals": 0,
+      "homeGoals": null,
+      "awayGoals": null,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-19T01:05:48Z",
+      "lastUpdated": "2026-06-19T02:38:23Z",
       "goals": [],
       "homeTeam": {
         "code": "MEX",
