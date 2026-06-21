@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-21T16:50:30.173Z",
+  "updatedAt": "2026-06-21T16:55:25.393Z",
   "groups": [
     {
       "name": "A",
@@ -2395,7 +2395,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-20T08:25:00Z",
+      "lastUpdated": "2026-06-20T08:25:01Z",
       "goals": [
         {
           "team": "USA",
@@ -2826,7 +2826,7 @@ window.WC2026_DATA = {
       "homeGoals": 3,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-21T16:50:22Z",
+      "lastUpdated": "2026-06-21T16:55:10Z",
       "goals": [],
       "homeTeam": {
         "code": "ESP",
