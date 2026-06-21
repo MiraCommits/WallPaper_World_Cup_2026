@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-21T22:00:36.611Z",
+  "updatedAt": "2026-06-21T22:05:25.255Z",
   "groups": [
     {
       "name": "A",
@@ -2919,13 +2919,13 @@
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-06-21T22:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-20T15:20:13Z",
+      "lastUpdated": "2026-06-21T22:04:40Z",
       "goals": [],
       "homeTeam": {
         "code": "URU",
