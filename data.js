@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-21T21:05:26.066Z",
+  "updatedAt": "2026-06-21T21:10:27.970Z",
   "groups": [
     {
       "name": "A",
@@ -538,10 +538,17 @@ window.WC2026_DATA = {
     "G": [
       {
         "team": "IRN",
-        "played": 1,
+        "played": 2,
         "goalDiff": 0,
-        "points": 1,
+        "points": 2,
         "goalsFor": 2
+      },
+      {
+        "team": "BEL",
+        "played": 2,
+        "goalDiff": 0,
+        "points": 2,
+        "goalsFor": 1
       },
       {
         "team": "NZL",
@@ -549,13 +556,6 @@ window.WC2026_DATA = {
         "goalDiff": 0,
         "points": 1,
         "goalsFor": 2
-      },
-      {
-        "team": "BEL",
-        "played": 1,
-        "goalDiff": 0,
-        "points": 1,
-        "goalsFor": 1
       },
       {
         "team": "EGY",
@@ -2886,13 +2886,13 @@ window.WC2026_DATA = {
       "venue": "Los Angeles (Inglewood)",
       "ground": "Los Angeles (Inglewood)",
       "kickoff": "2026-06-21T19:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-21T21:04:52Z",
+      "lastUpdated": "2026-06-21T21:06:37Z",
       "goals": [],
       "homeTeam": {
         "code": "BEL",
