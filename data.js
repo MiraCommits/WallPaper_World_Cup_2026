@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-22T00:10:30.959Z",
+  "updatedAt": "2026-06-22T00:15:30.719Z",
   "groups": [
     {
       "name": "A",
@@ -575,17 +575,17 @@ window.WC2026_DATA = {
       },
       {
         "team": "URU",
-        "played": 1,
+        "played": 2,
         "goalDiff": 0,
-        "points": 1,
-        "goalsFor": 1
+        "points": 2,
+        "goalsFor": 3
       },
       {
         "team": "CPV",
-        "played": 1,
+        "played": 2,
         "goalDiff": 0,
-        "points": 1,
-        "goalsFor": 0
+        "points": 2,
+        "goalsFor": 2
       },
       {
         "team": "KSA",
@@ -2919,14 +2919,47 @@ window.WC2026_DATA = {
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-06-21T22:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 2,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-22T00:10:04Z",
-      "goals": [],
+      "lastUpdated": "2026-06-22T00:10:40Z",
+      "goals": [
+        {
+          "team": "URU",
+          "side": "home",
+          "name": "Maxi Araújo",
+          "minute": "44",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "URU",
+          "side": "home",
+          "name": "Agustín Cano",
+          "minute": "45+6",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "CPV",
+          "side": "away",
+          "name": "Kevin Pina",
+          "minute": "21",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "CPV",
+          "side": "away",
+          "name": "Hélio Varela",
+          "minute": "61",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "URU",
         "name": "Uruguay",
