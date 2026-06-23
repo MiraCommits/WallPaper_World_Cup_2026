@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-23T19:00:45.855Z",
+  "updatedAt": "2026-06-23T19:05:37.319Z",
   "groups": [
     {
       "name": "A",
@@ -657,6 +657,13 @@ window.WC2026_DATA = {
     ],
     "K": [
       {
+        "team": "POR",
+        "played": 2,
+        "goalDiff": 5,
+        "points": 4,
+        "goalsFor": 6
+      },
+      {
         "team": "COL",
         "played": 1,
         "goalDiff": 2,
@@ -671,16 +678,9 @@ window.WC2026_DATA = {
         "goalsFor": 1
       },
       {
-        "team": "POR",
-        "played": 1,
-        "goalDiff": 0,
-        "points": 1,
-        "goalsFor": 1
-      },
-      {
         "team": "UZB",
-        "played": 1,
-        "goalDiff": -2,
+        "played": 2,
+        "goalDiff": -7,
         "points": 0,
         "goalsFor": 1
       }
@@ -3291,13 +3291,13 @@ window.WC2026_DATA = {
       "venue": "Houston",
       "ground": "Houston",
       "kickoff": "2026-06-23T17:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 5,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-23T18:58:30Z",
+      "lastUpdated": "2026-06-23T19:04:30Z",
       "goals": [],
       "homeTeam": {
         "code": "POR",
