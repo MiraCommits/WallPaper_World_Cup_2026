@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-23T00:50:28.815Z",
+  "updatedAt": "2026-06-23T00:55:27.252Z",
   "groups": [
     {
       "name": "A",
@@ -597,18 +597,18 @@ window.WC2026_DATA = {
     ],
     "I": [
       {
+        "team": "FRA",
+        "played": 2,
+        "goalDiff": 5,
+        "points": 6,
+        "goalsFor": 6
+      },
+      {
         "team": "NOR",
         "played": 1,
         "goalDiff": 3,
         "points": 3,
         "goalsFor": 4
-      },
-      {
-        "team": "FRA",
-        "played": 1,
-        "goalDiff": 2,
-        "points": 3,
-        "goalsFor": 3
       },
       {
         "team": "SEN",
@@ -619,8 +619,8 @@ window.WC2026_DATA = {
       },
       {
         "team": "IRQ",
-        "played": 1,
-        "goalDiff": -3,
+        "played": 2,
+        "goalDiff": -6,
         "points": 0,
         "goalsFor": 1
       }
@@ -2395,7 +2395,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-20T08:25:01Z",
+      "lastUpdated": "2026-06-20T08:25:00Z",
       "goals": [
         {
           "team": "USA",
@@ -3101,13 +3101,13 @@ window.WC2026_DATA = {
       "venue": "Philadelphia",
       "ground": "Philadelphia",
       "kickoff": "2026-06-22T21:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 3,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-23T00:50:19Z",
+      "lastUpdated": "2026-06-23T00:54:31Z",
       "goals": [],
       "homeTeam": {
         "code": "FRA",
@@ -3140,7 +3140,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-23T00:49:43Z",
+      "lastUpdated": "2026-06-23T00:55:07Z",
       "goals": [],
       "homeTeam": {
         "code": "NOR",
