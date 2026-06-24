@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-24T19:50:29.954Z",
+  "updatedAt": "2026-06-24T19:55:25.739Z",
   "groups": [
     {
       "name": "A",
@@ -3488,7 +3488,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-24T19:50:22Z",
+      "lastUpdated": "2026-06-24T19:55:14Z",
       "goals": [],
       "homeTeam": {
         "code": "SUI",
@@ -3521,7 +3521,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-24T19:50:23Z",
+      "lastUpdated": "2026-06-24T19:55:24Z",
       "goals": [],
       "homeTeam": {
         "code": "BIH",
