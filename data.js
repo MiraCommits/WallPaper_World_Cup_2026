@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-25T03:00:41.061Z",
+  "updatedAt": "2026-06-25T03:05:28.255Z",
   "groups": [
     {
       "name": "A",
@@ -358,31 +358,31 @@ window.WC2026_DATA = {
     "A": [
       {
         "team": "MEX",
-        "played": 2,
-        "goalDiff": 3,
-        "points": 6,
-        "goalsFor": 3
+        "played": 3,
+        "goalDiff": 6,
+        "points": 9,
+        "goalsFor": 6
+      },
+      {
+        "team": "RSA",
+        "played": 3,
+        "goalDiff": -1,
+        "points": 4,
+        "goalsFor": 2
       },
       {
         "team": "KOR",
-        "played": 2,
-        "goalDiff": 0,
+        "played": 3,
+        "goalDiff": -1,
         "points": 3,
         "goalsFor": 2
       },
       {
         "team": "CZE",
-        "played": 2,
-        "goalDiff": -1,
+        "played": 3,
+        "goalDiff": -4,
         "points": 1,
         "goalsFor": 2
-      },
-      {
-        "team": "RSA",
-        "played": 2,
-        "goalDiff": -2,
-        "points": 1,
-        "goalsFor": 1
       }
     ],
     "B": [
@@ -3746,14 +3746,39 @@ window.WC2026_DATA = {
       "venue": "Mexico City",
       "ground": "Mexico City",
       "kickoff": "2026-06-25T01:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:00:40Z",
-      "goals": [],
+      "lastUpdated": "2026-06-25T03:03:40Z",
+      "goals": [
+        {
+          "team": "MEX",
+          "side": "away",
+          "name": "Mateo Chávez",
+          "minute": "55",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "MEX",
+          "side": "away",
+          "name": "Julián Quiñones",
+          "minute": "61",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "MEX",
+          "side": "away",
+          "name": "Álvaro Fidalgo",
+          "minute": "90+4",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "CZE",
         "name": "Czechia",
@@ -3779,14 +3804,23 @@ window.WC2026_DATA = {
       "venue": "Monterrey (Guadalupe)",
       "ground": "Monterrey (Guadalupe)",
       "kickoff": "2026-06-25T01:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T02:59:51Z",
-      "goals": [],
+      "lastUpdated": "2026-06-25T03:03:55Z",
+      "goals": [
+        {
+          "team": "RSA",
+          "side": "home",
+          "name": "Thapelo Maseko",
+          "minute": "63",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "RSA",
         "name": "South Africa",
