@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-25T23:25:25.517Z",
+  "updatedAt": "2026-06-25T23:30:30.437Z",
   "groups": [
     {
       "name": "A",
@@ -3960,7 +3960,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T23:25:07Z",
+      "lastUpdated": "2026-06-25T23:30:06Z",
       "goals": [],
       "homeTeam": {
         "code": "TUN",
@@ -3993,7 +3993,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T23:25:08Z",
+      "lastUpdated": "2026-06-25T23:30:08Z",
       "goals": [],
       "homeTeam": {
         "code": "JPN",
