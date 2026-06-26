@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-26T12:45:29.128Z",
+  "updatedAt": "2026-06-26T12:50:31.386Z",
   "groups": [
     {
       "name": "A",
@@ -3852,7 +3852,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:12Z",
       "goals": [
         {
           "team": "ECU",
@@ -3910,7 +3910,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:12Z",
       "goals": [
         {
           "team": "CIV",
@@ -3960,7 +3960,7 @@
       "homeGoals": 1,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:16Z",
       "goals": [
         {
           "team": "TUN",
@@ -4026,7 +4026,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:16Z",
       "goals": [
         {
           "team": "JPN",
@@ -4076,7 +4076,7 @@
       "homeGoals": 3,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:20Z",
       "goals": [
         {
           "team": "TUR",
@@ -4150,7 +4150,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:19Z",
       "goals": [],
       "homeTeam": {
         "code": "PAR",
@@ -4600,11 +4600,11 @@
     {
       "id": "537423",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "BRA",
       "away": "JPN",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Houston",
+      "ground": "Houston",
       "kickoff": "2026-06-29T17:00:00Z",
       "status": "NS",
       "minute": null,
@@ -4625,7 +4625,10 @@
         "name": "Japan",
         "logo": "https://crests.football-data.org/766.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-06-29",
+      "openfootballTime": "12:00 UTC-5",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537415",
@@ -4660,11 +4663,11 @@
     {
       "id": "537418",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "NED",
       "away": "MAR",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Monterrey (Guadalupe)",
+      "ground": "Monterrey (Guadalupe)",
       "kickoff": "2026-06-30T01:00:00Z",
       "status": "NS",
       "minute": null,
@@ -4685,7 +4688,10 @@
         "name": "Morocco",
         "logo": "https://crests.football-data.org/morocco.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-06-29",
+      "openfootballTime": "19:00 UTC-6",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537424",
