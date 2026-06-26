@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-26T02:40:31.023Z",
+  "updatedAt": "2026-06-26T02:45:26.056Z",
   "groups": [
     {
       "name": "A",
@@ -2487,7 +2487,7 @@
       "homeGoals": 3,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:00Z",
+      "lastUpdated": "2026-06-23T20:15:54Z",
       "goals": [
         {
           "team": "BRA",
@@ -3107,7 +3107,7 @@
       "homeGoals": 3,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T13:25:01Z",
+      "lastUpdated": "2026-06-23T15:20:15Z",
       "goals": [
         {
           "team": "FRA",
@@ -3297,7 +3297,7 @@
       "homeGoals": 5,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:01Z",
+      "lastUpdated": "2026-06-23T22:35:13Z",
       "goals": [
         {
           "team": "POR",
@@ -3371,7 +3371,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:01Z",
+      "lastUpdated": "2026-06-24T00:40:37Z",
       "goals": [],
       "homeTeam": {
         "code": "ENG",
@@ -3404,7 +3404,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:01Z",
+      "lastUpdated": "2026-06-24T02:55:22Z",
       "goals": [
         {
           "team": "CRO",
@@ -3446,7 +3446,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:01Z",
+      "lastUpdated": "2026-06-24T05:57:43Z",
       "goals": [
         {
           "team": "COL",
@@ -3488,7 +3488,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:00Z",
+      "lastUpdated": "2026-06-24T22:56:46Z",
       "goals": [
         {
           "team": "SUI",
@@ -3546,7 +3546,7 @@
       "homeGoals": 3,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T13:25:00Z",
+      "lastUpdated": "2026-06-24T23:00:31Z",
       "goals": [
         {
           "team": "BIH",
@@ -3612,7 +3612,7 @@
       "homeGoals": 4,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T13:25:00Z",
+      "lastUpdated": "2026-06-25T02:02:44Z",
       "goals": [
         {
           "team": "MAR",
@@ -3694,7 +3694,7 @@
       "homeGoals": 0,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:01Z",
+      "lastUpdated": "2026-06-25T02:02:44Z",
       "goals": [
         {
           "team": "BRA",
@@ -3752,7 +3752,7 @@
       "homeGoals": 0,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:00Z",
+      "lastUpdated": "2026-06-25T02:44:46Z",
       "goals": [
         {
           "team": "MEX",
@@ -3810,7 +3810,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T03:25:00Z",
+      "lastUpdated": "2026-06-25T02:42:07Z",
       "goals": [
         {
           "team": "RSA",
@@ -3852,7 +3852,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T22:08:03Z",
+      "lastUpdated": "2026-06-23T15:20:15Z",
       "goals": [
         {
           "team": "ECU",
@@ -3910,7 +3910,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-25T22:04:07Z",
+      "lastUpdated": "2026-06-23T15:20:15Z",
       "goals": [
         {
           "team": "CIV",
@@ -3960,7 +3960,7 @@
       "homeGoals": 1,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T01:00:44Z",
+      "lastUpdated": "2026-06-23T15:20:15Z",
       "goals": [
         {
           "team": "TUN",
@@ -4026,7 +4026,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T01:04:59Z",
+      "lastUpdated": "2026-06-23T15:20:15Z",
       "goals": [
         {
           "team": "JPN",
@@ -4076,7 +4076,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T02:40:12Z",
+      "lastUpdated": "2026-06-26T02:45:12Z",
       "goals": [],
       "homeTeam": {
         "code": "TUR",
@@ -4109,7 +4109,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T02:40:13Z",
+      "lastUpdated": "2026-06-26T02:45:14Z",
       "goals": [],
       "homeTeam": {
         "code": "PAR",
