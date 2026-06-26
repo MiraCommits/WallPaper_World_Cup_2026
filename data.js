@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-26T19:45:26.996Z",
+  "updatedAt": "2026-06-26T19:50:29.204Z",
   "groups": [
     {
       "name": "A",
@@ -3852,7 +3852,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:12Z",
       "goals": [
         {
           "team": "ECU",
@@ -3910,7 +3910,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:12Z",
       "goals": [
         {
           "team": "CIV",
@@ -3960,7 +3960,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:16Z",
       "goals": [
         {
           "team": "TUN",
@@ -4026,7 +4026,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:16Z",
       "goals": [
         {
           "team": "JPN",
@@ -4076,7 +4076,7 @@ window.WC2026_DATA = {
       "homeGoals": 3,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:20Z",
       "goals": [
         {
           "team": "TUR",
@@ -4150,7 +4150,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T07:48:25Z",
+      "lastUpdated": "2026-06-26T10:54:19Z",
       "goals": [],
       "homeTeam": {
         "code": "PAR",
@@ -4183,7 +4183,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T19:45:22Z",
+      "lastUpdated": "2026-06-26T19:50:10Z",
       "goals": [],
       "homeTeam": {
         "code": "NOR",
@@ -4216,7 +4216,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T19:45:22Z",
+      "lastUpdated": "2026-06-26T19:50:22Z",
       "goals": [],
       "homeTeam": {
         "code": "SEN",
