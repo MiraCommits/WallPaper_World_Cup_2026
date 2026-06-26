@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-26T20:00:37.605Z",
+  "updatedAt": "2026-06-26T20:05:27.659Z",
   "groups": [
     {
       "name": "A",
@@ -4216,7 +4216,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T20:00:21Z",
+      "lastUpdated": "2026-06-26T20:03:11Z",
       "goals": [],
       "homeTeam": {
         "code": "SEN",
