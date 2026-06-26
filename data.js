@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-26T21:05:25.121Z",
+  "updatedAt": "2026-06-26T21:10:29.379Z",
   "groups": [
     {
       "name": "A",
@@ -612,15 +612,15 @@ window.WC2026_DATA = {
       },
       {
         "team": "SEN",
-        "played": 2,
-        "goalDiff": -3,
-        "points": 0,
-        "goalsFor": 3
+        "played": 3,
+        "goalDiff": 2,
+        "points": 3,
+        "goalsFor": 8
       },
       {
         "team": "IRQ",
-        "played": 2,
-        "goalDiff": -6,
+        "played": 3,
+        "goalDiff": -11,
         "points": 0,
         "goalsFor": 1
       }
@@ -4183,7 +4183,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 4,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T21:04:34Z",
+      "lastUpdated": "2026-06-26T21:05:47Z",
       "goals": [
         {
           "team": "NOR",
@@ -4251,14 +4251,55 @@ window.WC2026_DATA = {
       "venue": "Toronto",
       "ground": "Toronto",
       "kickoff": "2026-06-26T19:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 5,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T21:04:59Z",
-      "goals": [],
+      "lastUpdated": "2026-06-26T21:10:22Z",
+      "goals": [
+        {
+          "team": "SEN",
+          "side": "home",
+          "name": "Habib Diarra",
+          "minute": "4",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "SEN",
+          "side": "home",
+          "name": "Ismaïla Sarr",
+          "minute": "56",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "SEN",
+          "side": "home",
+          "name": "Pape Gueye",
+          "minute": "59",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "SEN",
+          "side": "home",
+          "name": "Pape Gueye",
+          "minute": "71",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "SEN",
+          "side": "home",
+          "name": "Iliman Ndiaye",
+          "minute": "82",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "SEN",
         "name": "Senegal",
