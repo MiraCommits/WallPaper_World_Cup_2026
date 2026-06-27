@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-27T04:30:35.046Z",
+  "updatedAt": "2026-06-27T04:35:27.033Z",
   "groups": [
     {
       "name": "A",
@@ -4404,9 +4404,9 @@ window.WC2026_DATA = {
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
-      "awayGoals": 2,
+      "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T04:30:05Z",
+      "lastUpdated": "2026-06-27T04:34:53Z",
       "goals": [],
       "homeTeam": {
         "code": "NZL",
@@ -4439,7 +4439,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T04:30:16Z",
+      "lastUpdated": "2026-06-27T04:35:16Z",
       "goals": [],
       "homeTeam": {
         "code": "EGY",
