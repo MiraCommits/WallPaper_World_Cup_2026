@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-27T05:55:25.805Z",
+  "updatedAt": "2026-06-27T06:00:35.914Z",
   "groups": [
     {
       "name": "A",
@@ -544,18 +544,18 @@
         "goalsFor": 6
       },
       {
-        "team": "EGY",
-        "played": 3,
-        "goalDiff": 2,
-        "points": 5,
-        "goalsFor": 5
-      },
-      {
         "team": "IRN",
         "played": 3,
-        "goalDiff": 0,
-        "points": 3,
-        "goalsFor": 3
+        "goalDiff": 1,
+        "points": 5,
+        "goalsFor": 4
+      },
+      {
+        "team": "EGY",
+        "played": 3,
+        "goalDiff": 1,
+        "points": 4,
+        "goalsFor": 5
       },
       {
         "team": "NZL",
@@ -4183,7 +4183,7 @@
       "homeGoals": 1,
       "awayGoals": 4,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T21:05:47Z",
+      "lastUpdated": "2026-06-26T07:48:25Z",
       "goals": [
         {
           "team": "NOR",
@@ -4257,7 +4257,7 @@
       "homeGoals": 5,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-26T21:10:58Z",
+      "lastUpdated": "2026-06-26T07:48:25Z",
       "goals": [
         {
           "team": "SEN",
@@ -4331,7 +4331,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T02:07:59Z",
+      "lastUpdated": "2026-06-27T02:14:31Z",
       "goals": [
         {
           "team": "ESP",
@@ -4486,9 +4486,9 @@
       "minute": null,
       "injuryTime": null,
       "homeGoals": 1,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T05:16:41Z",
+      "lastUpdated": "2026-06-27T05:09:41Z",
       "goals": [
         {
           "team": "EGY",
