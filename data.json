@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-27T22:55:23.952Z",
+  "updatedAt": "2026-06-27T23:00:37.855Z",
   "groups": [
     {
       "name": "A",
@@ -688,10 +688,10 @@
     "L": [
       {
         "team": "ENG",
-        "played": 2,
-        "goalDiff": 2,
-        "points": 4,
-        "goalsFor": 4
+        "played": 3,
+        "goalDiff": 4,
+        "points": 7,
+        "goalsFor": 6
       },
       {
         "team": "GHA",
@@ -709,8 +709,8 @@
       },
       {
         "team": "PAN",
-        "played": 2,
-        "goalDiff": -2,
+        "played": 3,
+        "goalDiff": -4,
         "points": 0,
         "goalsFor": 0
       }
@@ -4532,13 +4532,13 @@
       "venue": "New York/New Jersey (East Rutherford)",
       "ground": "New York/New Jersey (East Rutherford)",
       "kickoff": "2026-06-27T21:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T22:55:01Z",
+      "lastUpdated": "2026-06-27T23:00:19Z",
       "goals": [],
       "homeTeam": {
         "code": "PAN",
@@ -4571,7 +4571,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T22:55:19Z",
+      "lastUpdated": "2026-06-27T23:00:20Z",
       "goals": [],
       "homeTeam": {
         "code": "CRO",
