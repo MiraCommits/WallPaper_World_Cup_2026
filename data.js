@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-27T02:05:24.033Z",
+  "updatedAt": "2026-06-27T02:10:29.058Z",
   "groups": [
     {
       "name": "A",
@@ -568,10 +568,10 @@ window.WC2026_DATA = {
     "H": [
       {
         "team": "ESP",
-        "played": 2,
-        "goalDiff": 4,
-        "points": 4,
-        "goalsFor": 4
+        "played": 3,
+        "goalDiff": 5,
+        "points": 7,
+        "goalsFor": 5
       },
       {
         "team": "CPV",
@@ -582,8 +582,8 @@ window.WC2026_DATA = {
       },
       {
         "team": "URU",
-        "played": 2,
-        "goalDiff": 0,
+        "played": 3,
+        "goalDiff": -1,
         "points": 2,
         "goalsFor": 3
       },
@@ -4325,14 +4325,23 @@ window.WC2026_DATA = {
       "venue": "Guadalajara (Zapopan)",
       "ground": "Guadalajara (Zapopan)",
       "kickoff": "2026-06-27T00:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T02:04:35Z",
-      "goals": [],
+      "lastUpdated": "2026-06-27T02:07:59Z",
+      "goals": [
+        {
+          "team": "ESP",
+          "side": "away",
+          "name": "Álex Baena",
+          "minute": "42",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "URU",
         "name": "Uruguay",
@@ -4364,7 +4373,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T02:05:23Z",
+      "lastUpdated": "2026-06-27T02:09:26Z",
       "goals": [],
       "homeTeam": {
         "code": "CPV",
