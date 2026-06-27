@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-27T01:40:28.362Z",
+  "updatedAt": "2026-06-27T01:45:25.129Z",
   "groups": [
     {
       "name": "A",
@@ -4331,7 +4331,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T01:39:34Z",
+      "lastUpdated": "2026-06-27T01:45:22Z",
       "goals": [],
       "homeTeam": {
         "code": "URU",
@@ -4364,7 +4364,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T01:40:10Z",
+      "lastUpdated": "2026-06-27T01:45:04Z",
       "goals": [],
       "homeTeam": {
         "code": "CPV",
