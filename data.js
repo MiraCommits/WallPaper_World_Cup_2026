@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-27T19:15:27.238Z",
+  "updatedAt": "2026-06-27T19:20:26.271Z",
   "groups": [
     {
       "name": "A",
