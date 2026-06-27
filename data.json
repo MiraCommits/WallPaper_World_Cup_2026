@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-27T01:15:28.823Z",
+  "updatedAt": "2026-06-27T01:20:27.984Z",
   "groups": [
     {
       "name": "A",
@@ -4331,7 +4331,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T01:14:39Z",
+      "lastUpdated": "2026-06-27T01:20:08Z",
       "goals": [],
       "homeTeam": {
         "code": "URU",
@@ -4364,7 +4364,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T01:15:03Z",
+      "lastUpdated": "2026-06-27T01:20:22Z",
       "goals": [],
       "homeTeam": {
         "code": "CPV",
