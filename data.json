@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-28T01:30:32.449Z",
+  "updatedAt": "2026-06-28T01:35:23.522Z",
   "groups": [
     {
       "name": "A",
@@ -658,16 +658,16 @@
     "K": [
       {
         "team": "COL",
-        "played": 2,
+        "played": 3,
         "goalDiff": 3,
-        "points": 6,
+        "points": 7,
         "goalsFor": 4
       },
       {
         "team": "POR",
-        "played": 2,
+        "played": 3,
         "goalDiff": 5,
-        "points": 4,
+        "points": 5,
         "goalsFor": 6
       },
       {
@@ -4640,13 +4640,13 @@
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-06-27T23:30:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-28T01:30:09Z",
+      "lastUpdated": "2026-06-28T01:34:27Z",
       "goals": [],
       "homeTeam": {
         "code": "COL",
@@ -4679,7 +4679,7 @@
       "homeGoals": 3,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-28T01:30:21Z",
+      "lastUpdated": "2026-06-28T01:35:09Z",
       "goals": [],
       "homeTeam": {
         "code": "COD",
