@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-28T21:00:36.681Z",
+  "updatedAt": "2026-06-28T21:05:23.044Z",
   "groups": [
     {
       "name": "A",
@@ -4887,14 +4887,23 @@ window.WC2026_DATA = {
       "venue": "Los Angeles (Inglewood)",
       "ground": "Los Angeles (Inglewood)",
       "kickoff": "2026-06-28T19:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-28T20:59:54Z",
-      "goals": [],
+      "lastUpdated": "2026-06-28T21:02:00Z",
+      "goals": [
+        {
+          "team": "CAN",
+          "side": "away",
+          "name": "Stephan Eustáquio",
+          "minute": "90+2",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "RSA",
         "name": "South Africa",
