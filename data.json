@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-28T08:00:34.387Z",
+  "updatedAt": "2026-06-28T08:05:24.869Z",
   "groups": [
     {
       "name": "A",
@@ -4947,11 +4947,11 @@
     {
       "id": "537415",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "GER",
       "away": "PAR",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Boston (Foxborough)",
+      "ground": "Boston (Foxborough)",
       "kickoff": "2026-06-29T20:30:00Z",
       "status": "NS",
       "minute": null,
@@ -4972,7 +4972,10 @@
         "name": "Paraguay",
         "logo": "https://crests.football-data.org/761.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-06-29",
+      "openfootballTime": "16:30 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537418",
@@ -5010,11 +5013,11 @@
     {
       "id": "537424",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "CIV",
       "away": "NOR",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Dallas (Arlington)",
+      "ground": "Dallas (Arlington)",
       "kickoff": "2026-06-30T17:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5035,16 +5038,19 @@
         "name": "Norway",
         "logo": "https://crests.football-data.org/813.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-06-30",
+      "openfootballTime": "12:00 UTC-5",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537416",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "FRA",
       "away": "SWE",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "ground": "New York/New Jersey (East Rutherford)",
       "kickoff": "2026-06-30T21:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5065,16 +5071,19 @@
         "name": "Sweden",
         "logo": "https://crests.football-data.org/792.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-06-30",
+      "openfootballTime": "17:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537425",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "MEX",
       "away": "ECU",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Mexico City",
+      "ground": "Mexico City",
       "kickoff": "2026-07-01T01:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5095,16 +5104,19 @@
         "name": "Ecuador",
         "logo": "https://crests.football-data.org/791.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-06-30",
+      "openfootballTime": "19:00 UTC-6",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537426",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "ENG",
       "away": "COD",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Atlanta",
+      "ground": "Atlanta",
       "kickoff": "2026-07-01T16:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5125,16 +5137,19 @@
         "name": "Congo DR",
         "logo": "https://crests.football-data.org/congo_dr.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-01",
+      "openfootballTime": "12:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537422",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "BEL",
       "away": "SEN",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Seattle",
+      "ground": "Seattle",
       "kickoff": "2026-07-01T20:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5155,16 +5170,19 @@
         "name": "Senegal",
         "logo": "https://crests.football-data.org/senegal.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-01",
+      "openfootballTime": "13:00 UTC-7",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537421",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "USA",
       "away": "BIH",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "ground": "San Francisco Bay Area (Santa Clara)",
       "kickoff": "2026-07-02T00:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5185,16 +5203,19 @@
         "name": "Bosnia-H.",
         "logo": "https://crests.football-data.org/bosnia.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-01",
+      "openfootballTime": "17:00 UTC-7",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537420",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "ESP",
       "away": "AUT",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Los Angeles (Inglewood)",
+      "ground": "Los Angeles (Inglewood)",
       "kickoff": "2026-07-02T19:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5215,16 +5236,19 @@
         "name": "Austria",
         "logo": "https://crests.football-data.org/816.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-02",
+      "openfootballTime": "12:00 UTC-7",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537419",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "POR",
       "away": "CRO",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Toronto",
+      "ground": "Toronto",
       "kickoff": "2026-07-02T23:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5245,16 +5269,19 @@
         "name": "Croatia",
         "logo": "https://crests.football-data.org/799.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-02",
+      "openfootballTime": "19:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537429",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "SUI",
       "away": "ALG",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Vancouver",
+      "ground": "Vancouver",
       "kickoff": "2026-07-03T03:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5275,16 +5302,19 @@
         "name": "Algeria",
         "logo": "https://crests.football-data.org/algeria.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-02",
+      "openfootballTime": "20:00 UTC-7",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537428",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "AUS",
       "away": "EGY",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Dallas (Arlington)",
+      "ground": "Dallas (Arlington)",
       "kickoff": "2026-07-03T18:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5305,16 +5335,19 @@
         "name": "Egypt",
         "logo": "https://crests.football-data.org/825.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-03",
+      "openfootballTime": "13:00 UTC-5",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537427",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "ARG",
       "away": "CPV",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Miami (Miami Gardens)",
+      "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-07-03T22:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5335,16 +5368,19 @@
         "name": "Cape Verde",
         "logo": "https://crests.football-data.org/cape_verde.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-03",
+      "openfootballTime": "18:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537430",
       "group": "",
-      "round": "LAST_32",
+      "round": "Round of 32",
       "home": "COL",
       "away": "GHA",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Kansas City",
+      "ground": "Kansas City",
       "kickoff": "2026-07-04T01:30:00Z",
       "status": "NS",
       "minute": null,
@@ -5365,7 +5401,10 @@
         "name": "Ghana",
         "logo": "https://crests.football-data.org/ghana.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-03",
+      "openfootballTime": "20:30 UTC-5",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537376",
