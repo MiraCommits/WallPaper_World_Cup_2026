@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-28T01:40:28.399Z",
+  "updatedAt": "2026-06-28T01:45:26.758Z",
   "groups": [
     {
       "name": "A",
@@ -4183,7 +4183,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 4,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T07:23:05Z",
+      "lastUpdated": "2026-06-26T23:00:47Z",
       "goals": [
         {
           "team": "NOR",
@@ -4257,7 +4257,7 @@ window.WC2026_DATA = {
       "homeGoals": 5,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T07:23:05Z",
+      "lastUpdated": "2026-06-26T23:05:58Z",
       "goals": [
         {
           "team": "SEN",
@@ -4331,7 +4331,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T07:23:05Z",
+      "lastUpdated": "2026-06-27T04:02:59Z",
       "goals": [
         {
           "team": "ESP",
@@ -4373,7 +4373,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T07:23:05Z",
+      "lastUpdated": "2026-06-27T04:00:59Z",
       "goals": [],
       "homeTeam": {
         "code": "CPV",
@@ -4406,7 +4406,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 5,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T07:23:05Z",
+      "lastUpdated": "2026-06-27T06:58:41Z",
       "goals": [
         {
           "team": "NZL",
@@ -4488,7 +4488,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T07:23:05Z",
+      "lastUpdated": "2026-06-27T07:04:41Z",
       "goals": [
         {
           "team": "EGY",
@@ -4538,7 +4538,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T23:05:20Z",
+      "lastUpdated": "2026-06-26T15:20:14Z",
       "goals": [
         {
           "team": "ENG",
@@ -4588,7 +4588,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-27T23:04:51Z",
+      "lastUpdated": "2026-06-26T15:20:14Z",
       "goals": [
         {
           "team": "CRO",
@@ -4679,7 +4679,7 @@ window.WC2026_DATA = {
       "homeGoals": 3,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-28T01:38:09Z",
+      "lastUpdated": "2026-06-28T01:41:57Z",
       "goals": [
         {
           "team": "COD",
