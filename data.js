@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-29T23:30:31.802Z",
+  "updatedAt": "2026-06-29T23:35:24.898Z",
   "groups": [
     {
       "name": "A",
@@ -4993,8 +4993,25 @@ window.WC2026_DATA = {
       "homeGoals": 5,
       "awayGoals": 6,
       "duration": "PENALTY_SHOOTOUT",
-      "lastUpdated": "2026-06-29T23:30:29Z",
-      "goals": [],
+      "lastUpdated": "2026-06-29T23:34:57Z",
+      "goals": [
+        {
+          "team": "GER",
+          "side": "home",
+          "name": "Kai Havertz",
+          "minute": "54",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "PAR",
+          "side": "away",
+          "name": "Julio Enciso",
+          "minute": "42",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "GER",
         "name": "Germany",
