@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-29T23:25:23.965Z",
+  "updatedAt": "2026-06-29T23:30:31.802Z",
   "groups": [
     {
       "name": "A",
@@ -4987,13 +4987,13 @@ window.WC2026_DATA = {
       "venue": "Boston (Foxborough)",
       "ground": "Boston (Foxborough)",
       "kickoff": "2026-06-29T20:30:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 2,
-      "awayGoals": 2,
+      "homeGoals": 5,
+      "awayGoals": 6,
       "duration": "PENALTY_SHOOTOUT",
-      "lastUpdated": "2026-06-29T23:22:55Z",
+      "lastUpdated": "2026-06-29T23:30:29Z",
       "goals": [],
       "homeTeam": {
         "code": "GER",
