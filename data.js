@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-29T19:10:28.855Z",
+  "updatedAt": "2026-06-29T19:15:27.510Z",
   "groups": [
     {
       "name": "A",
@@ -4936,7 +4936,32 @@ window.WC2026_DATA = {
       "awayGoals": 1,
       "duration": "REGULAR",
       "lastUpdated": "2026-06-29T19:09:03Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "BRA",
+          "side": "home",
+          "name": "Casemiro",
+          "minute": "56",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "BRA",
+          "side": "home",
+          "name": "Gabriel Martinelli",
+          "minute": "90+5",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "JPN",
+          "side": "away",
+          "name": "Kaishu Sano",
+          "minute": "29",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "BRA",
         "name": "Brazil",
