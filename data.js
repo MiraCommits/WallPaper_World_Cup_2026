@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-30T04:00:35.743Z",
+  "updatedAt": "2026-06-30T04:05:24.991Z",
   "groups": [
     {
       "name": "A",
@@ -5044,7 +5044,24 @@ window.WC2026_DATA = {
       "awayGoals": 4,
       "duration": "PENALTY_SHOOTOUT",
       "lastUpdated": "2026-06-30T04:00:25Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "NED",
+          "side": "home",
+          "name": "Cody Gakpo",
+          "minute": "72",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "MAR",
+          "side": "away",
+          "name": "Issa Diop",
+          "minute": "90+1",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "NED",
         "name": "Netherlands",
