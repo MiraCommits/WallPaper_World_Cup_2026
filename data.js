@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-30T05:25:23.894Z",
+  "updatedAt": "2026-06-30T05:30:37.057Z",
   "groups": [
     {
       "name": "A",
@@ -5040,10 +5040,10 @@ window.WC2026_DATA = {
       "status": "FT",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 4,
+      "homeGoals": 3,
       "awayGoals": 4,
       "duration": "PENALTY_SHOOTOUT",
-      "lastUpdated": "2026-06-30T04:07:35Z",
+      "lastUpdated": "2026-06-30T04:08:17Z",
       "goals": [
         {
           "team": "NED",
