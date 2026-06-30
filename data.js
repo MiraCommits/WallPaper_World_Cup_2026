@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-30T19:00:39.257Z",
+  "updatedAt": "2026-06-30T19:05:24.182Z",
   "groups": [
     {
       "name": "A",
@@ -5087,14 +5087,39 @@ window.WC2026_DATA = {
       "venue": "Dallas (Arlington)",
       "ground": "Dallas (Arlington)",
       "kickoff": "2026-06-30T17:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 1,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-30T19:00:06Z",
-      "goals": [],
+      "lastUpdated": "2026-06-30T19:04:39Z",
+      "goals": [
+        {
+          "team": "CIV",
+          "side": "home",
+          "name": "Amad Diallo",
+          "minute": "74",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Antonio Nusa",
+          "minute": "39",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Erling Haaland",
+          "minute": "86",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "CIV",
         "name": "Ivory Coast",
