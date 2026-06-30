@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-06-30T01:00:37.564Z",
+  "updatedAt": "2026-06-30T01:05:23.442Z",
   "groups": [
     {
       "name": "A",
@@ -5037,13 +5037,13 @@ window.WC2026_DATA = {
       "venue": "Monterrey (Guadalupe)",
       "ground": "Monterrey (Guadalupe)",
       "kickoff": "2026-06-30T01:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-29T05:20:12Z",
+      "lastUpdated": "2026-06-30T01:05:15Z",
       "goals": [],
       "homeTeam": {
         "code": "NED",
