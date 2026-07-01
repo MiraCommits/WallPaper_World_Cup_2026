@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-01T20:25:28.734Z",
+  "updatedAt": "2026-07-01T20:30:37.574Z",
   "groups": [
     {
       "name": "A",
@@ -5093,7 +5093,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-01T08:25:01Z",
+      "lastUpdated": "2026-07-01T08:25:00Z",
       "goals": [
         {
           "team": "CIV",
@@ -5315,9 +5315,9 @@ window.WC2026_DATA = {
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-01T20:24:45Z",
+      "lastUpdated": "2026-07-01T20:30:30Z",
       "goals": [],
       "homeTeam": {
         "code": "BEL",
