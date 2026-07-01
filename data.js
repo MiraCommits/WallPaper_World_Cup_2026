@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-01T22:55:26.432Z",
+  "updatedAt": "2026-07-01T23:00:41.103Z",
   "groups": [
     {
       "name": "A",
@@ -5318,7 +5318,48 @@ window.WC2026_DATA = {
       "awayGoals": 2,
       "duration": "REGULAR",
       "lastUpdated": "2026-07-01T22:54:56Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "BEL",
+          "side": "home",
+          "name": "Romelu Lukaku",
+          "minute": "86",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "BEL",
+          "side": "home",
+          "name": "Youri Tielemans",
+          "minute": "89",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "BEL",
+          "side": "home",
+          "name": "Youri Tielemans",
+          "minute": "120+5",
+          "penalty": true,
+          "ownGoal": false
+        },
+        {
+          "team": "SEN",
+          "side": "away",
+          "name": "Habib Diarra",
+          "minute": "25",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "SEN",
+          "side": "away",
+          "name": "Ismaïla Sarr",
+          "minute": "51",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "BEL",
         "name": "Belgium",
