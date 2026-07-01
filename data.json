@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-01T07:20:33.496Z",
+  "updatedAt": "2026-07-01T07:25:27.166Z",
   "groups": [
     {
       "name": "A",
@@ -5210,7 +5210,24 @@
       "awayGoals": 0,
       "duration": "REGULAR",
       "lastUpdated": "2026-07-01T06:02:36Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "MEX",
+          "side": "home",
+          "name": "Julián Quiñones",
+          "minute": "31",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "MEX",
+          "side": "home",
+          "name": "Raúl Jiménez",
+          "minute": "45+1",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "MEX",
         "name": "Mexico",
@@ -5527,11 +5544,11 @@
     {
       "id": "537376",
       "group": "",
-      "round": "LAST_16",
+      "round": "Round of 16",
       "home": "CAN",
       "away": "MAR",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Houston",
+      "ground": "Houston",
       "kickoff": "2026-07-04T17:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5552,16 +5569,19 @@
         "name": "Morocco",
         "logo": "https://crests.football-data.org/morocco.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-04",
+      "openfootballTime": "12:00 UTC-5",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537375",
       "group": "",
-      "round": "LAST_16",
+      "round": "Round of 16",
       "home": "PAR",
       "away": "FRA",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Philadelphia",
+      "ground": "Philadelphia",
       "kickoff": "2026-07-04T21:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5582,16 +5602,19 @@
         "name": "France",
         "logo": "https://crests.football-data.org/773.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-04",
+      "openfootballTime": "17:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537377",
       "group": "",
-      "round": "LAST_16",
+      "round": "Round of 16",
       "home": "BRA",
       "away": "NOR",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "ground": "New York/New Jersey (East Rutherford)",
       "kickoff": "2026-07-05T20:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5612,7 +5635,10 @@
         "name": "Norway",
         "logo": "https://crests.football-data.org/813.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-05",
+      "openfootballTime": "16:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537378",
