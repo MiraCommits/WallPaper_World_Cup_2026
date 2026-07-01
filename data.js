@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-01T02:15:28.365Z",
+  "updatedAt": "2026-07-01T02:20:29.957Z",
   "groups": [
     {
       "name": "A",
@@ -5151,7 +5151,7 @@ window.WC2026_DATA = {
       "homeGoals": 3,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-30T23:08:38Z",
+      "lastUpdated": "2026-06-30T23:00:18Z",
       "goals": [
         {
           "team": "FRA",
@@ -5209,7 +5209,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-01T02:15:24Z",
+      "lastUpdated": "2026-07-01T02:19:49Z",
       "goals": [],
       "homeTeam": {
         "code": "MEX",
