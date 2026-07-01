@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-01T00:00:44.984Z",
+  "updatedAt": "2026-07-01T00:05:24.739Z",
   "groups": [
     {
       "name": "A",
@@ -5151,7 +5151,7 @@
       "homeGoals": 3,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-30T23:08:38Z",
+      "lastUpdated": "2026-06-30T23:00:18Z",
       "goals": [
         {
           "team": "FRA",
