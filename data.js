@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-02T07:15:27.489Z",
+  "updatedAt": "2026-07-02T07:20:31.156Z",
   "groups": [
     {
       "name": "A",
@@ -5726,11 +5726,11 @@ window.WC2026_DATA = {
     {
       "id": "537378",
       "group": "",
-      "round": "LAST_16",
+      "round": "Round of 16",
       "home": "MEX",
       "away": "ENG",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Mexico City",
+      "ground": "Mexico City",
       "kickoff": "2026-07-06T00:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5751,7 +5751,10 @@ window.WC2026_DATA = {
         "name": "England",
         "logo": "https://crests.football-data.org/770.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-05",
+      "openfootballTime": "18:00 UTC-6",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537379",
@@ -5786,11 +5789,11 @@ window.WC2026_DATA = {
     {
       "id": "537380",
       "group": "",
-      "round": "LAST_16",
+      "round": "Round of 16",
       "home": "USA",
       "away": "BEL",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Seattle",
+      "ground": "Seattle",
       "kickoff": "2026-07-07T00:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5811,7 +5814,10 @@ window.WC2026_DATA = {
         "name": "Belgium",
         "logo": "https://crests.football-data.org/805.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-06",
+      "openfootballTime": "17:00 UTC-7",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537381",
