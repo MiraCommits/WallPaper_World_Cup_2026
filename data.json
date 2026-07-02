@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-02T00:20:33.430Z",
+  "updatedAt": "2026-07-02T00:25:25.979Z",
   "groups": [
     {
       "name": "A",
@@ -5316,8 +5316,8 @@
       "injuryTime": null,
       "homeGoals": 3,
       "awayGoals": 2,
-      "duration": "REGULAR",
-      "lastUpdated": "2026-07-01T22:54:56Z",
+      "duration": "EXTRA_TIME",
+      "lastUpdated": "2026-07-01T23:03:13Z",
       "goals": [
         {
           "team": "BEL",
@@ -5391,7 +5391,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-02T00:20:07Z",
+      "lastUpdated": "2026-07-02T00:25:06Z",
       "goals": [],
       "homeTeam": {
         "code": "USA",
