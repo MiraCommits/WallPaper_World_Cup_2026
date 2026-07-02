@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-02T02:10:30.043Z",
+  "updatedAt": "2026-07-02T02:15:30.247Z",
   "groups": [
     {
       "name": "A",
@@ -5385,14 +5385,31 @@ window.WC2026_DATA = {
       "venue": "San Francisco Bay Area (Santa Clara)",
       "ground": "San Francisco Bay Area (Santa Clara)",
       "kickoff": "2026-07-02T00:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-02T02:10:07Z",
-      "goals": [],
+      "lastUpdated": "2026-07-02T02:12:45Z",
+      "goals": [
+        {
+          "team": "USA",
+          "side": "home",
+          "name": "Folarin Balogun",
+          "minute": "45",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "USA",
+          "side": "home",
+          "name": "Malik Tillman",
+          "minute": "82",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "USA",
         "name": "USA",
