@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-02T03:20:30.726Z",
+  "updatedAt": "2026-07-02T03:25:25.455Z",
   "groups": [
     {
       "name": "A",
@@ -5093,7 +5093,7 @@ window.WC2026_DATA = {
       "homeGoals": 1,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-01T08:25:00Z",
+      "lastUpdated": "2026-07-01T08:25:01Z",
       "goals": [
         {
           "team": "CIV",
@@ -5202,14 +5202,14 @@ window.WC2026_DATA = {
       "away": "ECU",
       "venue": "Mexico City",
       "ground": "Mexico City",
-      "kickoff": "2026-07-01T01:00:00Z",
+      "kickoff": "2026-07-01T02:00:00Z",
       "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-01T08:25:01Z",
+      "lastUpdated": "2026-07-02T03:25:01Z",
       "goals": [
         {
           "team": "MEX",
@@ -5259,7 +5259,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-01T18:06:21Z",
+      "lastUpdated": "2026-07-02T03:25:01Z",
       "goals": [
         {
           "team": "ENG",
@@ -5316,8 +5316,8 @@ window.WC2026_DATA = {
       "injuryTime": null,
       "homeGoals": 3,
       "awayGoals": 2,
-      "duration": "EXTRA_TIME",
-      "lastUpdated": "2026-07-01T23:03:12Z",
+      "duration": "REGULAR",
+      "lastUpdated": "2026-07-02T03:25:01Z",
       "goals": [
         {
           "team": "BEL",
@@ -5391,7 +5391,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-02T02:12:45Z",
+      "lastUpdated": "2026-07-02T03:25:01Z",
       "goals": [
         {
           "team": "USA",
