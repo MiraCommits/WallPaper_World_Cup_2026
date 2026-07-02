@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-02T00:00:42.107Z",
+  "updatedAt": "2026-07-02T00:05:27.310Z",
   "groups": [
     {
       "name": "A",
@@ -5385,13 +5385,13 @@
       "venue": "San Francisco Bay Area (Santa Clara)",
       "ground": "San Francisco Bay Area (Santa Clara)",
       "kickoff": "2026-07-02T00:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-06-30T15:20:13Z",
+      "lastUpdated": "2026-07-02T00:05:11Z",
       "goals": [],
       "homeTeam": {
         "code": "USA",
