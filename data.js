@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-03T01:10:31.943Z",
+  "updatedAt": "2026-07-03T01:15:28.355Z",
   "groups": [
     {
       "name": "A",
@@ -5493,14 +5493,39 @@ window.WC2026_DATA = {
       "venue": "Toronto",
       "ground": "Toronto",
       "kickoff": "2026-07-02T23:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 2,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-03T01:10:29Z",
-      "goals": [],
+      "lastUpdated": "2026-07-03T01:14:51Z",
+      "goals": [
+        {
+          "team": "POR",
+          "side": "home",
+          "name": "Cristiano Ronaldo",
+          "minute": "68",
+          "penalty": true,
+          "ownGoal": false
+        },
+        {
+          "team": "POR",
+          "side": "home",
+          "name": "Gonçalo Ramos",
+          "minute": "90+4",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "CRO",
+          "side": "away",
+          "name": "Ivan Perisic",
+          "minute": "53",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "POR",
         "name": "Portugal",
