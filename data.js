@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-03T01:15:28.355Z",
+  "updatedAt": "2026-07-03T01:20:29.999Z",
   "groups": [
     {
       "name": "A",
@@ -5499,7 +5499,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-03T01:14:51Z",
+      "lastUpdated": "2026-07-03T01:17:51Z",
       "goals": [
         {
           "team": "POR",
