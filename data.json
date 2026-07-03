@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-03T03:55:23.987Z",
+  "updatedAt": "2026-07-03T04:00:40.312Z",
   "groups": [
     {
       "name": "A",
@@ -5499,7 +5499,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-03T01:26:11Z",
+      "lastUpdated": "2026-07-03T01:22:34Z",
       "goals": [
         {
           "team": "POR",
@@ -5557,7 +5557,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-03T03:54:24Z",
+      "lastUpdated": "2026-07-03T03:56:12Z",
       "goals": [],
       "homeTeam": {
         "code": "SUI",
