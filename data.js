@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-03T08:45:31.199Z",
+  "updatedAt": "2026-07-03T08:50:34.377Z",
   "groups": [
     {
       "name": "A",
@@ -5441,7 +5441,7 @@ window.WC2026_DATA = {
       "homeGoals": 3,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-03T08:25:01Z",
+      "lastUpdated": "2026-07-02T22:59:09Z",
       "goals": [
         {
           "team": "ESP",
@@ -5499,7 +5499,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-03T08:25:01Z",
+      "lastUpdated": "2026-07-03T03:12:51Z",
       "goals": [
         {
           "team": "POR",
@@ -5557,7 +5557,7 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-03T08:25:01Z",
+      "lastUpdated": "2026-07-03T06:58:24Z",
       "goals": [
         {
           "team": "SUI",
