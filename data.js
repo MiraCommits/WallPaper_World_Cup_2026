@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-03T21:00:42.409Z",
+  "updatedAt": "2026-07-03T21:05:26.662Z",
   "groups": [
     {
       "name": "A",
@@ -5608,7 +5608,24 @@ window.WC2026_DATA = {
       "awayGoals": 5,
       "duration": "PENALTY_SHOOTOUT",
       "lastUpdated": "2026-07-03T20:58:23Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "AUS",
+          "side": "home",
+          "name": "Mohamed Hany",
+          "minute": "55",
+          "penalty": false,
+          "ownGoal": true
+        },
+        {
+          "team": "EGY",
+          "side": "away",
+          "name": "Emam Ashour",
+          "minute": "13",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "AUS",
         "name": "Australia",
