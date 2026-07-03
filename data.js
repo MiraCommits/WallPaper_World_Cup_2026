@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-03T14:50:30.291Z",
+  "updatedAt": "2026-07-03T14:55:26.996Z",
   "groups": [
     {
       "name": "A",
@@ -5164,16 +5164,16 @@ window.WC2026_DATA = {
         {
           "team": "FRA",
           "side": "home",
-          "name": "Bradley Barcola",
-          "minute": "53",
+          "name": "Kylian Mbappé",
+          "minute": "74",
           "penalty": false,
           "ownGoal": false
         },
         {
           "team": "FRA",
           "side": "home",
-          "name": "Kylian Mbappé",
-          "minute": "74",
+          "name": "Bradley Barcola",
+          "minute": "53",
           "penalty": false,
           "ownGoal": false
         }
@@ -5454,16 +5454,16 @@ window.WC2026_DATA = {
         {
           "team": "ESP",
           "side": "home",
-          "name": "Pedro Porro",
-          "minute": "66",
+          "name": "Mikel Oyarzabal",
+          "minute": "89",
           "penalty": false,
           "ownGoal": false
         },
         {
           "team": "ESP",
           "side": "home",
-          "name": "Mikel Oyarzabal",
-          "minute": "89",
+          "name": "Pedro Porro",
+          "minute": "66",
           "penalty": false,
           "ownGoal": false
         }
