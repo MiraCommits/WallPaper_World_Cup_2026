@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-04T03:35:25.517Z",
+  "updatedAt": "2026-07-04T03:40:35.320Z",
   "groups": [
     {
       "name": "A",
@@ -5725,14 +5725,23 @@ window.WC2026_DATA = {
       "venue": "Kansas City",
       "ground": "Kansas City",
       "kickoff": "2026-07-04T01:30:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-04T03:34:49Z",
-      "goals": [],
+      "lastUpdated": "2026-07-04T03:37:36Z",
+      "goals": [
+        {
+          "team": "COL",
+          "side": "home",
+          "name": "Jhon Arias",
+          "minute": "14",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "COL",
         "name": "Colombia",
