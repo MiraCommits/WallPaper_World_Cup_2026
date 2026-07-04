@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-04T00:35:23.918Z",
+  "updatedAt": "2026-07-04T00:40:39.767Z",
   "groups": [
     {
       "name": "A",
@@ -5654,10 +5654,10 @@
       "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 2,
-      "duration": "REGULAR",
-      "lastUpdated": "2026-07-04T00:34:56Z",
+      "duration": "EXTRA_TIME",
+      "lastUpdated": "2026-07-04T00:40:30Z",
       "goals": [],
       "homeTeam": {
         "code": "ARG",
