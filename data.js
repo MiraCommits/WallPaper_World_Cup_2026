@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-04T19:05:23.776Z",
+  "updatedAt": "2026-07-04T19:10:37.614Z",
   "groups": [
     {
       "name": "A",
@@ -5767,14 +5767,39 @@ window.WC2026_DATA = {
       "venue": "Houston",
       "ground": "Houston",
       "kickoff": "2026-07-04T17:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
-      "awayGoals": 2,
+      "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-04T19:04:57Z",
-      "goals": [],
+      "lastUpdated": "2026-07-04T19:09:21Z",
+      "goals": [
+        {
+          "team": "MAR",
+          "side": "away",
+          "name": "Azzedine Ounahi",
+          "minute": "50",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "MAR",
+          "side": "away",
+          "name": "Azzedine Ounahi",
+          "minute": "82",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "MAR",
+          "side": "away",
+          "name": "Soufiane Rahimi",
+          "minute": "90+8",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "CAN",
         "name": "Canada",
