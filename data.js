@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-04T00:45:31.891Z",
+  "updatedAt": "2026-07-04T00:50:33.780Z",
   "groups": [
     {
       "name": "A",
@@ -5651,14 +5651,55 @@ window.WC2026_DATA = {
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-07-03T22:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 3,
       "awayGoals": 2,
       "duration": "EXTRA_TIME",
-      "lastUpdated": "2026-07-04T00:44:55Z",
-      "goals": [],
+      "lastUpdated": "2026-07-04T00:50:06Z",
+      "goals": [
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Lionel Messi",
+          "minute": "29",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Lisandro Martínez",
+          "minute": "92",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Diney Borges",
+          "minute": "111",
+          "penalty": false,
+          "ownGoal": true
+        },
+        {
+          "team": "CPV",
+          "side": "away",
+          "name": "Deroy Duarte",
+          "minute": "59",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "CPV",
+          "side": "away",
+          "name": "Sidny Lopes Cabral",
+          "minute": "103",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "ARG",
         "name": "Argentina",
