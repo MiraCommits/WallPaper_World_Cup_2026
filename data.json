@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-04T23:05:27.876Z",
+  "updatedAt": "2026-07-04T23:10:37.585Z",
   "groups": [
     {
       "name": "A",
@@ -5825,14 +5825,23 @@
       "venue": "Philadelphia",
       "ground": "Philadelphia",
       "kickoff": "2026-07-04T21:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-04T23:05:06Z",
-      "goals": [],
+      "lastUpdated": "2026-07-04T23:09:45Z",
+      "goals": [
+        {
+          "team": "FRA",
+          "side": "away",
+          "name": "Kylian Mbappé",
+          "minute": "70",
+          "penalty": true,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "PAR",
         "name": "Paraguay",
