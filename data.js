@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-04T01:35:24.126Z",
+  "updatedAt": "2026-07-04T01:40:38.601Z",
   "groups": [
     {
       "name": "A",
@@ -5725,13 +5725,13 @@ window.WC2026_DATA = {
       "venue": "Kansas City",
       "ground": "Kansas City",
       "kickoff": "2026-07-04T01:30:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-02T15:20:12Z",
+      "lastUpdated": "2026-07-04T01:40:17Z",
       "goals": [],
       "homeTeam": {
         "code": "COL",
