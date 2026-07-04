@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-04T11:30:40.860Z",
+  "updatedAt": "2026-07-04T11:35:24.135Z",
   "groups": [
     {
       "name": "A",
@@ -5959,11 +5959,11 @@
     {
       "id": "537381",
       "group": "",
-      "round": "LAST_16",
+      "round": "Round of 16",
       "home": "ARG",
       "away": "EGY",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Atlanta",
+      "ground": "Atlanta",
       "kickoff": "2026-07-07T16:00:00Z",
       "status": "NS",
       "minute": null,
@@ -5984,16 +5984,19 @@
         "name": "Egypt",
         "logo": "https://crests.football-data.org/825.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-07",
+      "openfootballTime": "12:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537382",
       "group": "",
-      "round": "LAST_16",
+      "round": "Round of 16",
       "home": "SUI",
       "away": "COL",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Vancouver",
+      "ground": "Vancouver",
       "kickoff": "2026-07-07T20:00:00Z",
       "status": "NS",
       "minute": null,
@@ -6014,7 +6017,10 @@
         "name": "Colombia",
         "logo": "https://crests.football-data.org/818.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-07",
+      "openfootballTime": "13:00 UTC-7",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537383",
