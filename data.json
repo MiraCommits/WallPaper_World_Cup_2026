@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-05T22:10:40.525Z",
+  "updatedAt": "2026-07-05T22:15:28.735Z",
   "groups": [
     {
       "name": "A",
@@ -5874,7 +5874,32 @@
       "awayGoals": 2,
       "duration": "REGULAR",
       "lastUpdated": "2026-07-05T22:09:19Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "BRA",
+          "side": "home",
+          "name": "Neymar",
+          "minute": "90+10",
+          "penalty": true,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Erling Haaland",
+          "minute": "79",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "NOR",
+          "side": "away",
+          "name": "Erling Haaland",
+          "minute": "90",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "BRA",
         "name": "Brazil",
