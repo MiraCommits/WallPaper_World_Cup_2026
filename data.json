@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-05T21:55:28.219Z",
+  "updatedAt": "2026-07-05T22:00:50.462Z",
   "groups": [
     {
       "name": "A",
@@ -5871,9 +5871,9 @@
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-05T21:55:25Z",
+      "lastUpdated": "2026-07-05T22:00:24Z",
       "goals": [],
       "homeTeam": {
         "code": "BRA",
