@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-05T22:05:27.071Z",
+  "updatedAt": "2026-07-05T22:10:40.525Z",
   "groups": [
     {
       "name": "A",
@@ -5867,13 +5867,13 @@ window.WC2026_DATA = {
       "venue": "New York/New Jersey (East Rutherford)",
       "ground": "New York/New Jersey (East Rutherford)",
       "kickoff": "2026-07-05T20:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-05T22:05:25Z",
+      "lastUpdated": "2026-07-05T22:09:19Z",
       "goals": [],
       "homeTeam": {
         "code": "BRA",
