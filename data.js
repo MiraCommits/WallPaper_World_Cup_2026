@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-05T21:30:43.783Z",
+  "updatedAt": "2026-07-05T21:35:24.929Z",
   "groups": [
     {
       "name": "A",
@@ -5873,7 +5873,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-05T21:30:25Z",
+      "lastUpdated": "2026-07-05T21:35:03Z",
       "goals": [],
       "homeTeam": {
         "code": "BRA",
