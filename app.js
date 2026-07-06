@@ -1455,43 +1455,51 @@ function renderFixtureGoals(m) {
       </div>
     `;
   }
-  function renderKnockoutScorerColumn(goals = [], side = "home") {
+  function renderKnockoutScorerLines(goals = []) {
+    return goals.map((goal) => {
+      const { minute, name } = goalEventParts(goal);
+      return `
+        <div class="bracket-scorer-line">
+          <span>${minute || "--"}</span>
+          <strong title="${name || "TBD"}">${name || "TBD"}</strong>
+        </div>
+      `;
+    }).join("");
+  }
+
+  function renderKnockoutScorerSection(label, goals = [], side = "home") {
+    if (!goals.length) return "";
+
     return `
-      <div class="bracket-scorers-col is-${side}">
-        ${goals.map((goal) => {
-          const { minute, name } = goalEventParts(goal);
-          return `
-            <div class="bracket-scorer-line">
-              <span>${minute || "--"}</span>
-              <strong>${name || "TBD"}</strong>
-            </div>
-          `;
-        }).join("")}
+      <div class="bracket-scorer-section is-${side}">
+        <div class="bracket-scorer-team-label">${escapeHtml(label)}</div>
+        ${renderKnockoutScorerLines(goals)}
+      </div>
+    `;
+  }
+
+  function renderKnockoutScorersList(match, home, away) {
+    const { home: homeGoals, away: awayGoals } = getScorersByTeam(match);
+
+    return `
+      <div class="bracket-scorers-list">
+        ${renderKnockoutScorerSection(home.name, homeGoals, "home")}
+        ${renderKnockoutScorerSection(away.name, awayGoals, "away")}
       </div>
     `;
   }
 
   function renderKnockoutBack(match, home, away) {
-    const scorers = getScorersByTeam(match);
-    const hasGoals = scorers.home.length || scorers.away.length;
+    const goals = Array.isArray(match?.goals) ? match.goals : [];
     const score = bracketScoreText(match);
 
     return `
       <div class="bracket-back-head">
         <span class="bracket-back-summary">${escapeHtml(home.name)} ${escapeHtml(score)} ${escapeHtml(away.name)}</span>
-        <button class="bracket-card-close" type="button" aria-label="Quay lại">Back</button>
       </div>
-      <div class="bracket-back-teams">
-        <span>${escapeHtml(home.name)}</span>
-        <span>${escapeHtml(away.name)}</span>
-      </div>
-      ${hasGoals
-        ? `<div class="bracket-scorers-grid">
-            ${renderKnockoutScorerColumn(scorers.home, "home")}
-            ${renderKnockoutScorerColumn(scorers.away, "away")}
-          </div>`
+      ${goals.length
+        ? renderKnockoutScorersList(match, home, away)
         : `<div class="bracket-no-goals">Chưa có dữ liệu bàn thắng</div>`}
-      <div class="bracket-back-hint">Click để quay lại</div>
     `;
   }
   function renderKnockoutCard(slot, bracket, options = {}) {
@@ -1511,12 +1519,16 @@ function renderFixtureGoals(m) {
     const roundLabel = getRoundLabel(slot.roundKey);
     const penalty = getPenaltyScore(match);
     const winnerCode = getMatchWinner(match);
+    const goalCount = Array.isArray(match?.goals)
+      ? match.goals.length
+      : (hasScore(match) ? Number(match.homeGoals || 0) + Number(match.awayGoals || 0) : 0);
+    const compactBackClass = goalCount < 5 ? "is-compact-back" : "";
     const homeOutcomeClass = penalty.has && home.known && String(home.code) === String(winnerCode) ? "is-pen-winner" : "";
     const awayOutcomeClass = penalty.has && away.known && String(away.code) === String(winnerCode) ? "is-pen-winner" : "";
 
     return `
       <article
-        class="bracket-card ${options.center ? "is-center" : ""} ${stateClass} ${penalty.has ? "has-penalty" : ""} ${isOpen ? "is-flipped" : ""}"
+        class="bracket-card ${options.center ? "is-center" : ""} ${stateClass} ${penalty.has ? "has-penalty" : ""} ${compactBackClass} ${isOpen ? "is-flipped" : ""}"
         role="button"
         tabindex="0"
         aria-expanded="${isOpen ? "true" : "false"}"

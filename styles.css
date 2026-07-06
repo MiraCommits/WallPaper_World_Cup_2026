@@ -3348,7 +3348,7 @@ body {
 /* Tổng thể bracket: giảm khoảng trống ngoài, tăng không gian cho 2 nhánh */
 .wallpaper--knockout .knockout-view {
   --bracket-card-h: clamp(82px, 7.35vh, 108px) !important;
-  --bracket-card-open-h: clamp(128px, 13.5vh, 176px) !important;
+  --bracket-card-open-h: clamp(168px, 13.5vh, 216px) !important;
 
   grid-template-columns:
     minmax(560px, 1fr)
@@ -3571,4 +3571,114 @@ body {
   font-size: clamp(12px, 0.72vh, 16px) !important;
   font-weight: 950 !important;
   line-height: 1 !important;
+}
+/* ===== FINAL OVERRIDE: one-column knockout back face scorers ===== */
+.wallpaper--knockout .bracket-card-back {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 10px 12px !important;
+}
+
+.wallpaper--knockout .bracket-back-head {
+  display: block !important;
+  min-height: 0 !important;
+  margin-bottom: 8px !important;
+}
+
+.wallpaper--knockout .bracket-back-summary {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  overflow: hidden !important;
+  color: #ffffff !important;
+  font-size: clamp(10px, 1.2vh, 13px) !important;
+  font-weight: 1000 !important;
+  line-height: 1.15 !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.wallpaper--knockout .bracket-card-close,
+.wallpaper--knockout .bracket-back-hint,
+.wallpaper--knockout .bracket-back-teams {
+  display: none !important;
+}
+
+.wallpaper--knockout .bracket-scorers-grid,
+.wallpaper--knockout .bracket-scorers-list {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  align-content: start !important;
+  gap: 4px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin-top: 0 !important;
+  overflow: hidden !important;
+}
+
+.wallpaper--knockout .bracket-scorers-col {
+  display: contents !important;
+}
+
+.wallpaper--knockout .bracket-scorer-line {
+  display: grid !important;
+  grid-template-columns: clamp(22px, 3.2vw, 28px) minmax(0, 1fr) !important;
+  align-items: baseline !important;
+  column-gap: 6px !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  color: rgba(226, 235, 245, 0.86) !important;
+  font-size: clamp(10px, 0.92vh, 12px) !important;
+  font-weight: 850 !important;
+  line-height: 1.14 !important;
+  text-align: left !important;
+}
+
+.wallpaper--knockout .bracket-scorer-line span {
+  grid-column: 1 !important;
+  color: var(--gold) !important;
+  font-weight: 1000 !important;
+  text-align: right !important;
+  white-space: nowrap !important;
+}
+
+.wallpaper--knockout .bracket-scorer-line strong {
+  grid-column: 2 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  font-weight: 850 !important;
+  text-align: left !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+/* ===== FINAL OVERRIDE: separate knockout back scorers by team ===== */
+.wallpaper--knockout .bracket-scorers-list {
+  gap: 5px !important;
+}
+
+.wallpaper--knockout .bracket-scorer-section {
+  display: grid !important;
+  gap: 2px !important;
+  min-width: 0 !important;
+}
+
+.wallpaper--knockout .bracket-scorer-section + .bracket-scorer-section {
+  border-top: 1px solid rgba(226, 235, 245, 0.18) !important;
+  margin-top: 3px !important;
+  padding-top: 5px !important;
+}
+
+.wallpaper--knockout .bracket-scorer-team-label {
+  min-width: 0 !important;
+  overflow: hidden !important;
+  color: var(--gold) !important;
+  font-size: clamp(9px, 0.78vh, 11px) !important;
+  font-weight: 1000 !important;
+  line-height: 1 !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+/* ===== FINAL OVERRIDE: compact flipped card when scorer list is short ===== */
+.wallpaper--knockout .bracket-card.is-compact-back {
+  --bracket-card-open-h: clamp(108px, 13.5vh, 156px) !important;
 }
