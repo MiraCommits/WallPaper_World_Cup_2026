@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-06T12:50:38.734Z",
+  "updatedAt": "2026-07-06T12:55:28.314Z",
   "groups": [
     {
       "name": "A",
@@ -6188,11 +6188,11 @@
     {
       "id": "537385",
       "group": "",
-      "round": "QUARTER_FINALS",
+      "round": "Quarter-final",
       "home": "NOR",
       "away": "ENG",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Miami (Miami Gardens)",
+      "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-07-11T21:00:00Z",
       "status": "NS",
       "minute": null,
@@ -6213,7 +6213,10 @@
         "name": "England",
         "logo": "https://crests.football-data.org/770.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-11",
+      "openfootballTime": "17:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537386",
