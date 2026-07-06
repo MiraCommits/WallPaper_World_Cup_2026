@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-06T03:10:38.488Z",
+  "updatedAt": "2026-07-06T03:15:26.781Z",
   "groups": [
     {
       "name": "A",
@@ -5931,8 +5931,49 @@ window.WC2026_DATA = {
       "homeGoals": 2,
       "awayGoals": 3,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-06T03:10:12Z",
-      "goals": [],
+      "lastUpdated": "2026-07-06T03:12:36Z",
+      "goals": [
+        {
+          "team": "MEX",
+          "side": "home",
+          "name": "Julián Quiñones",
+          "minute": "42",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "MEX",
+          "side": "home",
+          "name": "Raúl Jiménez",
+          "minute": "69",
+          "penalty": true,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Jude Bellingham",
+          "minute": "36",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Jude Bellingham",
+          "minute": "38",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Harry Kane",
+          "minute": "60",
+          "penalty": true,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "MEX",
         "name": "Mexico",
