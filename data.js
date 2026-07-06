@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-06T01:00:48.849Z",
+  "updatedAt": "2026-07-06T01:05:25.722Z",
   "groups": [
     {
       "name": "A",
@@ -5925,13 +5925,13 @@ window.WC2026_DATA = {
       "venue": "Mexico City",
       "ground": "Mexico City",
       "kickoff": "2026-07-06T01:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-06T01:00:33Z",
+      "lastUpdated": "2026-07-06T01:05:22Z",
       "goals": [],
       "homeTeam": {
         "code": "MEX",
