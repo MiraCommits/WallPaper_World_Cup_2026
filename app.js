@@ -1121,6 +1121,57 @@ function renderFixtureGoals(m) {
     };
   }
 
+
+  function previousWinnerIndexForCode(previousSlots, code) {
+    const value = String(code || "");
+    if (!isKnownTeamCode(value)) return -1;
+
+    return previousSlots.findIndex((slot) => String(getMatchWinner(slot?.match)) === value);
+  }
+
+  function matchSlotFromPreviousRound(match, round, rounds) {
+    if (!round?.previous || round.key === "FINAL" || round.key === "THIRD_PLACE") return -1;
+
+    const previousSlots = rounds[round.previous] || [];
+    if (!previousSlots.length) return -1;
+
+    const sourceIndexes = [match?.home, match?.away]
+      .filter(isKnownTeamCode)
+      .map((code) => previousWinnerIndexForCode(previousSlots, code))
+      .filter((sourceIndex) => sourceIndex >= 0);
+
+    if (!sourceIndexes.length) return -1;
+
+    const targetIndexes = Array.from(new Set(sourceIndexes.map((sourceIndex) => Math.floor(sourceIndex / 2))));
+    if (targetIndexes.length !== 1) return -1;
+
+    const targetIndex = targetIndexes[0];
+    return targetIndex >= 0 && targetIndex < round.count ? targetIndex : -1;
+  }
+
+  function orderKnockoutMatchesForRound(round, ordered, rounds) {
+    const slots = Array.from({ length: round.count }, () => null);
+    const used = new Set();
+
+    ordered.forEach((match, orderIndex) => {
+      const slotIndex = matchSlotFromPreviousRound(match, round, rounds);
+      if (slotIndex < 0 || slots[slotIndex]) return;
+
+      slots[slotIndex] = match;
+      used.add(orderIndex);
+    });
+
+    ordered.forEach((match, orderIndex) => {
+      if (used.has(orderIndex)) return;
+
+      const slotIndex = slots.findIndex((slot) => !slot);
+      if (slotIndex < 0) return;
+
+      slots[slotIndex] = match;
+    });
+
+    return slots;
+  }
   function buildKnockoutBracket(matches) {
     const byRound = new Map();
 
@@ -1144,10 +1195,12 @@ function renderFixtureGoals(m) {
           return timeA - timeB || String(a.id || "").localeCompare(String(b.id || ""));
         });
 
+      const slotted = orderKnockoutMatchesForRound(round, ordered, rounds);
+
       rounds[round.key] = Array.from({ length: round.count }, (_, index) => ({
         roundKey: round.key,
         index,
-        match: asKnockoutMatch(ordered[index], round, index)
+        match: asKnockoutMatch(slotted[index], round, index)
       }));
     });
 
@@ -1193,6 +1246,7 @@ function renderFixtureGoals(m) {
     if (!match) return "";
     if (isKnownTeamCode(match.winner)) return match.winner;
     if (isKnownTeamCode(match.winnerCode)) return match.winnerCode;
+    if (!isFinishedMatch(match)) return "";
     if (!hasScore(match)) return "";
 
     const homeGoals = Number(match.homeGoals);
