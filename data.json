@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-07T10:55:25.002Z",
+  "updatedAt": "2026-07-07T11:00:59.668Z",
   "groups": [
     {
       "name": "A",
@@ -6208,11 +6208,11 @@
     {
       "id": "537384",
       "group": "",
-      "round": "QUARTER_FINALS",
+      "round": "Quarter-final",
       "home": "ESP",
       "away": "BEL",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Los Angeles (Inglewood)",
+      "ground": "Los Angeles (Inglewood)",
       "kickoff": "2026-07-10T19:00:00Z",
       "status": "NS",
       "minute": null,
@@ -6233,7 +6233,10 @@
         "name": "Belgium",
         "logo": "https://crests.football-data.org/805.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-10",
+      "openfootballTime": "12:00 UTC-7",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537385",
