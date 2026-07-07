@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-07T18:10:53.045Z",
+  "updatedAt": "2026-07-07T18:15:28.761Z",
   "groups": [
     {
       "name": "A",
@@ -6121,8 +6121,49 @@ window.WC2026_DATA = {
       "homeGoals": 3,
       "awayGoals": 2,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-07T18:10:33Z",
-      "goals": [],
+      "lastUpdated": "2026-07-07T18:15:15Z",
+      "goals": [
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Cristian Romero",
+          "minute": "79",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Lionel Messi",
+          "minute": "83",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Enzo Fernández",
+          "minute": "90+2",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "EGY",
+          "side": "away",
+          "name": "Yasser Ibrahim",
+          "minute": "15",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "EGY",
+          "side": "away",
+          "name": "Mostafa Zico",
+          "minute": "67",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "ARG",
         "name": "Argentina",
