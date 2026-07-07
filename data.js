@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-07T00:05:26.990Z",
+  "updatedAt": "2026-07-07T00:10:43.066Z",
   "groups": [
     {
       "name": "A",
@@ -6041,13 +6041,13 @@ window.WC2026_DATA = {
       "venue": "Seattle",
       "ground": "Seattle",
       "kickoff": "2026-07-07T00:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-06T05:20:12Z",
+      "lastUpdated": "2026-07-07T00:10:33Z",
       "goals": [],
       "homeTeam": {
         "code": "USA",
