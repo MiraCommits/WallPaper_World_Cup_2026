@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-07T22:05:28.081Z",
+  "updatedAt": "2026-07-07T22:10:52.703Z",
   "groups": [
     {
       "name": "A",
@@ -6189,13 +6189,13 @@
       "venue": "Vancouver",
       "ground": "Vancouver",
       "kickoff": "2026-07-07T20:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-07T22:05:06Z",
+      "lastUpdated": "2026-07-07T22:09:58Z",
       "goals": [],
       "homeTeam": {
         "code": "SUI",
