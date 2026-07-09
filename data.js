@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-09T22:05:28.059Z",
+  "updatedAt": "2026-07-09T22:10:44.672Z",
   "groups": [
     {
       "name": "A",
@@ -6222,14 +6222,31 @@ window.WC2026_DATA = {
       "venue": "Boston (Foxborough)",
       "ground": "Boston (Foxborough)",
       "kickoff": "2026-07-09T20:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 2,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-09T22:04:51Z",
-      "goals": [],
+      "lastUpdated": "2026-07-09T22:05:53Z",
+      "goals": [
+        {
+          "team": "FRA",
+          "side": "home",
+          "name": "Kylian Mbappé",
+          "minute": "60",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "FRA",
+          "side": "home",
+          "name": "Ousmane Dembélé",
+          "minute": "66",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "FRA",
         "name": "France",
