@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-10T21:05:30.846Z",
+  "updatedAt": "2026-07-10T21:10:43.739Z",
   "groups": [
     {
       "name": "A",
@@ -6279,7 +6279,32 @@ window.WC2026_DATA = {
       "awayGoals": 1,
       "duration": "REGULAR",
       "lastUpdated": "2026-07-10T21:05:15Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "ESP",
+          "side": "home",
+          "name": "Fabián Ruiz",
+          "minute": "30",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ESP",
+          "side": "home",
+          "name": "Mikel Merino",
+          "minute": "88",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "BEL",
+          "side": "away",
+          "name": "Charles De Ketelaere",
+          "minute": "41",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "ESP",
         "name": "Spain",
