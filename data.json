@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-10T19:05:27.427Z",
+  "updatedAt": "2026-07-10T19:10:46.554Z",
   "groups": [
     {
       "name": "A",
@@ -6272,13 +6272,13 @@
       "venue": "Los Angeles (Inglewood)",
       "ground": "Los Angeles (Inglewood)",
       "kickoff": "2026-07-10T19:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-10T05:20:09Z",
+      "lastUpdated": "2026-07-10T19:10:31Z",
       "goals": [],
       "homeTeam": {
         "code": "ESP",
