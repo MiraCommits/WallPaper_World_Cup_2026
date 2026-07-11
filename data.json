@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-11T22:20:46.087Z",
+  "updatedAt": "2026-07-11T22:25:26.345Z",
   "groups": [
     {
       "name": "A",
@@ -6333,10 +6333,10 @@
       "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-11T22:20:19Z",
+      "lastUpdated": "2026-07-11T22:25:19Z",
       "goals": [],
       "homeTeam": {
         "code": "NOR",
