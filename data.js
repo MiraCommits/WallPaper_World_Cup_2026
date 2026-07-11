@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-11T23:50:44.823Z",
+  "updatedAt": "2026-07-11T23:55:25.146Z",
   "groups": [
     {
       "name": "A",
@@ -6330,14 +6330,39 @@ window.WC2026_DATA = {
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-07-11T21:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 1,
       "awayGoals": 2,
       "duration": "EXTRA_TIME",
-      "lastUpdated": "2026-07-11T23:49:18Z",
-      "goals": [],
+      "lastUpdated": "2026-07-11T23:53:31Z",
+      "goals": [
+        {
+          "team": "NOR",
+          "side": "home",
+          "name": "Andreas Schjelderup",
+          "minute": "36",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Jude Bellingham",
+          "minute": "45+2",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Jude Bellingham",
+          "minute": "93",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "NOR",
         "name": "Norway",
