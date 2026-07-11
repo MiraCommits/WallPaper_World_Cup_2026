@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-11T13:50:43.693Z",
+  "updatedAt": "2026-07-11T13:55:27.485Z",
   "groups": [
     {
       "name": "A",
@@ -6390,11 +6390,11 @@ window.WC2026_DATA = {
     {
       "id": "537387",
       "group": "",
-      "round": "SEMI_FINALS",
+      "round": "Semi-final",
       "home": "FRA",
       "away": "ESP",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Dallas (Arlington)",
+      "ground": "Dallas (Arlington)",
       "kickoff": "2026-07-14T19:00:00Z",
       "status": "NS",
       "minute": null,
@@ -6415,7 +6415,10 @@ window.WC2026_DATA = {
         "name": "Spain",
         "logo": "https://crests.football-data.org/760.svg",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-14",
+      "openfootballTime": "14:00 UTC-5",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537388",
