@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-12T15:00:56.298Z",
+  "updatedAt": "2026-07-12T15:05:24.566Z",
   "groups": [
     {
       "name": "A",
@@ -6481,11 +6481,11 @@
     {
       "id": "537388",
       "group": "",
-      "round": "SEMI_FINALS",
+      "round": "Semi-final",
       "home": "ENG",
       "away": "ARG",
-      "venue": "TBA",
-      "ground": "",
+      "venue": "Atlanta",
+      "ground": "Atlanta",
       "kickoff": "2026-07-15T19:00:00Z",
       "status": "NS",
       "minute": null,
@@ -6506,7 +6506,10 @@
         "name": "Argentina",
         "logo": "https://crests.football-data.org/762.png",
         "flagCode": ""
-      }
+      },
+      "openfootballDate": "2026-07-15",
+      "openfootballTime": "15:00 UTC-4",
+      "sourceExtra": "openfootball"
     },
     {
       "id": "537389",
