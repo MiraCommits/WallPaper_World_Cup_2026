@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-12T03:45:29.266Z",
+  "updatedAt": "2026-07-12T03:50:43.314Z",
   "groups": [
     {
       "name": "A",
@@ -6391,11 +6391,44 @@
       "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 1,
       "duration": "EXTRA_TIME",
-      "lastUpdated": "2026-07-12T03:45:21Z",
-      "goals": [],
+      "lastUpdated": "2026-07-12T03:49:33Z",
+      "goals": [
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Alexis Mac Allister",
+          "minute": "10",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Julián Álvarez",
+          "minute": "112",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ARG",
+          "side": "home",
+          "name": "Lautaro Martínez",
+          "minute": "120+1",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "SUI",
+          "side": "away",
+          "name": "Dan Ndoye",
+          "minute": "67",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "ARG",
         "name": "Argentina",
