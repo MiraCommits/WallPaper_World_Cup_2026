@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-14T21:05:26.134Z",
+  "updatedAt": "2026-07-14T21:10:48.704Z",
   "groups": [
     {
       "name": "A",
@@ -6461,7 +6461,24 @@ window.WC2026_DATA = {
       "awayGoals": 2,
       "duration": "REGULAR",
       "lastUpdated": "2026-07-14T21:04:16Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "ESP",
+          "side": "away",
+          "name": "Mikel Oyarzabal",
+          "minute": "22",
+          "penalty": true,
+          "ownGoal": false
+        },
+        {
+          "team": "ESP",
+          "side": "away",
+          "name": "Pedro Porro",
+          "minute": "58",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "FRA",
         "name": "France",
