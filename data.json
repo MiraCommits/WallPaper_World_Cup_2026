@@ -3,7 +3,7 @@
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-14T19:00:59.085Z",
+  "updatedAt": "2026-07-14T19:05:27.000Z",
   "groups": [
     {
       "name": "A",
@@ -6454,13 +6454,13 @@
       "venue": "Dallas (Arlington)",
       "ground": "Dallas (Arlington)",
       "kickoff": "2026-07-14T19:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-14T05:20:10Z",
+      "lastUpdated": "2026-07-14T19:05:15Z",
       "goals": [],
       "homeTeam": {
         "code": "FRA",
