@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-14T19:15:28.326Z",
+  "updatedAt": "2026-07-14T19:20:48.823Z",
   "groups": [
     {
       "name": "A",
@@ -6460,7 +6460,7 @@ window.WC2026_DATA = {
       "homeGoals": 0,
       "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-14T19:15:08Z",
+      "lastUpdated": "2026-07-14T19:20:40Z",
       "goals": [],
       "homeTeam": {
         "code": "FRA",
