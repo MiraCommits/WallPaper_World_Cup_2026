@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-15T19:05:28.982Z",
+  "updatedAt": "2026-07-15T19:10:48.479Z",
   "groups": [
     {
       "name": "A",
@@ -6504,13 +6504,13 @@ window.WC2026_DATA = {
       "venue": "Atlanta",
       "ground": "Atlanta",
       "kickoff": "2026-07-15T19:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-15T05:20:10Z",
+      "lastUpdated": "2026-07-15T19:09:37Z",
       "goals": [],
       "homeTeam": {
         "code": "ENG",
