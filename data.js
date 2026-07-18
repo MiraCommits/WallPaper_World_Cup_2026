@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-18T21:05:29.463Z",
+  "updatedAt": "2026-07-18T21:10:32.376Z",
   "groups": [
     {
       "name": "A",
@@ -6562,13 +6562,13 @@ window.WC2026_DATA = {
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-07-18T21:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 1,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-18T05:20:20Z",
+      "lastUpdated": "2026-07-18T21:10:24Z",
       "goals": [],
       "homeTeam": {
         "code": "FRA",
