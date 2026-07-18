@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-18T23:05:26.924Z",
+  "updatedAt": "2026-07-18T23:10:33.433Z",
   "groups": [
     {
       "name": "A",
@@ -6562,14 +6562,95 @@ window.WC2026_DATA = {
       "venue": "Miami (Miami Gardens)",
       "ground": "Miami (Miami Gardens)",
       "kickoff": "2026-07-18T21:00:00Z",
-      "status": "LIVE",
+      "status": "FT",
       "minute": null,
       "injuryTime": null,
       "homeGoals": 4,
-      "awayGoals": 5,
+      "awayGoals": 6,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-18T23:05:00Z",
-      "goals": [],
+      "lastUpdated": "2026-07-18T23:08:00Z",
+      "goals": [
+        {
+          "team": "FRA",
+          "side": "home",
+          "name": "Kylian Mbappé",
+          "minute": "48",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "FRA",
+          "side": "home",
+          "name": "Bradley Barcola",
+          "minute": "54",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "FRA",
+          "side": "home",
+          "name": "Kylian Mbappé",
+          "minute": "66",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "FRA",
+          "side": "home",
+          "name": "Ousmane Dembélé",
+          "minute": "90+6",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Declan Rice",
+          "minute": "3",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Ezri Konsa",
+          "minute": "18",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Bukayo Saka",
+          "minute": "37",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Bukayo Saka",
+          "minute": "45+1",
+          "penalty": false,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Bukayo Saka",
+          "minute": "87",
+          "penalty": true,
+          "ownGoal": false
+        },
+        {
+          "team": "ENG",
+          "side": "away",
+          "name": "Jude Bellingham",
+          "minute": "90+8",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "FRA",
         "name": "France",
