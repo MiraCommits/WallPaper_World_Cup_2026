@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-19T19:05:25.849Z",
+  "updatedAt": "2026-07-19T19:10:30.937Z",
   "groups": [
     {
       "name": "A",
@@ -6676,13 +6676,13 @@ window.WC2026_DATA = {
       "venue": "New York/New Jersey (East Rutherford)",
       "ground": "New York/New Jersey (East Rutherford)",
       "kickoff": "2026-07-19T19:00:00Z",
-      "status": "NS",
+      "status": "LIVE",
       "minute": null,
       "injuryTime": null,
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "duration": "REGULAR",
-      "lastUpdated": "2026-07-19T05:20:05Z",
+      "lastUpdated": "2026-07-19T19:05:57Z",
       "goals": [],
       "homeTeam": {
         "code": "ESP",
