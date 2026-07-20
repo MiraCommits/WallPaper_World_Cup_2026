@@ -3,7 +3,7 @@ window.WC2026_DATA = {
   "source": "football-data.org + openfootball/worldcup.json via GitHub Actions",
   "competition": "WC",
   "season": "2026",
-  "updatedAt": "2026-07-20T10:50:31.645Z",
+  "updatedAt": "2026-07-20T10:55:27.313Z",
   "groups": [
     {
       "name": "A",
@@ -6683,7 +6683,16 @@ window.WC2026_DATA = {
       "awayGoals": 0,
       "duration": "EXTRA_TIME",
       "lastUpdated": "2026-07-20T05:20:04Z",
-      "goals": [],
+      "goals": [
+        {
+          "team": "ESP",
+          "side": "home",
+          "name": "Ferran Torres",
+          "minute": "106",
+          "penalty": false,
+          "ownGoal": false
+        }
+      ],
       "homeTeam": {
         "code": "ESP",
         "name": "Spain",
