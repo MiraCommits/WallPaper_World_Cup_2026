@@ -1,67 +1,67 @@
-name: Update football-data.org data
-run-name: ${{ github.event_name }} - update football-data.org data
+# name: Update football-data.org data
+# run-name: ${{ github.event_name }} - update football-data.org data
 
-on:
-  workflow_dispatch:
+# on:
+#   workflow_dispatch:
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-concurrency:
-  group: update-football-data
-  cancel-in-progress: false
+# concurrency:
+#   group: update-football-data
+#   cancel-in-progress: false
 
-jobs:
-  update-data:
-    runs-on: ubuntu-latest
+# jobs:
+#   update-data:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: "20"
 
-      - name: Show trigger info
-        run: |
-          echo "event_name=${{ github.event_name }}"
-          echo "ref=${{ github.ref }}"
-          date -u
+#       - name: Show trigger info
+#         run: |
+#           echo "event_name=${{ github.event_name }}"
+#           echo "ref=${{ github.ref }}"
+#           date -u
 
-      - name: Fetch football-data.org and generate static data
-        env:
-          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-          COMPETITION: WC
-          SEASON: "2026"
-          TIMEZONE: Asia/Ho_Chi_Minh
-        shell: bash
-        run: |
-          for i in 1 2 3 4 5; do
-            echo "Fetch attempt $i/5..."
+#       - name: Fetch football-data.org and generate static data
+#         env:
+#           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+#           COMPETITION: WC
+#           SEASON: "2026"
+#           TIMEZONE: Asia/Ho_Chi_Minh
+#         shell: bash
+#         run: |
+#           for i in 1 2 3 4 5; do
+#             echo "Fetch attempt $i/5..."
 
-            if node scripts/update-data.js; then
-              echo "Fetch successful."
-              exit 0
-            fi
+#             if node scripts/update-data.js; then
+#               echo "Fetch successful."
+#               exit 0
+#             fi
 
-            echo "Fetch failed. Waiting before retry..."
-            sleep $((i * 20))
-          done
+#             echo "Fetch failed. Waiting before retry..."
+#             sleep $((i * 20))
+#           done
 
-          echo "All fetch attempts failed."
-          exit 1
+#           echo "All fetch attempts failed."
+#           exit 1
 
-      - name: Commit data changes
-        shell: bash
-        run: |
-          if [[ -n "$(git status --porcelain data.json data.js)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data.json data.js
-            git commit -m "chore: update World Cup data"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+#       - name: Commit data changes
+#         shell: bash
+#         run: |
+#           if [[ -n "$(git status --porcelain data.json data.js)" ]]; then
+#             git config user.name "github-actions[bot]"
+#             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+#             git add data.json data.js
+#             git commit -m "chore: update World Cup data"
+#             git push
+#           else
+#             echo "No changes to commit."
+#           fi
